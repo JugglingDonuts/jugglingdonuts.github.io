@@ -74,6 +74,9 @@ nav {
   text-decoration: none;
   color: #3e2723;
 }
+.content pre {
+  display: inline;
+}
 @media (max-width: 600px) {
   .content {
     padding-left: 10px;
