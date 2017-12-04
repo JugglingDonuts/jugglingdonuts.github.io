@@ -7,9 +7,11 @@
   "license": "MIT",
   "dependencies": {
     "autoprefixer-stylus": "^0.14.0",
+    "http-server": "^0.10.0",
     "stylus": "^0.54.5"
   },
   "scripts": {
-    "build-css": "stylus -u autoprefixer-stylus css/style.stylus -o docs/css"
+    "build-css": "stylus -u autoprefixer-stylus css/style.stylus -o docs/css",
+    "preview": "yarn run build-css && http-server ./docs"
   }
 }
