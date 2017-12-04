@@ -4,5 +4,12 @@
   "main": "main.js",
   "repository": "https://github.com/JugglingDonuts/JugglingDonuts.github.io",
   "author": "ishiy",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer-stylus": "^0.14.0",
+    "stylus": "^0.54.5"
+  },
+  "scripts": {
+    "build-css": "stylus -u autoprefixer-stylus css/style.stylus -o docs/css"
+  }
 }
