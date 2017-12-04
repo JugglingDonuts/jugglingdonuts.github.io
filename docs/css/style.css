@@ -77,6 +77,9 @@ nav {
 .content pre {
   display: inline;
 }
+.content ul {
+  padding-left: 15px;
+}
 @media (max-width: 600px) {
   .content {
     padding-left: 10px;

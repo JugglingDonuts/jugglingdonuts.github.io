@@ -88,6 +88,10 @@ nav {
   pre {
     display: inline;
   }
+
+  ul {
+    padding-left: 15px;
+  }
 }
 
 @media (max-width: 600px) {
