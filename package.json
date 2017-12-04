@@ -15,6 +15,6 @@
     "build-html": "node main.js",
     "build-css": "stylus -u autoprefixer-stylus css/style.stylus -o docs/css",
     "build": "yarn run build-html && yarn run build-css",
-    "preview": "yarn run build && http-server ./docs"
+    "preview": "yarn run build-html && yarn run build-css && http-server ./docs"
   }
 }
