@@ -8,10 +8,13 @@
   "dependencies": {
     "autoprefixer-stylus": "^0.14.0",
     "http-server": "^0.10.0",
+    "nunjucks": "^3.0.1",
     "stylus": "^0.54.5"
   },
   "scripts": {
+    "build-html": "node main.js",
     "build-css": "stylus -u autoprefixer-stylus css/style.stylus -o docs/css",
-    "preview": "yarn run build-css && http-server ./docs"
+    "build": "yarn run build-html && yarn run build-css",
+    "preview": "yarn run build && http-server ./docs"
   }
 }
