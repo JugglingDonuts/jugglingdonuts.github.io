@@ -1,29 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Juggling Donuts</title>
-
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-  </head>
-  <body>
-    <header>
-      <a href="/">
-        <img class="image title-image" src="/img/title.svg" alt="京都大道芸倶楽部 Juggling Donuts">
-      </a>
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#about" class="nav-link">Donutsについて</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">メンバー紹介</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">出演依頼</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      
+{% extends "templates/base.html" %}
+{% block content %}
       <img class="image" src="/img/JDL_2017.jpg">
       <section class="content">
         <h2 id="about">Donutsについて</h2>
@@ -66,10 +42,4 @@
         <h3>見学など: <pre>donuts.daihyou[at]gmail.com</pre></h3>
         <h3><a href="">出演依頼</a></h3>
       </section>
-
-    </main>
-    <footer>
-      (c) 2017 Juggling Donuts
-    </footer>
-  </body>
-</html>
+{% endblock %}
