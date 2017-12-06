@@ -24,3 +24,16 @@ $ yarn run preview
 $ convert -resize 600x600 sample.org.jpg sample.jpg
 $ convert -crop 600x400+0+100 sample.org.jpg sample.jpg
 ```
+
+## メンバーの追加
+`members` 以下に入会年度ごとに tomlファイルを作成する。
+ひとり分のデータは次のような形で登録する。
+よくわからない場合は、 `members/2015.toml` を参考にすること。
+
+```toml
+[[members]]
+name = ""
+picture = ""
+description = ""
+team = ""
+```
