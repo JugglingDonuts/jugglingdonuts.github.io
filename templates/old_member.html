@@ -2,7 +2,11 @@
 {% block content %}
       <section class="content">
       {% for d in data %}
+        {% if d.isLast %}
+        <h2>{{ d.year }}年度以前のメンバー</h2>
+        {% else %}
         <h2>{{ d.year }}年度メンバー</h2>
+        {% endif %}
         <ul class="old_member-list">
           {% for member in d.members %}
             <li class="old_member-item">
