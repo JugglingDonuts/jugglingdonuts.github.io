@@ -86,6 +86,28 @@ nav {
     padding-right: 10px;
   }
 }
+.member-item {
+  list-style-type: none;
+  margin: 10px 0;
+}
+.member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.member-name {
+  margin-top: 5px;
+  font-size: 20px;
+}
+.member-picture {
+  max-width: 150px;
+  width: 30%;
+  margin-right: 10px;
+}
+.member-text {
+  width: 70%;
+}
 footer {
   margin-top: 10px;
   margin-bottom: 5px;

@@ -1,0 +1,15 @@
+{% extends "templates/base.html" %}
+{% block content %}
+      <img class="image" src="/img/NF_2017.jpg">
+      <section class="content">
+        <h2>メンバー紹介</h2>
+        <p>
+          ジャグリングドーナツってどんなとこ？ 一言で答えると、色んな人が集まっているところです。 ここではドーナツの個性豊かなメンバー達を紹介します。 
+        </p>
+        <ul>
+          {% for year in years %}
+            <li><a href="/members/{{ year }}.html">{{ year }}年度メンバー</a></li>
+          {% endfor %}
+        </ul>
+      </section>
+{% endblock %}
