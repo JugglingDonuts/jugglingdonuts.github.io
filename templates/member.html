@@ -1,0 +1,33 @@
+{% extends "templates/base.html" %}
+{% block content %}
+      <section class="content">
+        <h2>{{ year }}年度メンバー</h2>
+        <ul class="member-list">
+          {% for member in members %}
+            <li class="member-item">
+              <div class="member">
+                {% if member.picture %}
+                  <img class="member-picture" src="/img/member/{{ year }}/{{ member.picture }}">
+                {% else %}
+                  <img class="member-picture" src="/img/member/nodata.jpg">
+                {% endif %}
+                <div class="member-text">
+                  <h4 class="member-name">
+                    {{ member.name }}
+                    {% if member.team %}
+                    <span class="member-team">
+                      ({{ member.team }})
+                    </span>
+                    {% endif %}
+                  </h4>
+                  <p class="member-description">
+                    {{ member.description }}
+                  </p>
+                </div>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+{% endblock %}
+

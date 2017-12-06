@@ -9,7 +9,8 @@
     "autoprefixer-stylus": "^0.14.0",
     "http-server": "^0.10.0",
     "nunjucks": "^3.0.1",
-    "stylus": "^0.54.5"
+    "stylus": "^0.54.5",
+    "toml": "^2.3.3"
   },
   "scripts": {
     "build-html": "node main.js",
