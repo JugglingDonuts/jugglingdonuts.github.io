@@ -108,6 +108,11 @@ nav {
 .member-text {
   width: 70%;
 }
+.irai-button {
+  margin: 0 auto;
+  width: 220px;
+  display: block;
+}
 footer {
   margin-top: 10px;
   margin-bottom: 5px;
