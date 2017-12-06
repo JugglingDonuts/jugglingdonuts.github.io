@@ -6,7 +6,7 @@ const main = () => {
   const topPage = nunjucks.render('templates/top.html');
   fs.writeFileSync('docs/index.html',topPage);
 
-  const years = [2016,2015];
+  const years = [2017,2016,2015];
   const membersPage = nunjucks.render('templates/members.html', {years});
   fs.writeFileSync('docs/members.html',membersPage);
   years.forEach((year) => {
