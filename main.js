@@ -33,7 +33,9 @@ const main = () => {
       console.error(`Parse Error: ${e.line} in members/${year}.toml`);
       process.exit(1);
     }
-    return {year, members};
+
+    const isLast = year === '2007';
+    return {year, members, isLast};
   });
   const oldMemberPage = nunjucks.render('templates/old_member.html', {"data": oldMember});
   fs.writeFileSync('docs/members/obog.html', oldMemberPage);
