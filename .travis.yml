@@ -1,0 +1,12 @@
+sudo: false
+language: node_js
+node_js:
+  - "node"
+cache: yarn
+before_install:
+  - node --version
+  - yarn --version
+install:
+  - yarn
+script:
+  - yarn run build
