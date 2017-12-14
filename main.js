@@ -19,6 +19,8 @@ const main = () => {
   };
   shell.cp('-r', 'img', 'public/img');
 
+  shell.cp('templates/404.html', 'public/404.html');
+
   const topPage = nunjucks.render('templates/top.html', {imgTable});
   fs.writeFileSync('public/index.html',topPage);
 
