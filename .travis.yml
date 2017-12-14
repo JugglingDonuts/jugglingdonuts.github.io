@@ -1,12 +1,16 @@
 sudo: false
 language: node_js
 node_js:
-  - "node"
+- node
 cache: yarn
 before_install:
-  - node --version
-  - yarn --version
+- node --version
+- yarn --version
 install:
-  - yarn
+- yarn
 script:
-  - yarn run build
+- yarn run build
+deploy:
+  provider: firebase
+  token:
+    secure: "$FIREBASE_TOKEN"
