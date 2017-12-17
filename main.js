@@ -58,7 +58,8 @@ const main = () => {
   const oldMemberPage = nunjucks.render('templates/old_member.html', {"data": oldMember, imgTable});
   fs.writeFileSync('public/members/obog.html', oldMemberPage);
 
-  const iraiPage = nunjucks.render('templates/irai.html', {imgTable});
+  const iraiFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSf_oz0aqanJrUwnZZmWay6z2-9HIfsqKpbbHPWgml7gPsKF4w/viewform';
+  const iraiPage = nunjucks.render('templates/irai.html', {imgTable, iraiFormUrl});
   fs.writeFileSync('public/irai.html',iraiPage);
 };
 
