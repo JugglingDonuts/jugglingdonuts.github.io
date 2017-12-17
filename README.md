@@ -28,6 +28,7 @@ $ convert -crop 600x400+0+100 sample.org.jpg sample.jpg
 ## メンバーの追加
 `members` 以下に入会年度ごとに tomlファイルを作成する。
 ひとり分のデータは次のような形で登録する。
+ひとり分の写真の解像度は `200px x 200px` にすること。
 よくわからない場合は、 `members/2015.toml` を参考にすること。
 
 ```toml
