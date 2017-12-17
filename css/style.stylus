@@ -112,7 +112,6 @@ nav {
 }
 
 .member-name {
-  margin-top: 5px;
   font-size: 20px;
 }
 
