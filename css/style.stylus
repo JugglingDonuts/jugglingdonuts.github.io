@@ -119,6 +119,7 @@ nav {
 .member-picture {
   max-width: 150px;
   width: 30%;
+  height: 100%;
   margin-right: 10px;
 }
 
