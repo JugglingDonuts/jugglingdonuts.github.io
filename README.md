@@ -17,7 +17,7 @@ team = ""
 ```
 
 ## サイトの写真の変更
-TODO
+`img/top.jpg`, `img/members.jpg`, `img/irai.jpg` を上書きすることで写真を変更できる。
 
 ## 開発環境のセットアップ
 [yarn](https://yarnpkg.com/ja/) をインストールし、次のコマンドでライブラリをインストールする。
