@@ -5,11 +5,6 @@ description = "圧倒的なディアボロの技術を持っている。
 パフォーマンスもトップレベルだ！"
 
 [[members]]
-name = "磯部 宏征"
-picture = ""
-description = ""
-
-[[members]]
 name = "稲葉 昂希"
 picture = "inaba.jpg"
 description = "イケメンデビラー！
@@ -32,20 +27,10 @@ description = "リングを操る聖母様。
 眩しすぎて目が見えなくなる。"
 
 [[members]]
-name = "作田 淳弥"
-picture = ""
-description = ""
-
-[[members]]
 name = "白井 夢月"
 picture = "shirai.jpg"
 description = "元気一杯魔法使い。
 道具が不思議な動きをするよ。
-
-[[members]]
-name = "高木 彩花"
-picture = ""
-description = ""
 
 [[members]]
 name = "田中 嵩士"
@@ -100,9 +85,4 @@ name = "山下 湧志朗"
 picture = "yamashita yusiro.jpg"
 description = "インスタ映えを求めて旅をしていた。
 クラブの主な用途はマイクです。"
-
-[[members]]
-name = "和田 岳"
-picture = ""
-description = ""
 
