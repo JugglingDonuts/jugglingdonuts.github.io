@@ -3,11 +3,14 @@ priory-color = #5D4037
 focus-color = #8D6E63
 text-color = #3E2723
 
+@charset "UTF-8";
+
 body {
   max-width: 600px;
   width: 100%;
   margin: auto;
   color: text-color;
+  font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
 }
 
 header {
