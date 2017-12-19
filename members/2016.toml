@@ -1,9 +1,4 @@
 [[members]]
-name = "飯塚 大輔"
-picture = ""
-description = ""
-
-[[members]]
 name = "今谷 実希"
 picture = "imatani.jpg"
 description = "何の道具がメインなのかもはやわからない。いや、カメラかな。写真撮影の天才です。"
@@ -38,3 +33,8 @@ name = "竹花 祥"
 picture = "takehana.jpg"
 description = "不思議なキャラが皆から大人気。普段は俺様タイプじゃなくて、素直な良い子です。"
 
+[[members]]
+name = "渡辺 悠里"
+picture = "watanabe.jpg"
+description = "ボール激ウマジャグラー。
+神出鬼没のレアキャラです。"
