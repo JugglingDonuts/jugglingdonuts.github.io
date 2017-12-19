@@ -62,6 +62,10 @@ nav {
   width: 100%;
 }
 
+.email-img {
+  vertical-align: top;
+}
+
 .content {
   padding-top: 5px;
   line-height: 1.3em;
