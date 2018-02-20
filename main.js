@@ -1,3 +1,4 @@
+require('dotenv').config();
 const nunjucks = require('nunjucks');
 const toml = require('toml');
 const fs = require('fs');
@@ -33,7 +34,8 @@ const main = () => {
 
   shell.cp('templates/404.html', 'public/404.html');
 
-  writePage('templates/top.html', 'public/index.html');
+  const jdlYear = process.env.WITH_JDL;
+  writePage('templates/top.html', 'public/index.html',{jdlYear});
 
   const years = fs.readdirSync('members').sort().reverse().map(f => f.substr(0,4));
   const active = years.slice(0,4);
@@ -54,10 +56,13 @@ const main = () => {
   const iraiFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSf_oz0aqanJrUwnZZmWay6z2-9HIfsqKpbbHPWgml7gPsKF4w/viewform';
   writePage('templates/irai.html','public/irai.html',{iraiFormUrl});
 
-  const jdl = loadToml('jdl/2017.toml');
-  jdl['ticket'] = jdl.staffs.find(s => s.position === "チケット").name;
-  jdl['kouhou'] = jdl.staffs.find(s => s.position === "広報").name;
-  writePage('templates/jdl.html','public/jdl.html',jdl);
+  if(jdlYear) {
+    console.log(`with jdl ${jdlYear}`);
+    const jdl = loadToml(`jdl/${jdlYear}.toml`);
+    jdl['ticket'] = jdl.staffs.find(s => s.position === "チケット").name;
+    jdl['kouhou'] = jdl.staffs.find(s => s.position === "広報").name;
+    writePage('templates/jdl.html','public/jdl.html',jdl);
+  }
 };
 
 main();

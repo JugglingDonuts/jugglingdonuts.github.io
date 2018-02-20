@@ -7,6 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "autoprefixer-stylus": "^0.14.0",
+    "dotenv": "^5.0.0",
     "http-server": "^0.10.0",
     "nunjucks": "^3.0.1",
     "shelljs": "^0.7.8",
