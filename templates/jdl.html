@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="none">
+    <title>Juggling Donuts Live {{ year }}</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="/css/jdl.css">
+  </head>
+  <body>
+    <header>
+      <h1>Juggling Donuts Live {{ year }}</h1>
+    </header>
+    <main>
+      <section id="about">
+        <h2>Juggling Donuts Liveとは?</h2>
+        <article>
+          <p>京都大道芸倶楽部 Juggling Donutsが<br>総力を挙げて贈る、年に一度の<br>ジャグリングライブショー！</p>
+          <p>大道芸とは一味違ったステージショーを<br>今年も迫力満点でお届けします！</p>
+          <p>詳細は<a href="{{ blogUrl }}">ブログ</a>をチェック！</p>
+        </article>
+      </section>
+      <section id="date">
+        <h2>日時</h2>
+        <article>
+          <div>{{ year }}年{{ month }}月{{ day }}日 ({{ dow }})</div>
+          <div>昼の部 開演 {{ firstStart }} (開場 {{firstOpen }})</div>
+          <div>夜の部 開演 {{ secondStart }} (開場 {{secondOpen }})</div>
+          <div>各公演は{{ showtime }}分程度の予定です。</div>
+        </article>
+      </section>
+      <section id="place">
+        <h2>会場</h2>
+        {% if place === "京都府立文化芸術会館" %}
+          <p><a href="http://www.bungei.jp/index.shtml" target="_blank">京都府立文化芸術会館</a><span style="font-size:80%;">(外部リンク)</span></p>
+          <p>〒602-0858&nbsp;京都市上京区河原町通広小路下ル</p>
+          <div class="map"><img src="img/kaikan-map.jpg" alt="マップが表示できません"></div>
+          <div>
+            <div><a href="http://www.city.kyoto.lg.jp/kotsu/" target="_blank">市バス</a></div>
+            <div>京都駅「A2のりば」から </div>
+            <div>市バス4・17・205系統にて</div>
+            <div>「府立医大病院前」下車すぐ</div>
+          </div>
+          <div>
+            <div><a href="http://www.keihan.co.jp/" target="_blank">京阪電車</a></div>
+            <div>神宮丸太町駅・出町柳駅から徒歩12分</div>
+          </div>
+        {% else %}
+          <p><a href="http://www2.odn.ne.jp/kyobun/" target="_blank">京都教育文化センター</a><span style="font-size:80%;">（外部リンク）</span></p>
+          <p>〒606-8397&nbsp;京都市左京区聖護院川原町4-13</p>
+          <div class="map"><img src="img/center-map.jpg" alt="マップが表示できません"></div>
+          <div>
+            <div><a href="http://www.city.kyoto.lg.jp/kotsu/" target="_blank">市バス</a></div>
+            <div>京都駅「D2のりば」から市バス206系統にて</div>
+            <div>「熊野神社前」下車徒歩5分</div>
+          </div>
+          <div>
+            <div><a href="http://www.keihan.co.jp/" target="_blank">京阪電車</a></div>
+            <div>神宮丸太町駅から徒歩5分</div>
+          </div>
+        {% endif %}
+          <p><b>※お車でのご来場はご遠慮ください。</b></p>
+      </section>
+      <section id="cast">
+        <h2>キャスト</h2>
+        <table>
+        {% for cast in casts %}
+          <tr>
+            <td>{{ cast.name }}</td>
+            <td>({{ cast.tool }})</td>
+          </tr>
+        {% endfor %}
+        </table>
+      </section>
+      <section id="staff">
+        <h2>スタッフ</h2>
+        <table>
+        {% for staff in staffs %}
+          <tr>
+            <td>{{ staff.position }}</td>
+            <td>{{ staff.name }}</td>
+          </tr>
+        {% endfor %}
+        </table>
+      </section>
+      <section id="price">
+        <h2>チケット料金</h2>
+        <table>
+          <tr>
+            <td>一般</td>
+            <td>{{ prices.adult }}円</td>
+          </tr>
+          <tr>
+            <td>大学生・大学院生・専門学生</td>
+            <td>{{ prices.collegeStudent }}円</td>
+          </tr>
+          <tr>
+            <td>大学新入生・高校生以下</td>
+            <td>{{ prices.highSchoolStudent }}円</td>
+          </tr>
+        </table>
+      </section>
+      <section id="register">
+        <h2>ご予約</h2>
+        <h3>注意事項</h3>
+        <ul class="l"> 
+          <li>Web申し込みの締切は<b>{{ registerDeadline }}</b>です。</li>
+          <li>座席は全席<b>自由席</b>です。</li>
+          <li>公演当日は当日券のみの販売となります。ただし、予約で既に満席の場合、当日券は販売いたしません。確実にお席を確保するために、上記の締切までに予めご購入いただくようにお願いいたします。</li>
+          <li><span style="color:red;font-weight:bold">予約者優先入場</span>：ご予約頂いたチケットは、開場30分前より代金との引換を開始いたしますので、開場後すぐにご入場いただけます。当日券を販売する場合は、開場後に販売いたしますが、満席になり次第、販売終了とさせていただきます。</li>
+          <li>ご予約は満席になり次第、締め切らせていただきます。</li>
+          <li>代金のお支払いは当日会場にてお願いいたします。なお、当日は混雑いたしますので、できるだけつり銭の無いようお願いいたします。</li>
+          <li><b>2回とも観覧をご希望の方</b>は、大変お手数ですが、各回ごとにご予約をお願いいたします。</li>
+          <!--<li><b>異なる種類のチケットをご希望の方</b>も、大変お手数ですが、分けてご予約をお願いいたします。</li>-->
+          <li>3才以下のお子様をお連れの場合、出入口付近の座席を指定させていただく可能性がございます。予めご了承ください。</li>
+          <li><b>10枚以上ご予約の方</b>はチケット係までお問い合わせください。</li>
+          <li>その他質問等ございましたらこちらまで直接ご連絡ください。</li>
+        </ul>
+        <p>E-mail：<a href="mailto:jdl{{ year }}ticket&#64;gmail.com">jdl{{ year }}ticket&#64;gmail.com</a>&nbsp;<br>（担当：{{ ticket }}）</p>
+        <div><a class="button" href="{{ registerForm }}">ご予約フォームへ</a></div>
+      </section>
+      <section id="contact">
+        <h2>お問い合わせ</h2>
+        <p>ご不明な点がございましたら広報担当までお気軽にお問い合わせください。<br>E-mail：<a href="mailto:juggling.donuts.kouhou&#64;gmail.com">juggling.donuts.kouhou&#64;gmail.com</a><br>（担当：{{ kouhou }}）</p>
+      </section>
+    </main>
+    <footer>
+      (c) {{ year }} Juggling Donuts
+    </footer>
+  </body>
+</html>

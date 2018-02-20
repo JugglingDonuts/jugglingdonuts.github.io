@@ -56,6 +56,20 @@ const main = () => {
   const iraiFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSf_oz0aqanJrUwnZZmWay6z2-9HIfsqKpbbHPWgml7gPsKF4w/viewform';
   const iraiPage = nunjucks.render('templates/irai.html', {iraiFormUrl});
   fs.writeFileSync('public/irai.html',iraiPage);
+
+  let jdl;
+  const jdlData = fs.readFileSync('jdl/2017.toml');
+  try {
+    jdl = toml.parse(jdlData);
+  } catch(e) {
+    console.error(`Parse Error: ${e.line} in jdl/2017.toml`);
+    process.exit(1);
+  }
+  jdl['ticket'] = jdl.staffs.find(s => s.position === "チケット").name;
+  jdl['kouhou'] = jdl.staffs.find(s => s.position === "広報").name;
+  console.log(jdl);
+  const jdlPage = nunjucks.render('templates/jdl.html', jdl);
+  fs.writeFileSync('public/jdl.html',jdlPage);
 };
 
 main();
