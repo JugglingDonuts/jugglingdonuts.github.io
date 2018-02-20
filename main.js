@@ -3,6 +3,23 @@ const toml = require('toml');
 const fs = require('fs');
 const shell = require('shelljs');
 
+const loadToml = (fn) => {
+  const content = fs.readFileSync(fn);
+  let data;
+  try {
+    data = toml.parse(content);
+  } catch(e) {
+    console.error(`Parse Error: ${e.line} in ${fn}`);
+    process.exit(1);
+  }
+  return data;
+};
+
+const writePage = (tmp, output, data) => {
+  const page = nunjucks.render(tmp,data);
+  fs.writeFileSync(output, page);
+};
+
 const main = () => {
   if (fs.existsSync('public')) {
     shell.rm('-r', 'public');
@@ -16,60 +33,31 @@ const main = () => {
 
   shell.cp('templates/404.html', 'public/404.html');
 
-  const topPage = nunjucks.render('templates/top.html');
-  fs.writeFileSync('public/index.html',topPage);
+  writePage('templates/top.html', 'public/index.html');
 
   const years = fs.readdirSync('members').sort().reverse().map(f => f.substr(0,4));
   const active = years.slice(0,4);
   const inactive = years.slice(4);
-  const membersPage = nunjucks.render('templates/members.html', {"years": active});
-  fs.writeFileSync('public/members.html',membersPage);
+  writePage('templates/members.html','public/members.html',{"years": active});
   active.forEach((year) => {
-    const memberData = fs.readFileSync(`members/${year}.toml`);
-    let members;
-    try {
-      members = toml.parse(memberData).members;
-    } catch(e) {
-      console.error(`Parse Error: ${e.line} in members/${year}.toml`);
-      process.exit(1);
-    }
-    const memberPage = nunjucks.render('templates/member.html', {year, members});
-    fs.writeFileSync(`public/members/${year}.html`, memberPage);
+    const members = loadToml(`members/${year}.toml`).members;
+    writePage('templates/member.html',`public/members/${year}.html`,{year,members});
   });
 
   const oldMember = inactive.map((year) => {
-    const memberData = fs.readFileSync(`members/${year}.toml`);
-    let members;
-    try {
-      members = toml.parse(memberData).members;
-    } catch(e) {
-      console.error(`Parse Error: ${e.line} in members/${year}.toml`);
-      process.exit(1);
-    }
-
+    const members = loadToml(`members/${year}.toml`).members;
     const isLast = year === '2007';
     return {year, members, isLast};
   });
-  const oldMemberPage = nunjucks.render('templates/old_member.html', {"data": oldMember});
-  fs.writeFileSync('public/members/obog.html', oldMemberPage);
+  writePage('templates/old_member.html','public/members/obog.html',{"data": oldMember});
 
   const iraiFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSf_oz0aqanJrUwnZZmWay6z2-9HIfsqKpbbHPWgml7gPsKF4w/viewform';
-  const iraiPage = nunjucks.render('templates/irai.html', {iraiFormUrl});
-  fs.writeFileSync('public/irai.html',iraiPage);
+  writePage('templates/irai.html','public/irai.html',{iraiFormUrl});
 
-  let jdl;
-  const jdlData = fs.readFileSync('jdl/2017.toml');
-  try {
-    jdl = toml.parse(jdlData);
-  } catch(e) {
-    console.error(`Parse Error: ${e.line} in jdl/2017.toml`);
-    process.exit(1);
-  }
+  const jdl = loadToml('jdl/2017.toml');
   jdl['ticket'] = jdl.staffs.find(s => s.position === "チケット").name;
   jdl['kouhou'] = jdl.staffs.find(s => s.position === "広報").name;
-  console.log(jdl);
-  const jdlPage = nunjucks.render('templates/jdl.html', jdl);
-  fs.writeFileSync('public/jdl.html',jdlPage);
+  writePage('templates/jdl.html','public/jdl.html',jdl);
 };
 
 main();
