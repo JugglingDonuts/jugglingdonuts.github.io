@@ -1,0 +1,70 @@
+year = 2017
+month = 5
+day = 6
+dow = "土"
+firstStart = "14:30" # 昼の部の開演時間
+firstOpen = "14:00" # 昼の部の開場時間
+secondStart = "18:30" # 夜の部の開演時間
+secondOpen = "18:00" # 夜の部の開場時間
+showtime = 60
+place = "京都府立文化芸術会館"
+blogUrl = "http://jdl2017.kyotolog.net/"
+registerDeadline = "5月5日 (金) 21時"
+registerForm = ""
+
+[[casts]]
+name = "糸田川 大我"
+tool = "ディアボロ"
+
+[[casts]]
+name = "小澤 駿弥"
+tool = "デビルスティック"
+
+[[casts]]
+name = "古賀 優太"
+tool = "デビルスティック"
+
+[[casts]]
+name = "田中 篤志"
+tool = "シガーボックス"
+
+[[casts]]
+name = "中田 哲"
+tool = "ボール"
+
+[[casts]]
+name = "西川 将司"
+tool = "ヨーヨー"
+
+[[casts]]
+name = "服部 駿佑"
+tool = "クラブ"
+
+[[staffs]]
+name = "貫井 洋介"
+position = "舞台監督"
+
+[[staffs]]
+name = "清水 翔太"
+position = "音響"
+
+[[staffs]]
+name = "竹花 祥"
+position = "照明"
+
+[[staffs]]
+name = "砂原 啓人"
+position = "撮影"
+
+[[staffs]]
+name = "小松原"
+position = "広報"
+
+[[staffs]]
+name = "西川"
+position = "チケット"
+
+[prices]
+adult = 1000
+collegeStudent = 700
+highSchoolStudent = 500
