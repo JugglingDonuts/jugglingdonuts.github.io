@@ -20,6 +20,10 @@ team = ""
 ## サイトの写真の変更
 `img/top.jpg`, `img/members.jpg`, `img/irai.jpg` を上書きすることで写真を変更できる。
 
+## JDL特設ページ
+- `jdl/`に `2017.toml`のようなファイルを作成する
+- `.env` を編集し、`WITH_JDL` に対象の年をセットする
+
 ## 開発環境のセットアップ
 [yarn](https://yarnpkg.com/ja/) をインストールし、次のコマンドでライブラリをインストールする。
 
