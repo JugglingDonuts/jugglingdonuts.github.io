@@ -19,7 +19,7 @@
         <article>
           <p>京都大道芸倶楽部 Juggling Donutsが<br>総力を挙げて贈る、年に一度の<br>ジャグリングライブショー！</p>
           <p>大道芸とは一味違ったステージショーを<br>今年も迫力満点でお届けします！</p>
-          <p>詳細は<a href="{{ blogUrl }}">ブログ</a>をチェック！</p>
+          <p>詳細は<a href="http://www.twitter.com/Juggling_Donuts">Twitter</a>をチェック！</p>
         </article>
       </section>
       <section id="date">
@@ -88,18 +88,12 @@
       <section id="price">
         <h2>チケット料金</h2>
         <table>
+          {% for price in prices %}
           <tr>
-            <td>一般</td>
-            <td>{{ prices.adult }}円</td>
+            <td>{{ price.target }}</td>
+            <td>{{ price.price }}</td>
           </tr>
-          <tr>
-            <td>大学生・大学院生・専門学生</td>
-            <td>{{ prices.collegeStudent }}円</td>
-          </tr>
-          <tr>
-            <td>大学新入生・高校生以下</td>
-            <td>{{ prices.highSchoolStudent }}円</td>
-          </tr>
+          {% endfor %}
         </table>
       </section>
       <section id="register">
