@@ -8,7 +8,6 @@ secondStart = "18:30" # 夜の部の開演時間
 secondOpen = "18:00" # 夜の部の開場時間
 showtime = 60
 place = "京都府立文化芸術会館"
-blogUrl = "http://jdl2017.kyotolog.net/"
 registerDeadline = "5月5日 (金) 21時"
 registerForm = ""
 
@@ -64,7 +63,16 @@ position = "広報"
 name = "西川"
 position = "チケット"
 
-[prices]
-adult = 1000
-collegeStudent = 700
-highSchoolStudent = 500
+[[prices]]
+target = "一般"
+price = "1000円"
+
+[[prices]]
+target = "大学生・大学院生・専門学生"
+price = "700円"
+
+[[prices]]
+target = "大学新入生・高校生以下"
+price = "500円"
+
+
