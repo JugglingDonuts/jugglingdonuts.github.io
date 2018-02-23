@@ -19,6 +19,12 @@ table {
   margin: auto;
 }
 
+.list {
+  td {
+    width: 50%;
+  }
+}
+
 section {
   margin-bottom: 30px;
 
