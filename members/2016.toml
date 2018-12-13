@@ -12,6 +12,7 @@ description = "コミカルな演技に定評がある高身長デビラー。�
 name = "小松原 裕"
 picture = "komatsubara.jpg"
 description = "いつも熱心にクラブを投げている姿が好印象。ズッキーニは投げちゃダメだよ！"
+team = "ポアロ"
 
 [[members]]
 name = "清水 翔太"
@@ -27,11 +28,13 @@ description = "清潔感溢れる爽やかボーイ。声とリングの軌道�
 name = "砂原 啓人"
 picture = "sunahara.jpg"
 description = "ポ○モン大好きなイケメン、略してポケメン。次の新歓係はキミに決めた！"
+team = "ハルシカ"
 
 [[members]]
 name = "竹花 祥"
 picture = "takehana.jpg"
 description = "不思議なキャラが皆から大人気。普段は俺様タイプじゃなくて、素直な良い子です。"
+team = "ポアロ"
 
 [[members]]
 name = "渡辺 悠里"
