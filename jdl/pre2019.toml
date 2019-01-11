@@ -1,7 +1,9 @@
 year = 2017
 month = 5
-day = 5.6 # エラー吐くかも　関数2個使うのが無難かな
-dow = "土・日"
+day1 = 5
+dow1 = "土"
+day2 = 6
+dow2 = "日"
 firstStart = "14:30" # 1日目昼の部の開演時間
 firstOpen = "14:00" # 1日目昼の部の開場時間
 secondStart = "18:30" # 1日目夜の部の開演時間
