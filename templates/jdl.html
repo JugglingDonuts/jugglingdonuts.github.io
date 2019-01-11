@@ -24,9 +24,17 @@
       </section>
       <section id="date">        <h2>日時</h2>
         <article>
-          <div>{{ year }}年{{ month }}月{{ day }}日 ({{ dow }})</div>
-          <div>昼の部 開演 {{ firstStart }} (開場 {{firstOpen }})</div>
-          <div>夜の部 開演 {{ secondStart }} (開場 {{secondOpen }})</div>
+# 以下注意 バグったらコメント部分の形に戻す
+#         <div>{{ year }}年{{ month }}月{{ day1 }}日 ({{ dow1 }})</div>
+#          <div>昼の部 開演 {{ firstStart }} (開場 {{firstOpen }})</div>
+#          <div>夜の部 開演 {{ secondStart }} (開場 {{secondOpen }})</div>
+          <div>{{ year }}年{{ month }}月{{ day1 }}日 ({{ dow1 }})</div>
+           <div>1日目昼の部 開演 {{ firstStart }} (開場 {{firstOpen }})</div>
+          <div>1日目夜の部 開演 {{ secondStart }} (開場 {{secondOpen }})</div>
+          <div>{{ day2 }}日 ({{ dow2 }})</div>
+           <div>2日目昼の部 開演 {{ thirdStart }} (開場 {{thirdOpen }})</div>
+          <div>2日目夜の部 開演 {{ forthStart }} (開場 {{forthOpen }})</div>
+           
           <div>各公演は{{ showtime }}分程度の予定です。</div>
         </article>
       </section>
@@ -46,7 +54,8 @@
             <div><a href="http://www.keihan.co.jp/" target="_blank">京阪電車</a></div>
             <div>神宮丸太町駅・出町柳駅から徒歩12分</div>
           </div>
-        # 注意！バグったら{% else %}に戻す
+        
+        # 以下注意！バグったら{% else %}に戻す
         
         {% else if place === "京都教育文化センター"%}
           <p><a href="http://www2.odn.ne.jp/kyobun/" target="_blank">京都教育文化センター</a><span style="font-size:80%;">（外部リンク）</span></p>
