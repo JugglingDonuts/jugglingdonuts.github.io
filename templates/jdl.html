@@ -46,7 +46,9 @@
             <div><a href="http://www.keihan.co.jp/" target="_blank">京阪電車</a></div>
             <div>神宮丸太町駅・出町柳駅から徒歩12分</div>
           </div>
-        {% else %}
+        # 注意！バグったら{% else %}に戻す
+        
+        {% else if place === "京都教育文化センター"%}
           <p><a href="http://www2.odn.ne.jp/kyobun/" target="_blank">京都教育文化センター</a><span style="font-size:80%;">（外部リンク）</span></p>
           <p>〒606-8397&nbsp;京都市左京区聖護院川原町4-13</p>
           <div class="map"><img src="img/center-map.jpg" alt="マップが表示できません"></div>
@@ -59,6 +61,21 @@
             <div><a href="http://www.keihan.co.jp/" target="_blank">京阪電車</a></div>
             <div>神宮丸太町駅から徒歩5分</div>
           </div>
+        
+        {% else if place === "京都市東山青少年活動センター"%}
+          <p><a href="http://ys-kyoto.org/higashiyama/" target="_blank">京都市東山青少年活動センター</a><span style="font-size:80%;">（外部リンク）</span></p>
+          <p>〒605-0862&nbsp;京都府京都市東山区清水5丁目130-6</p>
+          <div class="map"><img src="img/higasei-map.png" alt="マップが表示できません"></div>
+          <div>
+            <div><a href="http://www.city.kyoto.lg.jp/kotsu/" target="_blank">市バス</a></div>
+            <div>京都駅「D2のりば」から市バス206系統にて</div>
+            <div>「清水坂」下車徒歩5分</div>
+          </div>
+          <div>
+            <div><a href="http://www.keihan.co.jp/" target="_blank">京阪電車</a></div>
+            <div>清水五条駅から徒歩20分</div>
+          </div>
+        
         {% endif %}
           <p><b>※お車でのご来場はご遠慮ください。</b></p>
       </section>
