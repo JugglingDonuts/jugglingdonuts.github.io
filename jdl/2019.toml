@@ -1,1 +1,70 @@
-a
+year = 2017
+month = 5
+day = 5・6 # エラー吐くかも　関数2個使うのが無難かな
+dow = "土・日"
+firstStart = "14:30" # 1日目昼の部の開演時間
+firstOpen = "14:00" # 1日目昼の部の開場時間
+secondStart = "18:30" # 1日目夜の部の開演時間
+secondOpen = "18:00" # 1日目夜の部の開場時間
+thirdStart = "14:30" # 2日目昼の部の開演時間
+thirdOpen = "14:00" # 2日目昼の部の開場時間
+forthStart = "18:30" # 2日目夜の部の開演時間
+forthOpen = "18:00" # 2日目夜の部の開場時間
+
+showtime = 40
+place = "京都市東山青少年活動センター"
+registerDeadline = "5月4日 (金) 21時" # 前日の夜でいい？ 
+registerForm = "https://ticket.corich.jp/apply/97372" # 何も考えず載せてみる
+
+[[casts]]
+name = "白井夢月"
+tool = "ディアボロ"
+
+[[casts]]
+name = "戸板　治紀"
+tool = "ポイ"
+
+[[casts]]
+name = "松巾　拓未"
+tool = "ヨーヨー"
+
+[[casts]]
+name = "山下　巧"
+tool = "クリスタル"
+
+[[casts]]
+name = "山下　湧志朗"
+tool = "クラブ"
+
+[[staffs]]
+name = "小松原　裕"
+position = "舞台監督"
+
+[[staffs]]
+name = "渡邉　優大"
+position = "音響"
+
+[[staffs]]
+name = "吉村　比呂"
+position = "照明"
+
+[[staffs]]
+name = "糟谷？" # 決まってたっけ？
+position = "撮影"
+
+[[staffs]]
+name = "原田　優真"
+position = "広報"
+
+[[staffs]]
+name = "富川　幹也"
+position = "ウェブ(チケット)"
+
+[[prices]]
+target = "一般・大学生"
+price = "500円"
+
+[[prices]]
+target = "大学新入生・高校生以下"
+price = "300円"
+
