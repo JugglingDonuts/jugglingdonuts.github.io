@@ -56,7 +56,7 @@ const main = () => {
   const iraiFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfN2we5QLMyIb6ZEA-e_oLwqC7UoRDnJ1XIf5-tMfZwI33OJQ/viewform';
   writePage('templates/irai.html','public/irai.html',{iraiFormUrl});
 
-  if(jdlYear != null) {
+  if(jdlYear) {
     console.log(`with jdl ${jdlYear}`);
     const jdl = loadToml(`jdl/${jdlYear}.toml`);
     jdl['ticket'] = jdl.staffs.find(s => s.position === "チケット").name;
