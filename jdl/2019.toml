@@ -60,7 +60,11 @@ position = "広報"
 
 [[staffs]]
 name = "富川　幹也"
-position = "ウェブ(チケット)"
+position = "ウェブ"
+
+[[staffs]]
+name = "富川　幹也"
+position = "チケット"
 
 [[prices]]
 target = "一般・大学生"
