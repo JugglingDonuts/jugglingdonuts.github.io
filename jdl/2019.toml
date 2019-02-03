@@ -1,25 +1,23 @@
 year = 2019
 month = 5
-day1 = 5
+day1 = 4
 dow1 = "土"
-day2 = 6
+day2 = 5
 dow2 = "日"
-firstStart = "14:30" # 1日目昼の部の開演時間
-firstOpen = "14:00" # 1日目昼の部の開場時間
-secondStart = "18:30" # 1日目夜の部の開演時間
-secondOpen = "18:00" # 1日目夜の部の開場時間
-thirdStart = "14:30" # 2日目昼の部の開演時間
-thirdOpen = "14:00" # 2日目昼の部の開場時間
-forthStart = "18:30" # 2日目夜の部の開演時間
-forthOpen = "18:00" # 2日目夜の部の開場時間
+firstStart = "13:00" # 1日目昼の部の開演時間
+firstOpen = "12:30" # 1日目昼の部の開場時間
+secondStart = "16:00" # 1日目夜の部の開演時間
+secondOpen = "15:30" # 1日目夜の部の開場時間
+thirdStart = "13:00" # 2日目昼の部の開演時間
+thirdOpen = "12:30" # 2日目昼の部の開場時間
 
 showtime = 40
 place = "京都市東山青少年活動センター"
-registerDeadline = "5月4日 (金) 21時" # 前日の夜でいい？ 
+registerDeadline = "5月3日 (金) 21時" # 前日の夜でいい？ 
 registerForm = "https://ticket.corich.jp/apply/97372" # 何も考えず載せてみる
 
 [[casts]]
-name = "白井夢月"
+name = "白井　夢月"
 tool = "ディアボロ"
 
 [[casts]]
