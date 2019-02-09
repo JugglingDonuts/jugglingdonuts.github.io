@@ -13,8 +13,8 @@ thirdOpen = "12:30" # 2日目昼の部の開場時間
 
 showtime = 40
 place = "京都市東山青少年活動センター"
-registerDeadline = "5月3日 (金) 21時" # 前日の夜でいい？ 
-registerForm = "https://ticket.corich.jp/apply/97372" # 何も考えず載せてみる
+registerDeadline = "5月3日 (金) 21時" 
+registerForm = "https://ticket.corich.jp/apply/97372" 
 
 [[casts]]
 name = "今谷　美希"
