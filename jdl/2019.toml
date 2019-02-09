@@ -17,6 +17,10 @@ registerDeadline = "5月3日 (金) 21時" # 前日の夜でいい？
 registerForm = "https://ticket.corich.jp/apply/97372" # 何も考えず載せてみる
 
 [[casts]]
+name = "今谷　美希"
+tool = "キャスト"
+
+[[casts]]
 name = "白井　夢月"
 tool = "ディアボロ"
 
@@ -41,6 +45,10 @@ name = "小松原　裕"
 position = "舞台監督"
 
 [[staffs]]
+name = "田中　嵩士"
+position = "舞台監督補佐"
+
+[[staffs]]
 name = "渡邉　優大"
 position = "音響"
 
@@ -49,12 +57,36 @@ name = "吉村　比呂"
 position = "照明"
 
 [[staffs]]
-name = "糟谷？" # 決まってたっけ？
+name = "川井　悠生"
 position = "撮影"
+
+[[staffs]]
+name = "比嘉　魁斗"
+position = "大道具"
+
+[[staffs]]
+name = "山田　朋広"
+position = "大道具"
+
+[[staffs]]
+name = "古城　幸奈"
+position = "メイク"
+
+[[staffs]]
+name = "田﨑　晃司"
+position = "ヘアメイク"
+
+[[staffs]]
+name = "吉村　萌杏"
+position = "宣伝美術"
 
 [[staffs]]
 name = "原田　優真"
 position = "広報"
+
+[[staffs]]
+name = "前田　幸太郎"
+position = "会計"
 
 [[staffs]]
 name = "富川　幹也"
