@@ -90,11 +90,7 @@ position = "会計"
 
 [[staffs]]
 name = "富川　幹也"
-position = "ウェブ"
-
-[[staffs]]
-name = "富川　幹也"
-position = "チケット"
+position = "ウェブ・チケット"
 
 [[prices]]
 target = "一般・大学生"
