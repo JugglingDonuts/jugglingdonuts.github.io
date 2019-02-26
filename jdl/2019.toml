@@ -11,7 +11,7 @@ secondOpen = "15:30" # 1日目夜の部の開場時間
 thirdStart = "13:00" # 2日目昼の部の開演時間
 thirdOpen = "12:30" # 2日目昼の部の開場時間
 
-showtime = 40
+showtime = 
 place = "京都市東山青少年活動センター"
 registerDeadline = "5月3日 (金) 21時" 
 registerForm = "https://ticket.corich.jp/apply/97372" 
