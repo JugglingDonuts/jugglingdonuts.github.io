@@ -59,7 +59,7 @@ const main = () => {
   if(jdlYear) {
     console.log(`with jdl ${jdlYear}`);
     const jdl = loadToml(`jdl/${jdlYear}.toml`);
-    jdl['ticket'] = jdl.staffs.find(s => s.position === "チケット").name;
+    jdl['ticket'] = jdl.staffs.find(s => s.position === "ウェブ・チケット").name;
     jdl['kouhou'] = jdl.staffs.find(s => s.position === "広報").name;
     writePage('templates/jdl.html','public/jdl.html',jdl);
   }
