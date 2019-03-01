@@ -12,7 +12,7 @@ thirdStart = "13:00" # 2日目昼の部の開演時間
 thirdOpen = "12:30" # 2日目昼の部の開場時間
 
 showtime = 50
-place = "京都市東山青少年活動センター"
+place = "京都市東山青少年活動センター 創造活動室"
 registerDeadline = "5月3日 (金) 21時" 
 registerForm = "https://www.quartet-online.net/ticket/jdl2019" 
 
