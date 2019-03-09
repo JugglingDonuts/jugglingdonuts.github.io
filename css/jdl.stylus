@@ -44,11 +44,6 @@ img {
   max-width: 400px;
 }
 
-img2 {
-  width: 30%;
-  max-width: 200px;
-}
-
 .button {
   padding: 10px 5px;
   text-decoration: none;
