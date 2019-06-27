@@ -29,7 +29,7 @@ description = ""
 team = ""
 
 [[members]]
-name = "榊原美緒里"
+name = "榊原 美緒里"
 picture = ""
 description = ""
 team = ""
@@ -48,6 +48,12 @@ team = ""
 
 [[members]]
 name = "澤近 優真"
+picture = ""
+description = ""
+team = ""
+
+[[members]]
+name = "鈴木 翼"
 picture = ""
 description = ""
 team = ""
@@ -100,8 +106,4 @@ picture = ""
 description = ""
 team = ""
 
-[[members]]
-name = ""
-picture = ""
-description = ""
-team = ""
+
