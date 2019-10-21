@@ -63,3 +63,8 @@ $ convert -crop 600x400+0+100 sample.org.jpg sample.jpg
 - [stylus](http://stylus-lang.com/)
 - [nunjucks](https://mozilla.github.io/nunjucks/)
 
+### ライブラリの更新
+
+```
+$ yarn upgrade
+```
