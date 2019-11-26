@@ -53,7 +53,7 @@ const main = () => {
   });
   writePage('templates/old_member.html','public/members/obog.html',{"data": oldMember});
 
-  const iraiFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfN2we5QLMyIb6ZEA-e_oLwqC7UoRDnJ1XIf5-tMfZwI33OJQ/viewform';
+  const iraiFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSf5pHW7KXhTDXpM4smg3CeABYJ1kn80m5_HiDdt7044Not1FA/viewform?usp=pp_url';
   writePage('templates/irai.html','public/irai.html',{iraiFormUrl});
 
   if(jdlYear) {
