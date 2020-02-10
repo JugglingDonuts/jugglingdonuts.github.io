@@ -1,0 +1,120 @@
+year = 2020
+
+month = 5
+
+day = 5
+
+dow = "火"
+
+firstStart = "**:**" # 昼の部の開演時間
+
+firstOpen = "**:**" # 昼の部の開場時間
+
+secondStart = "**:**" # 夜の部の開演時間
+
+secondOpen = "**:**" # 夜の部の開場時間
+
+showtime = **
+
+place = "教育文化センター"
+
+registerDeadline = "*月*日 (金) **時"
+
+registerForm = ""
+
+
+
+[[casts]]
+
+name = "川井　悠生"
+
+tool = "ポイ"
+
+
+
+[[casts]]
+
+name = "鈴木　さら"
+
+tool = "ボール"
+
+
+
+[[casts]]
+
+name = "田崎　晃司"
+
+tool = "ディアボロ"
+
+
+
+[[casts]]
+
+name = "原田　優真"
+
+tool = "？？？"
+
+
+
+[[casts]]
+
+name = "比嘉　魁人"
+
+tool = "ボール"
+
+
+
+[[casts]]
+
+name = "宮里　航司"
+
+tool = "デビルスティック"
+
+
+
+[[casts]]
+
+name = "吉村　比呂"
+
+tool = "シェーカーカップ"
+
+
+
+[[casts]]
+
+name = "吉村　萌杏"
+
+position = "ディアボロ"
+
+
+
+[[casts]]
+
+name = "古城　幸奈"
+
+position = "キャスト"
+
+
+
+[[prices]]
+
+target = "一般"
+
+price = "1500円"
+
+
+
+[[prices]]
+
+target = "大学生"
+
+price = "1000円"
+
+
+
+[[prices]]
+
+target = "大学新入生・高校生以下"
+
+price = "500円"
+
