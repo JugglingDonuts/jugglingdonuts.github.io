@@ -14,7 +14,7 @@ secondStart = "**:**" # 夜の部の開演時間
 
 secondOpen = "**:**" # 夜の部の開場時間
 
-showtime = **
+showtime = *
 
 place = "教育文化センター"
 
