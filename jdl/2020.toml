@@ -6,21 +6,21 @@ day = 5
 
 dow = "火"
 
-firstStart = "**:**" # 昼の部の開演時間
+firstStart = "99:99" # 昼の部の開演時間
 
-firstOpen = "**:**" # 昼の部の開場時間
+firstOpen = "99:99" # 昼の部の開場時間
 
-secondStart = "**:**" # 夜の部の開演時間
+secondStart = "99:99" # 夜の部の開演時間
 
-secondOpen = "**:**" # 夜の部の開場時間
+secondOpen = "99:99" # 夜の部の開場時間
 
-showtime = *
+showtime = 99
 
-place = "教育文化センター"
+place = "京都教育文化センター"
 
-registerDeadline = "*月*日 (金) **時"
+registerDeadline = "5月4日 (金) 21時"
 
-registerForm = ""
+registerForm = "aaa"
 
 
 
@@ -84,7 +84,7 @@ tool = "シェーカーカップ"
 
 name = "吉村　萌杏"
 
-position = "ディアボロ"
+tool = "ディアボロ"
 
 
 
@@ -92,7 +92,192 @@ position = "ディアボロ"
 
 name = "古城　幸奈"
 
-position = "キャスト"
+tool = "キャスト"
+
+
+
+
+[[staffs]] 
+  
+name = "松巾　拓未" 
+  
+position = "舞台監督" 
+  
+  
+  
+[[staffs]] 
+  
+name = "小松原　裕" 
+  
+position = "舞台監督補佐" 
+ 
+ 
+ 
+[[staffs]] 
+  
+name = "比嘉　魁人" 
+  
+position = "大道具統括" 
+  
+  
+  
+[[staffs]] 
+  
+name = "吉村　比呂" 
+  
+position = "照明統括" 
+ 
+  
+   
+[[staffs]] 
+  
+name = "戸板　治紀" 
+  
+position = "広報統括" 
+  
+  
+  
+[[staffs]] 
+  
+name = "吉村　萌杏" 
+  
+position = "宣伝美術統括" 
+  
+  
+  
+[[staffs]] 
+  
+name = "糟谷　悠" 
+  
+position = "宣伝美術補佐" 
+  
+  
+  
+[[staffs]] 
+  
+name = "砂原　啓人" 
+  
+position = "受付統括" 
+  
+  
+  
+[[staffs]] 
+  
+name = "古城　幸奈" 
+  
+position = "メイク統括" 
+  
+  
+  
+[[staffs]] 
+  
+name = "田崎　晃司" 
+  
+position = "ヘアメイク統括" 
+  
+  
+ 
+ [[staffs]] 
+  
+name = "大山　拓海" 
+  
+position = "大道具" 
+  
+  
+  
+[[staffs]] 
+  
+name = "丸尾　亮太" 
+  
+position = "大道具" 
+ 
+ 
+ 
+[[staffs]] 
+  
+name = "竹田　瑞萌" 
+  
+position = "音響" 
+  
+  
+  
+[[staffs]] 
+  
+name = "石川　碧人" 
+  
+position = "照明" 
+  
+  
+  
+[[staffs]] 
+  
+name = "坂田　寛知" 
+  
+position = "撮影" 
+  
+  
+  
+[[staffs]] 
+  
+name = "米澤　璃穂" 
+  
+position = "撮影" 
+  
+ 
+ 
+[[staffs]]
+
+name = "田島　玄基"
+
+position = "広報"
+  
+  
+ 
+[[staffs]] 
+  
+name = "ウェブ" 
+  
+position = "榊原　美緒里" 
+
+
+
+[[staffs]]
+
+name = "澤近　優真"
+
+position = "会計・スポンサー"
+ 
+
+  
+[[staffs]] 
+  
+name = "相庭　将行" 
+  
+position = "宣伝美術" 
+  
+ 
+ 
+[[staffs]] 
+ 
+name = "向後　拓真"
+
+position = "チケット"
+  
+ 
+  
+[[staffs]] 
+  
+name = "佐藤　翔太郎" 
+  
+position = "メイク" 
+  
+  
+  
+[[staffs]] 
+  
+name = "山戸　瞭雅" 
+  
+position = "ヘアメイク" 
 
 
 
@@ -100,15 +285,15 @@ position = "キャスト"
 
 target = "一般"
 
-price = "1500円"
+price = "1000円"
 
 
 
 [[prices]]
 
-target = "大学生"
+target = "大学生・大学院生・専門学生"
 
-price = "1000円"
+price = "700円"
 
 
 
