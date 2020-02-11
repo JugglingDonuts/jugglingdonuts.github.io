@@ -4,7 +4,7 @@ month = 5
 
 day = 5
 
-dow = "火"
+dow1 = "火"
 
 firstStart = "99:99" # 昼の部の開演時間
 
