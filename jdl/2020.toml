@@ -285,15 +285,15 @@ position = "ヘアメイク"
 
 target = "一般"
 
-price = "1000円"
+price = "1500円"
 
 
 
 [[prices]]
 
-target = "大学生・大学院生・専門学生"
+target = "大学生"
 
-price = "700円"
+price = "1000円"
 
 
 
