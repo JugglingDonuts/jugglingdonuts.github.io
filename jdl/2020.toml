@@ -299,7 +299,7 @@ price = "1000円"
 
 [[prices]]
 
-target = "大学新入生・高校生以下"
+target = "高校生以下"
 
 price = "500円"
 
