@@ -171,7 +171,7 @@ position = "メイク統括"
   
 [[staffs]] 
   
-name = "田崎　晃司" 
+name = "田﨑　晃司" 
   
 position = "ヘアメイク統括" 
 
@@ -247,6 +247,13 @@ name = "榊原　美諸里"
   
 position = "ウェブ"
 
+
+
+[[staffs]]
+
+name = "渡邊　優大"
+
+position = "映像"
 
 
 [[staffs]]
