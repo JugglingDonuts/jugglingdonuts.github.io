@@ -6,15 +6,15 @@ day1 = 5
 
 dow1 = "火"
 
-firstStart = "99:99" # 昼の部の開演時間
+firstStart = "14:30" # 昼の部の開演時間
 
-firstOpen = "99:99" # 昼の部の開場時間
+firstOpen = "14:00" # 昼の部の開場時間
 
-secondStart = "99:99" # 夜の部の開演時間
+secondStart = "18:30" # 夜の部の開演時間
 
-secondOpen = "99:99" # 夜の部の開場時間
+secondOpen = "18:00" # 夜の部の開場時間
 
-showtime = 99
+showtime = 75
 
 place = "京都教育文化センター"
 
@@ -42,7 +42,7 @@ tool = "ボール"
 
 [[casts]]
 
-name = "田崎　晃司"
+name = "田﨑　晃司"
 
 tool = "ディアボロ"
 
