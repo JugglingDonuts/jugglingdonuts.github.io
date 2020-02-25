@@ -14,7 +14,7 @@ secondStart = "18:30" # 夜の部の開演時間
 
 secondOpen = "18:00" # 夜の部の開場時間
 
-showtime = 約70
+showtime = 70
 
 place = "京都教育文化センター"
 
