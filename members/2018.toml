@@ -1,10 +1,4 @@
 [[members]]
-name = "大谷 空遊希"
-picture = ""
-description = ""
-team = ""
-
-[[members]]
 name = "糟谷 悠"
 picture = "kasuya.jpg"
 description = "自由自在なジャグリングで魅せるクラバー。クラブ捌きに負けず劣らずトークも軽快。"
@@ -86,7 +80,7 @@ team = ""
 name = "吉村 比呂"
 picture = "yoshimura-hiro.jpg"
 description = "全国でも珍しい、シェーカーカップをメインで使うジャグラー。その成長はとどまるところを知らない。"
-team = ""
+team = "ブラックサンダー"
 
 [[members]]
 name = "吉村 萌杏"
@@ -98,4 +92,4 @@ team = ""
 name = "渡邊 優大"
 picture = "watanabe.jpg"
 description = "ドーナツでは希少なシガラー。様々な系統の技に挑戦し次々と身につけている。"
-team = ""
+team = "ブラックサンダー"
