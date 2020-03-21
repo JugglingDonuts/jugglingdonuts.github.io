@@ -8,7 +8,6 @@
   "dependencies": {
     "autoprefixer-stylus": "^0.14.0",
     "dotenv": "^5.0.0",
-    "http-server": "^0.12.1",
     "nunjucks": "^3.0.1",
     "shelljs": "^0.7.8",
     "stylus": "^0.54.5",
@@ -19,5 +18,8 @@
     "build-css": "stylus -u autoprefixer-stylus css/style.stylus css/jdl.stylus -o public/css",
     "build": "yarn run build-html && yarn run build-css",
     "preview": "yarn run build-html && yarn run build-css && http-server ./public"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.1"
   }
 }
