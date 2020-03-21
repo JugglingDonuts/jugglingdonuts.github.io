@@ -1,5 +1,5 @@
 # Juggling Donuts website
-[![Build Status](https://travis-ci.org/JugglingDonuts/website.svg?branch=master)](https://travis-ci.org/JugglingDonuts/website)
+[![Build Status](https://github.com/jugglingdonuts/jugglingdonuts.github.io/workflows/github pages/badge.svg)](https://github.com/JugglingDonuts/jugglingdonuts.github.io/actions)
 ## メンバーの追加のやり方
 以下では `2017` 年度入会のメンバーを追加する場合で説明する
 
