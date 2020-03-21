@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - master
+      - dev
 
 jobs:
   build-deploy:
@@ -28,5 +28,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          publish_branch: master
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
