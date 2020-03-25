@@ -1,5 +1,6 @@
 # Juggling Donuts website
 [![Build Status](https://github.com/jugglingdonuts/jugglingdonuts.github.io/workflows/github_pages/badge.svg)](https://github.com/JugglingDonuts/jugglingdonuts.github.io/actions)
+
 ## メンバーの追加のやり方
 以下では `2017` 年度入会のメンバーを追加する場合で説明する
 
@@ -68,3 +69,13 @@ $ convert -crop 600x400+0+100 sample.org.jpg sample.jpg
 ```
 $ yarn upgrade
 ```
+
+### デプロイとホスティング
+[このサイト](https://juggling-donuts.org)は、[GitHub Pages](https://help.github.com/ja/github/working-with-github-pages/about-github-pages)でホスティングされています。
+
+このリポジトリのdevブランチに変更がpushされると、[GitHub Actions](https://help.github.com/ja/actions/getting-started-with-github-actions/about-github-actions)でサイトがビルドされデプロイされます。
+ビルド結果は、masterブランチにpushされます。
+masterブランチに手動で変更を加えないでください。
+この設定は `.github/workflows/gh-pages.yml` に記述されています。
+
+
