@@ -56,7 +56,6 @@ $ convert -crop 600x400+0+100 sample.org.jpg sample.jpg
 - `members/`: メンバーの情報
 - `templates/`: HTMLのテンプレート
 - `main.js`: HTMLを生成するためのスクリプト
-- `.travis.yml`: Travis CIの設定ファイル
 
 ### 使用している技術
 
