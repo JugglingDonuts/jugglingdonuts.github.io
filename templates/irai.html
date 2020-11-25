@@ -1,8 +1,17 @@
 {% extends "templates/base.html" %}
 {% block content %}
       <section class="content">
+        <h2>お知らせ</h2>
+        <article>
+          <p>
+                <font color="red">
+                      現在、出演依頼のご対応を一時休止しています。申し訳ありません。
+                </font>
+          </p>
+        </article>
         <h2>出演依頼</h2>
         <article>
+          
           <p>
             私たちのパフォーマンスは、ジャグリングを主体とした20～30分程度のショーです。 音楽に合わせて行う完成度の高いジャグリングから、お喋りを交えながらのコミカルなパフォーマンス、 そして観客との掛け合いで大いに会場を盛り上げます。
           </p>
@@ -43,8 +52,5 @@
              その他ご不明な点やご相談については、出演依頼係(<img class="email-img" src="/img/contact_irai.png" alt="donuts.irai at gmail.com">)までお気軽にお問い合わせください。
           </p>
         </article>
-        <a class="irai-button" href="{{ iraiFormUrl }}">
-          <img src="/img/irai_form.png" alt="依頼する">
-        </a>
       </section>
 {% endblock %}
