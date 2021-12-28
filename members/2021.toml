@@ -25,7 +25,13 @@ team = ""
 [[members]]
 name = "中村　拓也"
 picture = "nakamura.jpg"
-description = ""
+description = "ジャグリング歴6年のディアボラー。Donutsのアイドル！"
+team = ""
+
+[[members]]
+name = "原"
+picture = ""
+description = "自由自在にディアボロを操る。優しいみんなのまとめ役。"
 team = ""
 
 [[members]]
