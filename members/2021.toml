@@ -23,13 +23,13 @@ description = "マイペースなボーラー。治療にミスはつきもの�
 team = ""
 
 [[members]]
-name = "中村"
-picture = ""
+name = "中村　拓也"
+picture = "nakamura.jpg"
 description = ""
 team = ""
 
 [[members]]
-name = "藤原"
+name = "藤原　秀慈"
 picture = "fujiwara.png"
 description = "ちょっと抜けてるけど頼りになるぞ。赤い鉢巻がとっても印象的なシガラー。"
 team = ""
@@ -47,7 +47,7 @@ description = "2ディア特訓中のディアボラー。あとで焼肉行こ�
 team = ""
 
 [[members]]
-name = "三角"
+name = "三角　理来"
 picture = "misumi.jpg"
 description = "個性的な人間が集まるDonutsでも霞まない個性。演技力抜群のルービックキューブ&ディアボロジャグラー。"
 team = ""
