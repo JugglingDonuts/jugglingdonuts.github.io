@@ -1,11 +1,11 @@
 
 year = 2022
 
-month = 00
+month = 0
 
-day1 = 00
+day1 = 0
 
-dow1 = ""
+dow1 = "-"
 
 firstStart = "" # 昼の部の開演時間
 
@@ -17,9 +17,9 @@ secondOpen = "" # 夜の部の開場時間
 
 showtime = 
 
-place = "京都教育文化センター"
+place = "後日公開"
 
-registerDeadline = "5月4日 (月) 21時"
+registerDeadline = ""
 
 registerForm = ""
 
@@ -299,6 +299,6 @@ position = "ヘアメイク"
 
 [[prices]]
 
-target = ""
+target = "xxx"
 
-price = ""
+price = "0"
