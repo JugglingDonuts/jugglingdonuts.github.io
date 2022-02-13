@@ -36,7 +36,7 @@ team = ""
 
 [[members]]
 name = "藤原　秀慈"
-picture = "fujiwara.jpg"
+#picture = "fujiwara.jpg"
 description = "ちょっと抜けてるけど頼りになるぞ。赤い鉢巻がとっても印象的なシガラー。"
 team = ""
 
