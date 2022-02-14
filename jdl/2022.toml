@@ -69,46 +69,6 @@ name = "戸坂　治紀"
 
 tool = "キャスト"
 
-
-[[staffs]] 
-  
-name = "" 
-  
-position = "スタッフ" 
-  
-  
-  
-[[staffs]] 
-  
-name = "" 
-  
-position = "スタッフ" 
- 
- 
- 
-[[staffs]] 
-  
-name = "" 
-  
-position = "スタッフ" 
-  
-  
-  
-[[staffs]] 
-  
-name = "" 
-  
-position = "スタッフ" 
- 
-  
-   
-[[staffs]] 
-  
-name = "" 
-  
-position = "スタッフ" 
-  
-  
   
 [[staffs]] 
   
@@ -120,95 +80,14 @@ position = "スタッフ"
   
 [[staffs]] 
   
-name = "" 
+name = "本田　健吾" 
   
-position = "スタッフ" 
-  
-  
-  
-[[staffs]] 
-  
-name = "" 
-  
-position = "スタッフ" 
+position = "証明" 
   
   
-  
-[[staffs]] 
-  
-name = "" 
-  
-position = "スタッフ" 
-  
-  
-  
-[[staffs]] 
-  
-name = "" 
-  
-position = "スタッフ" 
-
-
-
 [[staffs]]
 
-name = ""
-
-position = "スタッフ"
-  
-  
- 
- [[staffs]] 
-  
-name = "" 
-  
-position = "スタッフ" 
-  
-  
-  
-[[staffs]] 
-  
-name = "" 
-  
-position = "スタッフ" 
- 
- 
- 
-[[staffs]] 
-  
-name = "" 
-  
-position = "スタッフ" 
-  
-  
-  
-[[staffs]] 
-  
-name = "" 
-  
-position = "スタッフ" 
-  
-  
-  
-[[staffs]] 
-  
-name = "" 
-  
-position = "スタッフ" 
-  
-  
-  
-[[staffs]] 
-  
-name = "" 
-  
-position = "スタッフ" 
-  
- 
- 
-[[staffs]]
-
-name = ""
+name = "澤近　優真"
 
 position = "広報"
   
@@ -216,7 +95,7 @@ position = "広報"
  
 [[staffs]] 
   
-name = "" 
+name = "藤原　秀慈" 
   
 position = "ウェブ"
 
@@ -224,7 +103,7 @@ position = "ウェブ"
 
 [[staffs]]
 
-name = ""
+name = "松木　梨南・中井　竜太郎"
 
 position = "映像"
 
@@ -239,23 +118,14 @@ position = "会計・スポンサー"
   
 [[staffs]] 
   
-name = "" 
+name = "松木　梨南" 
   
 position = "宣伝美術" 
   
- 
- 
-[[staffs]] 
- 
-name = ""
-
-position = "チケット"
-  
- 
   
 [[staffs]] 
   
-name = "" 
+name = "出井　ななか" 
   
 position = "メイク" 
   
