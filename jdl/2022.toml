@@ -1,7 +1,7 @@
 
 year = 2022
 
-month = 0
+month = 4
 
 day1 = 0
 
@@ -141,6 +141,6 @@ position = "ヘアメイク"
 
 [[prices]]
 
-target = "xxx"
+target = "基本無料です。"
 
-price = "xxx"
+price = ""
