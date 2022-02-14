@@ -38,62 +38,13 @@
       </section>
       <section id="date">        <h2>日時</h2>
         <article>
-          <div>{{ year }}年{{ month }}月{{ day1 }}日 ({{ dow1 }})</div>
+          <div>{{ year }}年{{ month }}月**日</div>
          
-          <div>各公演は{{ showtime }}分程度の予定です。</div>
+          <div>各公演は ** 分程度の予定です。</div>
         </article>
       </section>
       <section id="place">
-        <h2>会場</h2>
-        {% if place === "京都府立文化芸術会館" %}
-          <p><a href="http://www.bungei.jp/index.shtml" target="_blank">京都府立文化芸術会館</a><span style="font-size:80%;">(外部リンク)</span></p>
-          <p>〒602-0858&nbsp;京都市上京区河原町通広小路下ル</p>
-          <div class="map"><img src="img/kaikan-map.jpg" alt="マップが表示できません"></div>
-          <div>
-            <div><a href="http://www.city.kyoto.lg.jp/kotsu/" target="_blank">市バス</a></div>
-            <div>京都駅「A2のりば」から </div>
-            <div>市バス4・17・205系統にて</div>
-            <div>「府立医大病院前」下車すぐ</div>
-          </div>
-          <div>
-            <div><a href="http://www.keihan.co.jp/" target="_blank">京阪電車</a></div>
-            <div>神宮丸太町駅・出町柳駅から徒歩12分</div>
-          </div>
         
-        {% endif %}
-        
-        {% if place === "京都教育文化センター" %}
-          <p><a href="http://www2.odn.ne.jp/kyobun/" target="_blank">京都教育文化センター</a><span style="font-size:80%;">（外部リンク）</span></p>
-          <p>〒606-8397&nbsp;京都市左京区聖護院川原町4-13</p>
-          <div class="map"><img src="img/center-map.jpg" alt="マップが表示できません"></div>
-          <div>
-            <div><a href="http://www.city.kyoto.lg.jp/kotsu/" target="_blank">市バス</a></div>
-            <div>京都駅「D2のりば」から市バス206系統にて</div>
-            <div>「熊野神社前」下車徒歩5分</div>
-          </div>
-          <div>
-            <div><a href="http://www.keihan.co.jp/" target="_blank">京阪電車</a></div>
-            <div>神宮丸太町駅から徒歩3分</div>
-          </div>
-        
-        {% endif %}
-        
-        {% if place === "京都市東山青少年活動センター 創造活動室" %}
-          <div><img src="img/SSPロゴ.jpg" alt="マップが表示できません" class="mini"></div><div><img src="img/創活番ロゴ_文字白.jpg" alt="マップが表示できません" class="mini2"></div><p><a href="http://ys-kyoto.org/higashiyama/" target="_blank">京都市東山青少年活動センター 創造活動室</a><span style="font-size:80%;">（外部リンク）</span></p>
-          <p>(共催：公益財団法人 京都市ユースサービス協会)</p>
-          <p>〒605-0862&nbsp;東山区東大路五条上ル 東山区総合庁舎２F</p>
-          <div class="map"><img src="img/higasei-official.jpg" alt="マップが表示できません"></div>
-          <div>
-            <div><a href="http://www.city.kyoto.lg.jp/kotsu/" target="_blank">市バス</a></div>
-            <div>京都駅「D2のりば」から市バス206系統にて</div>
-            <div>「清水道」下車徒歩すぐ</div>
-          </div>
-          <div>
-            <div><a href="http://www.keihan.co.jp/" target="_blank">京阪電車</a></div>
-            <div>清水五条駅から徒歩15分</div>
-          </div>
-        
-        {% endif %}
           <p><b>※インターネット上で動画の配信を予定しています。</b></p>
       </section>
       <section id="cast">
