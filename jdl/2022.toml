@@ -5,23 +5,23 @@ month = 0
 
 day1 = 0
 
-dow1 = "-"
+dow1 = "xxx"
 
-firstStart = "" # 昼の部の開演時間
+firstStart = "xx" # 昼の部の開演時間
 
-firstOpen = "" # 昼の部の開場時間
+firstOpen = "xx" # 昼の部の開場時間
 
-secondStart = "" # 夜の部の開演時間
+secondStart = "xx" # 夜の部の開演時間
 
-secondOpen = "" # 夜の部の開場時間
+secondOpen = "xx" # 夜の部の開場時間
 
-showtime = 
+showtime = 0
 
 place = "後日公開"
 
-registerDeadline = ""
+registerDeadline = "xx"
 
-registerForm = ""
+registerForm = "xx"
 
 
 
@@ -102,7 +102,7 @@ tool = "キャスト"
   
 name = "" 
   
-position = "" 
+position = "スタッフ" 
   
   
   
@@ -110,7 +110,7 @@ position = ""
   
 name = "" 
   
-position = "" 
+position = "スタッフ" 
  
  
  
@@ -118,7 +118,7 @@ position = ""
   
 name = "" 
   
-position = "" 
+position = "スタッフ" 
   
   
   
@@ -126,7 +126,7 @@ position = ""
   
 name = "" 
   
-position = "" 
+position = "スタッフ" 
  
   
    
@@ -134,7 +134,7 @@ position = ""
   
 name = "" 
   
-position = "" 
+position = "スタッフ" 
   
   
   
@@ -142,7 +142,7 @@ position = ""
   
 name = "" 
   
-position = "" 
+position = "スタッフ" 
   
   
   
@@ -150,7 +150,7 @@ position = ""
   
 name = "" 
   
-position = "" 
+position = "スタッフ" 
   
   
   
@@ -158,7 +158,7 @@ position = ""
   
 name = "" 
   
-position = "" 
+position = "スタッフ" 
   
   
   
@@ -166,7 +166,7 @@ position = ""
   
 name = "" 
   
-position = "" 
+position = "スタッフ" 
   
   
   
@@ -174,7 +174,7 @@ position = ""
   
 name = "" 
   
-position = "" 
+position = "スタッフ" 
 
 
 
@@ -182,7 +182,7 @@ position = ""
 
 name = ""
 
-position = ""
+position = "スタッフ"
   
   
  
@@ -190,7 +190,7 @@ position = ""
   
 name = "" 
   
-position = "" 
+position = "スタッフ" 
   
   
   
@@ -198,7 +198,7 @@ position = ""
   
 name = "" 
   
-position = "" 
+position = "スタッフ" 
  
  
  
@@ -206,7 +206,7 @@ position = ""
   
 name = "" 
   
-position = "" 
+position = "スタッフ" 
   
   
   
@@ -214,7 +214,7 @@ position = ""
   
 name = "" 
   
-position = "" 
+position = "スタッフ" 
   
   
   
@@ -222,7 +222,7 @@ position = ""
   
 name = "" 
   
-position = "" 
+position = "スタッフ" 
   
   
   
@@ -230,7 +230,7 @@ position = ""
   
 name = "" 
   
-position = "" 
+position = "スタッフ" 
   
  
  
