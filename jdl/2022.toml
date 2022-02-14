@@ -7,13 +7,13 @@ day1 = 0
 
 dow1 = "xxx"
 
-firstStart = "xx" # 昼の部の開演時間
+#firstStart = "xx" # 昼の部の開演時間
 
-firstOpen = "xx" # 昼の部の開場時間
+#firstOpen = "xx" # 昼の部の開場時間
 
-secondStart = "xx" # 夜の部の開演時間
+#secondStart = "xx" # 夜の部の開演時間
 
-secondOpen = "xx" # 夜の部の開場時間
+#secondOpen = "xx" # 夜の部の開場時間
 
 showtime = 0
 
@@ -63,39 +63,11 @@ name = "山下　巧"
 
 tool = "クリスタル"
 
-
-
-[[casts]]
-
-name = "宮里　航司"
-
-tool = "デビルスティック"
-
-
-
 [[casts]]
 
 name = "戸坂　治紀"
 
 tool = "キャスト"
-
-
-
-[[casts]]
-
-name = "吉村　萌杏"
-
-tool = "ディアボロ"
-
-
-
-[[casts]]
-
-name = "古城　幸奈"
-
-tool = "キャスト"
-
-
 
 
 [[staffs]] 
@@ -301,4 +273,4 @@ position = "ヘアメイク"
 
 target = "xxx"
 
-price = "0"
+price = "xxx"
