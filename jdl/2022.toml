@@ -1,4 +1,9 @@
 
+#この年はインターネット上での公開を行い、
+#例年のと比べていろいろと減っています。
+#コピペするときは以前までのをお使いください。
+
+
 year = 2022
 
 month = 4
@@ -7,13 +12,6 @@ day1 = 0
 
 dow1 = "xxx"
 
-#firstStart = "xx" # 昼の部の開演時間
-
-#firstOpen = "xx" # 昼の部の開場時間
-
-#secondStart = "xx" # 夜の部の開演時間
-
-#secondOpen = "xx" # 夜の部の開場時間
 
 showtime = 0
 
@@ -66,16 +64,9 @@ tool = "クリスタル"
 
 [[casts]]
 
-name = "戸坂　治紀"
+name = "戸板　治紀"
 
 tool = "キャスト"
-
-  
-[[staffs]] 
-  
-name = "" 
-  
-position = "チケット" 
   
   
   
@@ -92,13 +83,12 @@ name = "本田　健吾"
 position = "照明" 
   
   
-  
  
 [[staffs]] 
   
 name = "藤原　秀慈" 
   
-position = "ウェブ"
+position = "ウェブ・ヘアメイク"
 
 
 
@@ -113,7 +103,7 @@ position = "映像"
 
 name = ""
 
-position = "会計・スポンサー"
+position = "会計"
  
 
   
@@ -126,22 +116,7 @@ position = "宣伝美術"
   
 [[staffs]] 
   
-name = "出井　ななか" 
+name = "出井　菜々香" 
   
 position = "メイク" 
   
-  
-  
-[[staffs]] 
-  
-name = "" 
-  
-position = "ヘアメイク" 
-
-
-
-[[prices]]
-
-target = "基本無料です。"
-
-price = ""
