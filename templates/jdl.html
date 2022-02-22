@@ -32,7 +32,7 @@
         <h2>Juggling Donuts Liveとは?</h2>
         <article>
           <p>京都大道芸倶楽部Juggling Donutsが<br>総力を挙げて贈る、年に一度の<br>ジャグリングライブショー！</p>
-          <p>大道芸とは一味違ったステージショーを<br>今年も迫力満点でお届けします！</p>
+          <p>大道芸とは一味違った迫力満点のステージショーを<br>今年は動画サイトでお届けします！</p>
           <p>変更や連絡、その他出演者の紹介等は<a href="http://www.twitter.com/Juggling_Donuts">Twitter</a>にアップするので<br>そちらも併せてご覧ください。</p>
         </article>
       </section>
@@ -40,13 +40,9 @@
         <article>
           <div>{{ year }}年{{ month }}月**日</div>
          
-          <div>各公演は ** 分程度の予定です。</div>
         </article>
       </section>
-      <section id="place">
-        
-          <p><b>※インターネット上で動画の配信を予定しています。</b></p>
-      </section>
+      
       <section id="cast">
         <h2>出演</h2>
         <table class="list">
@@ -58,6 +54,7 @@
         {% endfor %}
         </table>
       </section>
+      
       <section id="staff">
         <h2>スタッフ</h2>
         <table class="list">
@@ -69,23 +66,19 @@
         {% endfor %}
         </table>
       </section>
+      
       <section id="price">
-        <h2>チケット料金</h2>
-        <table>
-          {% for price in prices %}
-          <tr>
-            <td>{{ price.target }}</td>
-            <td>{{ price.price }}</td>
-          </tr>
-          {% endfor %}
-        </table>
+        <h2>カンパについて</h2>
+          <article>
+            <p>今回のJDLは誰でも無料でご視聴いただけますが、資金的に困難であるためカンパを募ることにしました。</p>
+          </article>
       </section>  
       <section id="caution">
         <h2>注意事項</h2>
         <ul class="l"> 
           <li>公開日時等は後日公開します。</li>
         </ul>
-        <p>E-mail：<a href="mailto:donuts.information&#64;gmail.com">donuts.information&#64;gmail.com</a>&nbsp;<br>（担当：{{ ticket }}）</p>
+        <p>E-mail：<a href="mailto:donuts.information&#64;gmail.com">donuts.information&#64;gmail.com</a>&nbsp;<br></p>
       </section>
       <section id="contact">
         <h2>お問い合わせ</h2>
