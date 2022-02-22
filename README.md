@@ -24,7 +24,7 @@ team = ""
 ## JDL特設ページ
 - `jdl/`に `2017.toml`のようなファイルを作成する
 - `.env` を編集し、`WITH_JDL` に対象の年をセットする
-- `template`->`jdl.html` も編集し甲斐がある
+- `templates`の`jdl.html` も編集し甲斐がある
 
 ## 開発環境のセットアップ
 [yarn](https://yarnpkg.com/ja/) をインストールし、次のコマンドでライブラリをインストールする。
