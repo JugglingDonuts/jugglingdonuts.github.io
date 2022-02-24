@@ -16,13 +16,13 @@ dow1 = "xxx"
 place = "後日公開"
 
 
-###
+
 [[casts]]
 
 name = "酒徳　波和"
 
 tool = "リング"
-###
+
 
 
 [[casts]]
@@ -63,7 +63,7 @@ name = "戸板　治紀"
 tool = "キャスト"
   
   
-  
+ """
 [[staffs]]
 
 name = "澤近　優真"
@@ -124,4 +124,4 @@ position = "宣伝美術"
 name = "出井　菜々香" 
   
 position = "メイク" 
-  
+  """
