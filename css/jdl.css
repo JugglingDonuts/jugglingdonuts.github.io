@@ -11,6 +11,7 @@ body {
 }
 table {
   text-align: left;
+  margin: auto;
 }
 .list td {
   width: 50%;
