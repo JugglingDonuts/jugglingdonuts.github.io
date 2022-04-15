@@ -16,11 +16,11 @@ picture = "shimizu.jpg"
 description = "一緒にいると元気になれる、癒し系ジャグラー。ボールを投げたり、ディアボロを回したりする。"
 team = ""
 
-[[members]]
-name = "田熊　大輝"
-picture = ""
-description = "コツコツジャグリングを続ける、琵琶湖大好きボーラー。ドーナツトップレベルのユーモアセンスを持つ。"
-team = ""
+#[[members]]
+#name = "田熊　大輝"
+#picture = ""
+#description = "コツコツジャグリングを続ける、琵琶湖大好きボーラー。ドーナツトップレベルのユーモアセンスを持つ。"
+#team = ""
 
 [[members]]
 name = "中村　伊吹"
