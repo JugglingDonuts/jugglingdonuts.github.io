@@ -18,6 +18,8 @@ description = ""
 team = ""
 ```
 
+※新年度に(数字).tomlファイルは新規作成するだけで勝手にホームページに追加してくれます。
+
 ## サイトの写真の変更
 `img/top.jpg`, `img/members.jpg`, `img/irai.jpg` を上書きすることで写真を変更できる。
 
