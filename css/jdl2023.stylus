@@ -1,0 +1,468 @@
+@charset "UTF-8";
+
+body,
+a {
+  color: #3b3b3b;
+}
+
+h1 {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  color: #f3e2ae;
+  font-size: 3.5rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 0 5px rgba(27, 8, 44, 0.9), 0 0 5px rgba(19, 57, 62, 0.8);
+  margin: 0;
+}
+
+h2 {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.2rem;
+  padding: 0 0 10px 0;
+}
+
+h3 {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  line-height: 2rem;
+  padding: 10px 0 5px 0;
+}
+
+a {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  color: rgb(2, 85, 157);
+  font-weight: bold;
+}
+
+a:hover {
+  opacity: 0.3;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+table {
+  margin: 0 auto;
+}
+
+td {
+  padding: 0 10px
+}
+
+.contentWrapper {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+header {
+  background-image: url(../img/header.jpg);
+  height: 590px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header nav {
+  position: absolute;
+  right: 0;
+}
+
+header a {
+  color: #333333;
+  font-weight: bold;
+  text-shadow: 0 0 20px rgba(168, 168, 168, 0.5);
+}
+
+header ul {
+  display: flex;
+  margin: 0;
+  padding: 20px;
+}
+
+header li {
+  padding: 0 15px;
+}
+
+header .contentWrapper {
+  padding-top: 18rem;
+}
+
+#date table {
+  margin: auto;
+}
+
+#date td {
+  text-align: left;
+}
+
+#date p {
+  margin-top: 5px;
+}
+
+#access dl {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#access dt,
+#access dd {
+  float: left;
+  text-align: left;
+  padding: 10px 0;
+  line-height: 160%;
+}
+
+#access dt {
+  width: 10%;
+  clear: both;
+}
+
+#access dd {
+  width: 80%;
+}
+
+#map {
+  width: 600px;
+  height: 450px;
+  border: 0;
+}
+
+#cast th {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  line-height: 2rem;
+  padding: 10px 0 0 0;
+}
+
+#cast td {
+  padding: 0 10px;
+  line-height: 130%;
+}
+
+#price table {
+  font-size: large;
+  padding: 5px;
+  border-collapse: collapse;
+  background-color: #fff8e5;
+  margin: 10px auto;
+}
+
+#price th,
+#price td {
+  padding: 10px 15px
+}
+
+#price .gray {
+  background-color: #615a5a;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+
+#price table tr:nth-child(even) {
+  background-color: #e2e0e0;
+}
+
+#price ul {
+  font-size: 0.9rem;
+  margin: 10px auto;
+}
+
+#ticket p {
+  text-align: left;
+  line-height: 150%;
+}
+
+#ticket h3 {
+  padding-top: 20px;
+}
+
+#ticket ul {
+  width: fit-content;
+  text-align: left;
+  margin: 0 auto;
+}
+
+#ticket li {
+  line-height: 140%;
+  padding: 3px;
+  list-style: circle;
+}
+
+#donation .flexcontent {
+  flex: 1;
+}
+
+#donation .flexcontent p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 160%;
+}
+
+#caution ul {
+  width: fit-content;
+  text-align: left;
+  margin: 0 auto;
+}
+
+#caution li {
+  line-height: 120%;
+  padding: 3px;
+  list-style: circle;
+}
+
+#date,
+#donation,
+#caution,
+#price {
+  background-color: #f9f1d5;
+}
+
+.upperFooter {
+  background-color: #c9c7c1
+}
+
+.upperFooter li {
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+.upperFooter a {
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  ;
+  color: #515151;
+}
+
+.bottomFooter {
+  text-align: center;
+  background-color: #515151;
+  color: #fdf4e0;
+  padding: 5px;
+}
+
+.flex {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* スマートフォン向け */
+  img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .flex {
+    display: block;
+  }
+
+  header {
+    height: 300px;
+  }
+
+  .contentWrapper {
+    width: 90%;
+  }
+
+  .contentWrapper img {
+    width: 60%
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+
+  header .contentWrapper {
+    width: 100%;
+    padding-top: 13rem;
+  }
+
+  header nav {
+    background: rgba(255, 255, 255, 0.85);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: none;
+    top: 55px;
+  }
+
+  header nav ul {
+    display: block;
+    padding: 20px 0 12rem 0;
+  }
+
+  header nav li {
+    font-size: 0.85rem;
+    padding: 20px;
+    color: #606060;
+    border-bottom: 1px solid rgba(118, 123, 133, 0.3);
+    text-align: center;
+  }
+
+  header nav a {
+    color: #333;
+    font-weight: normal;
+    text-shadow: none;
+  }
+
+  header nav a:hover {
+    color: #ae9218 !important;
+  }
+
+  #menuWrapper {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 15px 15px 10px 15px;
+    box-sizing: border-box;
+    z-index: 1;
+    position: fixed;
+  }
+
+  .trigger,
+  .trigger span {
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+  }
+
+  .trigger {
+    position: relative;
+    width: 35px;
+    height: 30px;
+  }
+
+  .trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #718085;
+    border-radius: 4px;
+    opacity: 1
+  }
+
+  .trigger a:hover {
+    opacity: 1;
+  }
+
+  .trigger span:nth-of-type(1) {
+    top: 0;
+  }
+
+  .trigger span:nth-of-type(2) {
+    top: 12px;
+  }
+
+  .trigger span:nth-of-type(3) {
+    bottom: 0;
+  }
+
+  .trigger.active span:nth-of-type(1) {
+    -webkit-transform: translateY(10px) rotate(-45deg);
+    transform: translateY(10px) rotate(-45deg);
+  }
+
+  .trigger.active span:nth-of-type(2) {
+    left: 50%;
+    opacity: 0;
+    -webkit-animation: active-menu-bar02 .8s forwards;
+    animation: active-menu-bar02 .8s forwards;
+  }
+
+  @-webkit-keyframes active-menu-bar02 {
+    100% {
+      height: 0;
+    }
+  }
+
+  @keyframes active-menu-bar02 {
+    100% {
+      height: 0;
+    }
+  }
+
+  .trigger.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-15px) rotate(45deg);
+    transform: translateY(-15px) rotate(45deg);
+  }
+
+  .onanimation {
+    display: block;
+  }
+
+  body,
+  p {
+    font-size: 0.8rem;
+  }
+
+  #about p {
+    font-size: 0.75rem;
+    line-height: 1.6rem;
+  }
+
+  #access dt {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  #access dd {
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  #map {
+    width: 80%;
+    height: 300px;
+    border: 0;
+  }
+
+  #price table {
+    font-size: 0.9rem;
+  }
+
+  #price ul {
+    font-size: 0.7rem;
+  }
+
+  .upperFooter .contentWrapper,
+  footer nav {
+    width: 100%;
+  }
+
+  .upperFooter li {
+    flex-grow: 1;
+    flex-basis: auto;
+    border-bottom: 1px solid black;
+    padding: 0.5rem;
+  }
+
+  .upperFooter li:first-child {
+    border-top: 1px solid black;
+  }
+
+}
