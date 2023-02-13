@@ -7,7 +7,6 @@
   <meta name="robots" content="none">
   <title>Juggling Donuts Live 2023</title>
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/jdl.css">
 </head>
 
@@ -38,7 +37,7 @@
     </div>
   </header>
   <main>
-    <section id="about">
+    <section id="about" class="fade_in fi_left">
       <div class="contentWrapper">
         <h2>Juggling Donuts Live(JDL) とは?</h2>
         <p>京都大道芸倶楽部Juggling
@@ -50,7 +49,7 @@
       </div>
     </section>
 
-    <section id="date">
+    <section id="date" class="fade_in fi_right">
       <div class="contentWrapper">
         <h2>日時</h2>
         <table>
@@ -75,7 +74,7 @@
       </div>
     </section>
 
-    <section id="access">
+    <section id="access" class="fade_in fi_left">
       <div class="contentWrapper">
         <h2>会場</h2>
         <dl>
@@ -92,7 +91,7 @@
       </div>
     </section>
 
-    <section id="price">
+    <section id="price" class="fade_in fi_right">
       <div class="contentWrapper">
         <h2>料金</h2>
         <p>昼の部、夜の部の料金は以下の通りです．</p>
@@ -130,7 +129,7 @@
       </div>
     </section>
 
-    <section id="ticket">
+    <section id="ticket" class="fade_in fi_left">
       <div class="contentWrapper">
         <h2>チケットについて</h2>
         <p>
@@ -146,9 +145,9 @@
         <h3>電子チケット購入時の注意</h3>
         <ul>
           <li>支払いはクレジットカードまたはPayPay残高決済が利用できます。ただしPayPay残高決済はYahoo! JAPAN IDとの連携が必要です。</li>
-          <li>未就学児をお連れの保護者様は、未就学児のための電子チケット購入の必要はありません。保護者様分の必要枚数をお買い求めください。</li>
+          <li>未就学児をお連れの保護者様は、未就学児のための電子チケット購入の必要はありません。保護者様分の必要枚数をお買いください。</li>
           <li>
-            電子チケットは購入時に入力いただいたメールアドレスに送信されます。必ず正しいメールアドレスを入力してください。また、購入時に返信されたメールは当日チケットとして提示していただく必要があるため削除しないようお願いします。
+            電子チケットは購入時に入力いただいたメールアドレスに送信されます。必ず正しいメールアドレスを入力してください。また購入に返信されたメールは当日チケットとして提示していただく必要があるため削除しないようお願いします。
           </li>
           <li>購入時にメールアドレスと数字4桁のパスワードを設定します。パスワードは当日電子チケットを表示するときに必要となりますので忘れないようにメモなどを取っておいてください。</li>
         </ul>
@@ -178,7 +177,7 @@
       </div>
     </section>
 
-    <section id="donation">
+    <section id="donation" class="fade_in fi_right">
       <div class="contentWrapper">
         <h2>カンパについて</h2>
         <p>
@@ -202,7 +201,7 @@
         </div>
     </section>
 
-    <section id="cast">
+    <section id="cast" class="fade_in fi_left">
       <div class="contentWrapper">
         <h2>Cast&Staff</h2>
         <h3>出演 （道具）</h3>
@@ -326,7 +325,7 @@
       </div>
     </section>
 
-    <section id="caution">
+    <section id="caution" class="fade_in fi_right">
       <div class="contentWrapper">
         <h2>注意事項</h2>
         <ul>
@@ -339,7 +338,7 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="fade_in fi_left">
       <div class="contentWrapper">
         <h2>お問い合わせ</h2>
         <p>
@@ -352,7 +351,7 @@
   </main>
 
   <footer>
-    <div class="upperFooter">
+    <div class="upperFooter" class="fade_in fi_left">
       <div class="contentWrapper">
         <nav>
           <ul class="flex">
@@ -376,25 +375,6 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script>
-  $(function () {
-    var windowWidth = $(window).width();
-    var nos = 0;
-    if (windowWidth > 480) {
-      nos = 3;
-    } else {
-      nos = 1;
-    }
-
-    $('.slider').slick({
-      infinite: true,
-      dots: true,
-      slidesToShow: nos,
-      autoplay: true,
-      initialSlide: 1,
-      arrows: true,
-    });
-  });
-
   $(".trigger").click(function () {
     $(this).toggleClass("active")
     $("header nav").toggleClass("onanimation")
@@ -403,6 +383,19 @@
   $("header nav li").click(function () {
     $(".trigger").removeClass("active")
     $("header nav").toggleClass("onanimation")
+  });
+
+  $(function () {
+    $(window).scroll(function () {
+      $(".fade_in").each(function () {
+        var ePos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > ePos - windowHeight + windowHeight / 5) {
+          $(this).addClass("scroll_in")
+        }
+      });
+    });
   });
 </script>
 
