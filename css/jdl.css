@@ -376,6 +376,17 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
+header::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  transition: 0.5s ease-out;
+}
+.isPlay:before {
+  transform: translate3d(-100%, 0, 0);
+}
 header nav {
   position: absolute;
   right: 0;
