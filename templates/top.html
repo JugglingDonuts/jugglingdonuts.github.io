@@ -2,13 +2,13 @@
 {% block content %}
 <img class="image" src="/img/top.jpg">
 <section class="content">
-  <!-- {% if jdlYear %}
-        <a class="jdl" href="./jdl.html">
-          <div>Juggling Donuts Live {{ jdlYear }}</div>
-          <div>特設ページオープン</div>
-          <p>Check!</p>
-        </a>
-        {% endif %} -->
+  {% if jdlYear %}
+      <a class="jdl" href="./jdl.html">
+        <div>Juggling Donuts Live {{ jdlYear }}</div>
+        <div>特設ページオープン</div>
+        <p>Check!</p>
+      </a>
+  {% endif %}
 
 
   <h2 id="about">Donutsについて</h2>
@@ -56,8 +56,4 @@
   <h3>出演依頼:検討中です</h3>
   　　　　 <h3>twitter:<a href="https://twitter.com/Juggling_Donuts">Juggling_Donuts</a></h3>
 </section>
-
-{% if jdlYear %}
-<a href="./jdl.html"> - </a>
-{% endif %}
 {% endblock %}
