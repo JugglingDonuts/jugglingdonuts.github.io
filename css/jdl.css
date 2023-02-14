@@ -314,6 +314,7 @@ a {
 }
 html {
   box-sizing: border-box;
+  background-color: #f7f5f1;
 }
 body,
 a {
@@ -369,6 +370,28 @@ td {
   content: "";
   clear: both;
 }
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: #333;
+  text-align: center;
+  color: #fff;
+}
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#logo img {
+  width: 260px;
+}
+.rotate {
+  -webkit-animation: rotateAnime 0.8s cubic-bezier(0.54, 1.43, 0.17, 1.01);
+          animation: rotateAnime 0.8s cubic-bezier(0.54, 1.43, 0.17, 1.01);
+}
 header {
   background-image: url("../img/jdl_header.jpg");
   height: 590px;
@@ -381,7 +404,7 @@ header::before {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: #f7f5f1;
   transition: 0.5s ease-out;
 }
 .isPlay:before {
@@ -518,7 +541,7 @@ header .contentWrapper {
   list-style: circle;
 }
 section:nth-of-type(even) {
-  background-color: #f9f1d5;
+  background-color: #e4dfcc;
 }
 .upperFooter {
   background-color: #c9c7c1;
@@ -740,4 +763,20 @@ section:nth-of-type(even) {
       height: 0;
     }
 }
+}
+@-webkit-keyframes rotateAnime {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateAnime {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
