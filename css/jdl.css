@@ -595,6 +595,12 @@ section:nth-of-type(even) {
   color: #1d1e1f;
   font-weight: bold;
 }
+.purchase {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 180%;
+}
 @media screen and (max-width: 768px) {
   .flex {
     display: block;
@@ -761,6 +767,9 @@ section:nth-of-type(even) {
   }
   .upperFooter li:first-child {
     border-top: 1px solid #000;
+  }
+  .purchase {
+    font-size: 0.9rem;
   }
 @-webkit-keyframes active-menu-bar02 {
     100% {
