@@ -649,12 +649,6 @@ section:nth-of-type(even) {
 
 
 @media screen and (max-width: 768px) {
-  img {
-    border: 0;
-    max-width: 100%;
-    height: auto;
-  }
-
   .flex {
     display: block;
   }
