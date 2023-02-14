@@ -441,7 +441,7 @@ td {
 }
 
 .rotate {
-  animation: rotateAnime 0.8s cubic-bezier(.54, 1.43, .17, 1.01);
+  animation: rotateAnime 0.8s cubic-bezier(.54, 1.43, .17, 1);
 }
 
 @keyframes rotateAnime {
