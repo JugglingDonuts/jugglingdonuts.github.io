@@ -389,8 +389,8 @@ td {
   width: 260px;
 }
 .rotate {
-  -webkit-animation: rotateAnime 0.8s cubic-bezier(0.54, 1.43, 0.17, 1.01);
-          animation: rotateAnime 0.8s cubic-bezier(0.54, 1.43, 0.17, 1.01);
+  -webkit-animation: rotateAnime 0.8s cubic-bezier(0.54, 1.43, 0.17, 1);
+          animation: rotateAnime 0.8s cubic-bezier(0.54, 1.43, 0.17, 1);
 }
 header {
   background-image: url("../img/jdl_header.jpg");
