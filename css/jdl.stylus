@@ -662,7 +662,7 @@ section:nth-of-type(even) {
   }
 
   .contentWrapper img {
-    width: 60%;
+    width: 20%;
   }
 
   h1 {
