@@ -351,6 +351,7 @@ a {
 
 html {
   box-sizing: border-box;
+  background-color: #f7f5f1;
 }
 
 body,
@@ -418,6 +419,41 @@ td {
   clear: both;
 }
 
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: #333;
+  text-align: center;
+  color: #fff;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#logo img {
+  width: 260px;
+}
+
+.rotate {
+  animation: rotateAnime 0.8s cubic-bezier(.54, 1.43, .17, 1.01);
+}
+
+@keyframes rotateAnime {
+  from {
+    transform: rotate(180deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 header {
   background-image: url("../img/jdl_header.jpg");
   height: 590px;
@@ -431,7 +467,7 @@ header::before {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #FFF;
+  background-color: #f7f5f1;
   transition: 0.5s ease-out;
 }
 
@@ -599,7 +635,7 @@ header .contentWrapper {
 }
 
 section:nth-of-type(even) {
-  background-color: #f9f1d5;
+  background-color: #e4dfcc;
 }
 
 .upperFooter {
