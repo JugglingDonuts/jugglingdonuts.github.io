@@ -316,6 +316,9 @@ html {
   box-sizing: border-box;
   background-color: #f7f5f1;
 }
+.scroll_controller {
+  overflow-x: hidden;
+}
 body,
 a {
   color: #3b3b3b;
@@ -389,8 +392,8 @@ td {
   width: 260px;
 }
 .rotate {
-  -webkit-animation: rotateAnime 0.8s cubic-bezier(0.54, 1.43, 0.17, 1);
-          animation: rotateAnime 0.8s cubic-bezier(0.54, 1.43, 0.17, 1);
+  -webkit-animation: rotateAnime 0.8s cubic-bezier(0.54, 1.43, 0.17, 1.01);
+          animation: rotateAnime 0.8s cubic-bezier(0.54, 1.43, 0.17, 1.01);
 }
 header {
   background-image: url("../img/jdl_header.jpg");
@@ -588,18 +591,24 @@ section:nth-of-type(even) {
   transform: scale(1.1, 1.1);
   transition: 0.1s all ease-in;
 }
+.anchor {
+  color: #1d1e1f;
+  font-weight: bold;
+}
 @media screen and (max-width: 768px) {
   .flex {
     display: block;
   }
   header {
     height: 300px;
+    background-position-y: 55px;
   }
   .contentWrapper {
-    width: 90%;
+    width: 80%;
   }
   h1 {
     font-size: 1.3rem;
+    letter-spacing: 0.1rem;
   }
   h2 {
     font-size: 1.3rem;
@@ -623,14 +632,17 @@ section:nth-of-type(even) {
   }
   header nav ul {
     display: block;
-    padding: 20px 0 12rem 0;
+    padding: 5px 20%;
   }
   header nav li {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     padding: 20px;
     color: #606060;
     border-bottom: 1px solid rgba(118,123,133,0.3);
     text-align: center;
+  }
+  header nav li:last-child {
+    border-bottom: none;
   }
   header nav a {
     color: #333;
@@ -643,7 +655,7 @@ section:nth-of-type(even) {
   #menuWrapper {
     width: 100%;
     background: rgba(255,255,255,0.85);
-    padding: 15px 15px 10px 15px;
+    padding: 15px 15px 6px 15px;
     box-sizing: border-box;
     z-index: 1;
     position: fixed;
@@ -737,21 +749,18 @@ section:nth-of-type(even) {
   footer nav {
     width: 100%;
   }
+  .upperFooter ul {
+    font-size: 1rem;
+    padding: 0 10%;
+  }
   .upperFooter li {
     flex-grow: 1;
     flex-basis: auto;
     border-bottom: 1px solid #000;
-    padding: 0.5rem;
+    padding: 0.8rem;
   }
   .upperFooter li:first-child {
     border-top: 1px solid #000;
-  }
-  .fi_right {
-    transform: translateX(-50px);
-  }
-  .scroll_in {
-    opacity: 1;
-    transform: translate(0, 0);
   }
 @-webkit-keyframes active-menu-bar02 {
     100% {
