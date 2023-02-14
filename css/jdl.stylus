@@ -704,6 +704,13 @@ section:nth-of-type(even) {
   font-weight: bold;
 }
 
+.purchase {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 180%;
+}
+
 @media screen and (max-width: 768px) {
   .flex {
     display: block;
@@ -915,4 +922,7 @@ section:nth-of-type(even) {
     border-top: 1px solid #000;
   }
 
+  .purchase {
+    font-size: 0.9rem;
+  }
 }
