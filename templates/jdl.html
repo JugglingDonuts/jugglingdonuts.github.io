@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 
 <head>
   <meta charset="utf-8">
@@ -385,7 +385,7 @@
     </main>
 
     <footer>
-      <div class="upperFooter" class="fade_in fi_right">
+      <div class="upperFooter fade_in fi_right">
         <div class="contentWrapper">
           <nav>
             <ul class="flex">
@@ -407,70 +407,68 @@
       </div>
     </footer>
   </div>
-</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script>
+    $(".trigger").click(function () {
+      $(this).toggleClass("active")
+      $("header nav").toggleClass("onanimation")
+    });
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script>
-  $(".trigger").click(function () {
-    $(this).toggleClass("active")
-    $("header nav").toggleClass("onanimation")
-  });
+    $("header nav li a").click(function () {
+      $(".trigger").removeClass("active")
+      $("header nav").toggleClass("onanimation")
+    });
 
-  $("header nav li a").click(function () {
-    $(".trigger").removeClass("active")
-    $("header nav").toggleClass("onanimation")
-  });
-
-  $(function () {
-    $(window).on('load scroll', function () {
-      $(".fade_in").each(function () {
-        var ePos = $(this).offset().top;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        if (scroll > ePos - windowHeight + windowHeight / 5) {
-          $(this).addClass("scroll_in")
-        }
+    $(function () {
+      $(window).on('load scroll', function () {
+        $(".fade_in").each(function () {
+          var ePos = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          if (scroll > ePos - windowHeight + windowHeight / 5) {
+            $(this).addClass("scroll_in")
+          }
+        });
       });
     });
-  });
 
-  $(window).on('load', function () {
-    document.addEventListener('touchmove', noscroll, { passive: false });
-    document.addEventListener('wheel', noscroll, { passive: false });
-    $("#logo").delay(500).fadeOut("slow");
-    $("#loading").delay(800).fadeOut("slow");
-    $("header").delay(1000).queue(function () {
-      $(this).addClass('isPlay');
-      document.removeEventListener('touchmove', noscroll, { passive: false });
-      document.removeEventListener('wheel', noscroll, { passive: false });
+    $(window).on('load', function () {
+      document.addEventListener('touchmove', noscroll, { passive: false });
+      document.addEventListener('wheel', noscroll, { passive: false });
+      $("#logo").delay(500).fadeOut("slow");
+      $("#loading").delay(800).fadeOut("slow");
+      $("header").delay(1000).queue(function () {
+        $(this).addClass('isPlay');
+        document.removeEventListener('touchmove', noscroll, { passive: false });
+        document.removeEventListener('wheel', noscroll, { passive: false });
+      });
     });
-  });
 
-  function noscroll(e) {
-    e.preventDefault();
-  }
-
-  $(function () {
-    var headerHeight = ($(window).width() < 768) ? 55 : 0;
-    var urlHash = location.hash;
-    if (urlHash) {
-      $('body,html').stop().scrollTop(0);
-      setTimeout(function () {
-        var target = $(urlHash);
-        var position = target.offset().top - headerHeight;
-        $('body,html').stop().animate({ scrollTop: position }, 500);
-      }, 100);
+    function noscroll(e) {
+      e.preventDefault();
     }
-    $('a[href^="#"]').click(function () {
-      $(".trigger").removeClass("active")
-      $("header nav").removeClass("onanimation")
-      var href = $(this).attr("href");
-      var target = $(href);
-      var position = target.offset().top - headerHeight;
-      $('body,html').stop().animate({ scrollTop: position }, { duration: 500, easing: 'swing' });
-      return false;
-    });
-  });
-</script>
 
+    $(function () {
+      var headerHeight = ($(window).width() < 768) ? 55 : 0;
+      var urlHash = location.hash;
+      if (urlHash) {
+        $('body,html').stop().scrollTop(0);
+        setTimeout(function () {
+          var target = $(urlHash);
+          var position = target.offset().top - headerHeight;
+          $('body,html').stop().animate({ scrollTop: position }, 500);
+        }, 100);
+      }
+      $('a[href^="#"]').click(function () {
+        $(".trigger").removeClass("active")
+        $("header nav").removeClass("onanimation")
+        var href = $(this).attr("href");
+        var target = $(href);
+        var position = target.offset().top - headerHeight;
+        $('body,html').stop().animate({ scrollTop: position }, { duration: 500, easing: 'swing' });
+        return false;
+      });
+    });
+  </script>
+</body>
 </html>
