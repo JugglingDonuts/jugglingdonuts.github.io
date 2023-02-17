@@ -585,21 +585,16 @@ header .contentWrapper {
   background-color: #e2e0e0;
 }
 
-#price ul {
+.note {
   font-size: 0.9rem;
   margin: 10px auto;
-}
-
-#ticket p {
-  text-align: left;
-  line-height: 150%;
 }
 
 #ticket h3 {
   padding-top: 20px;
 }
 
-#ticket ul {
+.withDot {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -607,7 +602,7 @@ header .contentWrapper {
   margin: 0 auto;
 }
 
-#ticket li {
+.withDot li {
   line-height: 140%;
   padding: 3px;
   list-style: circle;
@@ -696,7 +691,7 @@ section:nth-of-type(even) {
 
 .icon img:hover {
   transform: scale(1.1, 1.1);
-  transition: 0.1s all ease-in;
+  transition: 0.4s all ease-in;
 }
 
 .anchor {
@@ -894,7 +889,7 @@ section:nth-of-type(even) {
   }
 
   #price table {
-    font-size: 0.9rem;
+    font-size: 0.65rem;
   }
 
   #price ul {
