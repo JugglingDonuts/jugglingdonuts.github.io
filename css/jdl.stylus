@@ -459,8 +459,8 @@ td {
 }
 
 header {
-  background-image: url("../img/jdl_header02.jpg");
-  height: 590px;
+  background-image: url("../img/jdl_header03.jpg");
+  height: 620px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
