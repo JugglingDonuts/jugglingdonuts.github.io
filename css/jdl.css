@@ -319,17 +319,16 @@ html {
 .scroll_controller {
   overflow-x: hidden;
 }
-body,
-a {
+body {
   color: #3b3b3b;
 }
 h1 {
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-  color: #f3e2ae;
+  color: #e0c579;
   font-size: 3.5rem;
   letter-spacing: 0.2rem;
-  text-shadow: 0 0 5px rgba(27,8,44,0.9), 0 0 5px rgba(19,57,62,0.8);
   margin: 0;
+  text-shadow: 3px 3px 2px #1b082c, 0 0 5px #13393e;
 }
 h2 {
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
@@ -396,7 +395,7 @@ td {
           animation: rotateAnime 0.8s cubic-bezier(0.54, 1.43, 0.17, 1.01);
 }
 header {
-  background-image: url("../img/jdl_header.jpg"), url("../img/jdl_header.jpg");
+  background-image: url("../img/header.png"), url("../img/header_back.png");
   background-size: contain, cover;
   height: 590px;
   background-repeat: no-repeat;
@@ -418,13 +417,13 @@ header nav {
   right: 0;
 }
 header a {
-  color: #333;
+  color: #eee2d7;
   font-weight: bold;
-  text-shadow: 0 0 20px rgba(168,168,168,0.5);
+  text-shadow: 0 0 5px #464444;
 }
 header a:hover {
   opacity: 0.7;
-  text-shadow: -2px -3px 1px #6b6b6b;
+  text-shadow: 2px 3px 1px #6b6b6b;
 }
 header ul {
   display: flex;
@@ -435,7 +434,7 @@ header li {
   padding: 0 15px;
 }
 header .contentWrapper {
-  padding-top: 18rem;
+  padding-top: 28rem;
 }
 #date table {
   margin: auto;
@@ -591,23 +590,16 @@ section:nth-of-type(even) {
   color: #1d1e1f;
   font-weight: bold;
 }
-.purchase {
-  font-weight: bold;
-  text-align: center;
-  font-size: 1.2rem;
-  line-height: 180%;
-}
 button {
-  color: #fff;
+  color: #fafafa;
   font-size: large;
   font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-weight: normal;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 10px;
   background-color: #cb8d4a;
-  border-radius: 10px 0px;
+  border-radius: 10px 3px;
+  margin: 10px;
+  padding: 10px;
   border-bottom: 5px solid #915b22;
 }
 button:hover {
@@ -619,8 +611,8 @@ button:hover {
     display: block;
   }
   header {
+    margin-top: 55px;
     height: 300px;
-    background-position-y: 55px;
   }
   .contentWrapper {
     width: 80%;
@@ -638,7 +630,7 @@ button:hover {
   }
   header .contentWrapper {
     width: 100%;
-    padding-top: 13rem;
+    padding-top: 15rem;
   }
   header nav {
     background: rgba(255,255,255,0.85);
@@ -780,9 +772,6 @@ button:hover {
   }
   .upperFooter li:first-child {
     border-top: 1px solid #000;
-  }
-  .purchase {
-    font-size: 0.9rem;
   }
 @-webkit-keyframes active-menu-bar02 {
     100% {
