@@ -382,7 +382,7 @@ h2 {
 h3 {
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   font-size: 1.3rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   line-height: 2rem;
   padding: 10px 0 5px 0;
 }
@@ -459,9 +459,9 @@ td {
 }
 
 header {
-  background-image: url("../img/jdl_header.jpg");
-  height: 590px;
-  background-size: cover;
+  background-image: url("../img/jdl_header.jpg"), url("../img/jdl_header.jpg");
+  background-size:contain, cover;
+  height: 590px;  
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -691,7 +691,7 @@ section:nth-of-type(even) {
 
 .icon img:hover {
   transform: scale(1.1, 1.1);
-  transition: 0.4s all ease-in;
+  transition: 0.2s all ease-in;
 }
 
 .anchor {
@@ -704,6 +704,24 @@ section:nth-of-type(even) {
   text-align: center;
   font-size: 1.2rem;
   line-height: 180%;
+}
+
+button {
+  color: #fff;
+  font-size: large;
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #cb8d4a;
+  border-radius: 10px;
+  border-bottom: 5px solid #915b22;
+}
+
+button:hover {
+  margin-top: 13px;
+  border-bottom: 2px solid #915b22;
 }
 
 @media screen and (max-width: 768px) {
@@ -774,6 +792,7 @@ section:nth-of-type(even) {
 
   header nav a:hover {
     color: #ae9218 !important;
+    text-shadow: none;
   }
 
   #menuWrapper {
