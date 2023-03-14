@@ -710,12 +710,13 @@ button {
   color: #fff;
   font-size: large;
   font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: normal;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
   background-color: #cb8d4a;
-  border-radius: 10px;
+  border-radius: 10px 0px;
   border-bottom: 5px solid #915b22;
 }
 
@@ -750,7 +751,6 @@ button:hover {
 
   h3 {
     font-size: 1rem;
-    letter-spacing: 0.1rem;
   }
 
   header .contentWrapper {
