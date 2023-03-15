@@ -791,7 +791,7 @@ button:hover {
   #menuWrapper {
     width: 100%;
     background: rgba(255, 255, 255, 0.85);
-    padding: 15px 15px 6px 15px;
+    padding: 15px 15px 8px 15px;
     box-sizing: border-box;
     z-index: 1;
     position: fixed;
