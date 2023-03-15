@@ -549,6 +549,7 @@ section:nth-of-type(even) {
   flex-basis: auto;
 }
 .upperFooter a {
+  display: block;
   font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   color: #515151;
 }
@@ -646,7 +647,6 @@ button:hover {
   }
   header nav li {
     font-size: 0.9rem;
-    padding: 20px;
     color: #606060;
     border-bottom: 1px solid rgba(118,123,133,0.3);
     text-align: center;
@@ -655,6 +655,8 @@ button:hover {
     border-bottom: none;
   }
   header nav a {
+    padding: 20px;
+    display: block;
     color: #333;
     font-weight: normal;
     text-shadow: none;
@@ -768,10 +770,12 @@ button:hover {
     flex-grow: 1;
     flex-basis: auto;
     border-bottom: 1px solid #000;
-    padding: 0.8rem;
   }
   .upperFooter li:first-child {
     border-top: 1px solid #000;
+  }
+  .upperFooter a {
+    padding: 0.8rem;
   }
 @-webkit-keyframes active-menu-bar02 {
     100% {
