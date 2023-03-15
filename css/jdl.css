@@ -34,6 +34,7 @@ h3 {
   font-size: 1.3rem;
   letter-spacing: 0.1rem;
   line-height: 2rem;
+  margin: 10px 0 5px 0;
 }
 a {
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
@@ -160,16 +161,18 @@ header .contentWrapper {
   height: 450px;
   border: 0;
 }
-#cast th {
-  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-  font-size: 1.3rem;
-  letter-spacing: 0.2rem;
-  line-height: 2rem;
-  padding: 10px 0 0 0;
+#cast .flex {
+  justify-content: space-around;
+}
+#cast img {
+  padding: 20px 30px 5px 30px;
+}
+#cast figure {
+  margin: 10px 0;
 }
 #cast td {
   padding: 0 10px;
-  line-height: 130%;
+  line-height: 1.3rem;
 }
 #price table {
   font-size: large;
@@ -211,6 +214,7 @@ header .contentWrapper {
 }
 #donation .flexcontent {
   flex: 1;
+  padding: 10px 0;
 }
 #donation .flexcontent p {
   width: 80%;
@@ -281,7 +285,6 @@ section:nth-of-type(even) {
 }
 .anchor {
   color: #1d1e1f;
-  font-weight: bold;
 }
 button {
   border: 0;
@@ -321,14 +324,16 @@ button.not_ready:hover {
     width: 80%;
   }
   h1 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     letter-spacing: 0.1rem;
   }
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
   }
   h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
   }
   header .contentWrapper {
     width: 100%;
@@ -433,10 +438,7 @@ button.not_ready:hover {
   }
   body,
   p {
-    font-size: 0.8rem;
-  }
-  #about p {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     line-height: 1.6rem;
   }
   #access dt {
@@ -454,10 +456,19 @@ button.not_ready:hover {
     border: 0;
   }
   #price table {
-    font-size: 0.65rem;
+    font-size: 0.9rem;
   }
   #price ul {
     font-size: 0.7rem;
+  }
+  #cast img {
+    padding: 0;
+  }
+  #cast figure {
+    margin: 10px;
+  }
+  .note li {
+    font-size: 0.8rem;
   }
   .upperFooter .contentWrapper,
   footer nav {
