@@ -41,7 +41,6 @@ h3 {
   font-size: 1.3rem;
   letter-spacing: 0.1rem;
   line-height: 2rem;
-  padding: 10px 0 5px 0;
 }
 
 a {
@@ -267,7 +266,6 @@ header .contentWrapper {
 
 #donation .flexcontent {
   flex: 1;
-  padding: 10px 0;
 }
 
 #donation .flexcontent p {
