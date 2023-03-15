@@ -700,6 +700,7 @@ section:nth-of-type(even) {
 }
 
 button {
+  border: 0;
   color: #fafafa;
   font-size: large;
   font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -715,6 +716,17 @@ button {
 button:hover {
   margin-top: 13px;
   border-bottom: 2px solid #915b22;
+}
+
+button.not_ready {
+  background-color: #676767;
+  text-align: center;
+  border-bottom: 5px solid #2d2d2d;
+}
+
+button.not_ready:hover {
+  margin-top: 10px;
+  border-bottom: 5px solid #2d2d2d;
 }
 
 @media screen and (max-width: 768px) {
