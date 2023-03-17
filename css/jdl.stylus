@@ -211,6 +211,7 @@ header .contentWrapper {
 }
 
 #cast img {
+  width: 130px;
   padding: 20px 30px 5px 30px;
 }
 
