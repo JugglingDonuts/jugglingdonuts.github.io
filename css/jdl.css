@@ -269,10 +269,6 @@ section:nth-of-type(even) {
 .fi_right {
   transform: translateX(50px);
 }
-.scroll_in {
-  opacity: 1;
-  transform: translate(0, 0);
-}
 .icon:hover {
   opacity: 1;
 }
@@ -489,6 +485,10 @@ button.not_ready:hover {
   .upperFooter a {
     padding: 0.8rem;
   }
+  .fi_left,
+  .fi_right {
+    transform: translateY(50px);
+  }
 @-webkit-keyframes active-menu-bar02 {
     100% {
       height: 0;
@@ -499,6 +499,10 @@ button.not_ready:hover {
       height: 0;
     }
 }
+}
+.scroll_in {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 @-webkit-keyframes rotateAnime {
   from {
