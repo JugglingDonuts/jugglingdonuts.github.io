@@ -314,6 +314,10 @@ section:nth-of-type(even) {
   color: #515151;
 }
 
+a.icon{
+  display: contents;
+}
+
 .bottomFooter {
   text-align: center;
   background-color: #515151;
@@ -401,7 +405,7 @@ button.not_ready:hover {
   }
 
   h1 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     letter-spacing: 0.1rem;
   }
 
@@ -592,7 +596,7 @@ button.not_ready:hover {
   }
 
   .upperFooter ul {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 0 10%;
   }
 
