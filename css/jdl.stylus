@@ -339,11 +339,6 @@ section:nth-of-type(even) {
   transform: translateX(50px);
 }
 
-.scroll_in {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
 .icon:hover {
   opacity: 1;
 }
@@ -614,4 +609,13 @@ button.not_ready:hover {
   .upperFooter a {
     padding: 0.8rem;
   }
+
+  .fi_left, .fi_right{
+    transform: translateY(50px);
+  }
+}
+
+.scroll_in {
+  opacity: 1;
+  transform: translate(0, 0);
 }
