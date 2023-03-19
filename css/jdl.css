@@ -21,6 +21,7 @@ h1 {
   font-size: 3.5rem;
   letter-spacing: 0.2rem;
   margin: 0;
+  line-height: 110%;
   text-shadow: 3px 3px 2px #1b082c, 0 0 5px #13393e;
 }
 h2 {
@@ -52,7 +53,7 @@ table {
   margin: 0 auto;
 }
 td {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 .contentWrapper {
   width: 70%;
@@ -240,6 +241,8 @@ section:nth-of-type(even) {
 }
 .upperFooter {
   background-color: #c9c7c1;
+  z-index: 1;
+  position: relative;
 }
 .upperFooter li {
   flex-grow: 1;
