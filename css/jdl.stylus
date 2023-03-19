@@ -26,6 +26,7 @@ h1 {
   font-size: 3.5rem;
   letter-spacing: 0.2rem;
   margin: 0;
+  line-height: 110%;
   text-shadow: 3px 3px 2px rgb(27, 8, 44), 0 0 5px rgb(19, 57, 62, 0.9);
 }
 
@@ -64,7 +65,7 @@ table {
 }
 
 td {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .contentWrapper {
@@ -302,6 +303,8 @@ section:nth-of-type(even) {
 
 .upperFooter {
   background-color: #c9c7c1;
+  z-index: 1;
+  position: relative;
 }
 
 .upperFooter li {
