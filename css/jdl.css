@@ -198,6 +198,7 @@ header .contentWrapper {
 .note {
   font-size: 0.9rem;
   margin: 10px auto;
+  line-height: 1.1rem;
 }
 #ticket h3 {
   padding-top: 20px;
