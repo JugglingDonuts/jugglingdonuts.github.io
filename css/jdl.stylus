@@ -430,7 +430,7 @@ iframe {
   }
 
   iframe {
-    width: 80%;
+    width: 100%;
   }
 
   header .contentWrapper {
