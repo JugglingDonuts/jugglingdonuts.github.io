@@ -316,6 +316,10 @@ button.not_ready:hover {
   margin-top: 10px;
   border-bottom: 5px solid #2d2d2d;
 }
+iframe {
+  width: 560px;
+  aspect-ratio: 16/9;
+}
 @media screen and (max-width: 768px) {
   .flex {
     display: block;
@@ -338,6 +342,9 @@ button.not_ready:hover {
   h3 {
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
+  }
+  iframe {
+    width: 80%;
   }
   header .contentWrapper {
     width: 100%;
