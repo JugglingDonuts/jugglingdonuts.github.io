@@ -209,6 +209,11 @@ header .contentWrapper {
 
 #cast .flex {
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#cast .flexcontent {
+  width: 25%
 }
 
 #cast img {
@@ -591,6 +596,11 @@ iframe {
   #price ul {
     font-size: 0.7rem;
   }
+  
+  #cast .flexcontent {
+    width: 100%
+  }
+
 
   #cast img {
     padding: 0;
