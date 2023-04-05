@@ -345,11 +345,11 @@ a.icon{
   transition-property: opacity, transform;
 }
 
-.fi_left {
+.fade_in:nth-child(odd) {
   transform: translateX(-50px);
 }
 
-.fi_right {
+.fade_in:nth-child(even) {
   transform: translateX(50px);
 }
 
@@ -645,5 +645,5 @@ iframe {
 
 .scroll_in {
   opacity: 1;
-  transform: translate(0, 0);
+  transform: translate(0, 0) !important;
 }
