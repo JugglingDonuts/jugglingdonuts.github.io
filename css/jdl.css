@@ -507,8 +507,7 @@ iframe {
   .upperFooter a {
     padding: 0.8rem;
   }
-  .fi_left,
-  .fi_right {
+  .fade_in {
     transform: translateY(50px);
   }
 @-webkit-keyframes active-menu-bar02 {
