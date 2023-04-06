@@ -521,9 +521,9 @@ iframe {
     }
 }
 }
-.scroll_in {
+.scroll_in:nth-child(n) {
   opacity: 1;
-  transform: translate(0, 0) !important;
+  transform: translate(0, 0);
 }
 @-webkit-keyframes rotateAnime {
   from {
