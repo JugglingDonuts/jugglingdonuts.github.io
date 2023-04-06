@@ -638,7 +638,7 @@ iframe {
     padding: 0.8rem;
   }
 
-  .fade_in{
+  .fade_in:nth-child(n){
     transform: translateY(50px);
   }
 }
