@@ -1,390 +1,386 @@
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 html {
-    box-sizing: border-box;
-    background-color: #f7f5f1;
+  box-sizing: border-box;
+  background-color: #f7f5f1;
 }
 
 body {
-    color: #3b3b3b;
+  color: #3b3b3b;
 }
 
 h1 {
-    font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-    color: #e0c579;
-    font-size: 3.5rem;
-    letter-spacing: 0.2rem;
-    margin: 0;
-    line-height: 110%;
-    text-shadow: 3px 3px 2px #1b082c, 0 0 5px #13393e;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 3.5rem;
+  letter-spacing: 0.2rem;
+  margin: 20px;
 }
 
 h2 {
-    font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-    font-size: 2.2rem;
-    letter-spacing: 0.2rem;
-    padding: 0 0 10px 0;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.2rem;
+  padding: 0 0 10px 0;
 }
 
 h3 {
-    font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-    font-size: 1.3rem;
-    letter-spacing: 0.1rem;
-    line-height: 1.2rem;
-    margin: 10px 0 5px 0;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.2rem;
+  margin: 10px 0 5px 0;
 }
 
 a {
-    font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-    color: #02559d;
-    font-weight: bold;
+  color: #02559d;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
 }
 
 a:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 p {
-    font-size: 1rem;
-    line-height: 1.8rem;
+  font-size: 1rem;
+  line-height: 1.8rem;
 }
 
 table {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 td {
-    padding: 0 5px;
+  padding: 0 5px;
 }
 
 .contentWrapper {
-    width: 70%;
-    margin: 0 auto;
-    text-align: left;
-    padding: 2rem 0;
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 2rem 0;
 }
 
 .clearfix::after {
-    display: block;
-    content: "";
-    clear: both;
+  display: block;
+  content: "";
+  clear: both;
 }
 
 section:nth-of-type(even) {
-    background-color: #e4dfcc;
+  background-color: #e4dfcc;
 }
 
 .image {
-    width: 100%;
+  width: 100%;
 }
 
 .withDot {
-    width: -moz-fit-content;
-    width: fit-content;
-    text-align: left;
-    margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: left;
+  margin: 0 auto;
 }
 
 .withDot li {
-    line-height: 140%;
-    padding: 3px;
-    list-style: circle;
+  line-height: 140%;
+  padding: 3px;
+  list-style: circle;
 }
 
 header nav {
-    position: absolute;
-    right: 0;
+  position: absolute;
+  right: 0;
 }
 
 header a {
-    color: #2a2825;
-    font-weight: bold;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  color: #2a2825;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  ;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 header a:hover {
-    text-shadow: 2px 2px 1px #6b6b6b;
+  text-shadow: 2px 2px 1px #6b6b6b;
 }
 
 header ul {
-    display: flex;
-    margin: 0;
-    padding: 20px;
+  display: flex;
+  margin: 0;
+  padding: 20px;
 }
 
 header li {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 
 .top {
-    padding-top: 60px;
+  padding-top: 60px;
 }
 
 .jdl_div {
-    position: relative;
-    color: #4190c4;
-    text-align: center;
-    border-top: solid 2px #5995bc;
-    border-bottom: solid 2px #5995bc;
-    background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px, #e9f4ff 3px, #e9f4ff 7px);
-    background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px, #e9f4ff 3px, #e9f4ff 7px);
-    margin-bottom: 30px;
+  position: relative;
+  color: #4190c4;
+  text-align: center;
+  border-top: solid 2px #5995bc;
+  border-bottom: solid 2px #5995bc;
+  background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px, #e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px, #e9f4ff 3px, #e9f4ff 7px);
+  margin-bottom: 30px;
 }
 
 .jdl_div a {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 #activities h3 {
-    background: linear-gradient(transparent 70%, #e4d1a9 70%);
+  background: linear-gradient(transparent 70%, #e4d1a9 70%);
 }
 
 #contact h2 {
-    font-size: 1.3rem;
-    letter-spacing: 0.1rem;
-    line-height: 1.2rem;
-    margin: 10px 0 5px 0;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.2rem;
+  margin: 10px 0 5px 0;
 }
 
 footer .contentWrapper {
-    text-align: center;
+  text-align: center;
 }
 
 .upperFooter {
-    background-color: #c9c7c1;
-    z-index: 1;
-    position: relative;
+  background-color: #c9c7c1;
+  z-index: 1;
+  position: relative;
 }
 
 .upperFooter li {
-    flex-grow: 1;
-    flex-basis: auto;
+  flex-grow: 1;
+  flex-basis: auto;
 }
 
 .upperFooter a {
-    display: block;
-    font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-    color: #515151;
+  display: block;
+  font-weight: bold;
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #515151;
 }
 
 a.icon {
-    display: contents;
+  display: contents;
 }
 
 .bottomFooter {
-    text-align: center;
-    background-color: #515151;
-    color: #fdf4e0;
-    padding: 5px;
+  text-align: center;
+  background-color: #515151;
+  color: #fdf4e0;
+  padding: 5px;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .icon:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .icon img {
-    transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
 }
 
 .icon img:hover {
-    transform: scale(1.1, 1.1);
-    transition: 0.2s all ease-in;
+  transform: scale(1.1, 1.1);
+  transition: 0.2s all ease-in;
 }
 
 .anchor {
-    color: #1d1e1f;
+  color: #1d1e1f;
 }
 
 @media screen and (max-width: 768px) {
-    .flex {
-        display: block;
-    }
+  .flex {
+    display: block;
+  }
 
-    .contentWrapper {
-        width: 80%;
-    }
+  .contentWrapper {
+    width: 80%;
+  }
 
-    h1 {
-        font-size: 1.8rem;
-        letter-spacing: 0.1rem;
-    }
+  h1 {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+  }
 
-    h2 {
-        font-size: 1.4rem;
-        letter-spacing: 0.1rem;
-    }
+  h2 {
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+  }
 
-    h3 {
-        font-size: 1.1rem;
-        letter-spacing: 0.1rem;
-    }
+  h3 {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+  }
 
-    iframe {
-        width: 100%;
-    }
+  iframe {
+    width: 100%;
+  }
 
-    header .contentWrapper {
-        width: 100%;
-        padding-top: 15rem;
-    }
+  header .contentWrapper {
+    width: 100%;
+    padding-top: 15rem;
+  }
 
-    header nav {
-        background: rgba(255, 255, 255, 0.85);
-        position: fixed;
-        z-index: 1;
-        width: 100%;
-        display: none;
-        top: 55px;
-    }
+  header nav {
+    background: rgba(255, 255, 255, 0.85);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: none;
+    top: 55px;
+  }
 
-    header nav ul {
-        display: block;
-        padding: 5px 20%;
-    }
+  header nav ul {
+    display: block;
+    padding: 5px 20%;
+  }
 
-    header nav li {
-        font-size: 0.9rem;
-        color: #606060;
-        border-bottom: 1px solid rgba(118, 123, 133, 0.3);
-        text-align: center;
-    }
+  header nav li {
+    font-size: 0.9rem;
+    color: #606060;
+    border-bottom: 1px solid rgba(118, 123, 133, 0.3);
+    text-align: center;
+  }
 
-    header nav li:last-child {
-        border-bottom: none;
-    }
+  header nav li:last-child {
+    border-bottom: none;
+  }
 
-    header nav a {
-        padding: 20px;
-        display: block;
-        color: #333;
-        font-weight: normal;
-        text-shadow: none;
-    }
+  header nav a {
+    padding: 20px;
+    display: block;
+    color: #333;
+    font-weight: normal;
+    text-shadow: none;
+  }
 
-    header nav a:hover {
-        color: #ae9218 !important;
-        text-shadow: none;
-    }
+  header nav a:hover {
+    color: #ae9218 !important;
+    text-shadow: none;
+  }
 
-    #menuWrapper {
-        width: 100%;
-        background: rgba(255, 255, 255, 0.85);
-        padding: 15px 15px 8px 15px;
-        box-sizing: border-box;
-        z-index: 1;
-        position: fixed;
-    }
+  #menuWrapper {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 15px 15px 8px 15px;
+    box-sizing: border-box;
+    z-index: 1;
+    position: fixed;
+  }
 
-    .trigger,
-    .trigger span {
-        display: inline-block;
-        transition: all 0.4s;
-        box-sizing: border-box;
-    }
+  .trigger,
+  .trigger span {
+    display: inline-block;
+    transition: all 0.4s;
+    box-sizing: border-box;
+  }
 
-    .trigger {
-        position: relative;
-        width: 35px;
-        height: 30px;
-    }
+  .trigger {
+    position: relative;
+    width: 35px;
+    height: 30px;
+  }
 
-    .trigger span {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 5px;
-        background-color: #718085;
-        border-radius: 4px;
-        opacity: 1;
-    }
+  .trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #718085;
+    border-radius: 4px;
+    opacity: 1;
+  }
 
-    .trigger a:hover {
-        opacity: 1;
-    }
+  .trigger a:hover {
+    opacity: 1;
+  }
 
-    .trigger span:nth-of-type(1) {
-        top: 0;
-    }
+  .trigger span:nth-of-type(1) {
+    top: 0;
+  }
 
-    .trigger span:nth-of-type(2) {
-        top: 12px;
-    }
+  .trigger span:nth-of-type(2) {
+    top: 12px;
+  }
 
-    .trigger span:nth-of-type(3) {
-        bottom: 0;
-    }
+  .trigger span:nth-of-type(3) {
+    bottom: 0;
+  }
 
-    .trigger.active span:nth-of-type(1) {
-        transform: translateY(10px) rotate(-45deg);
-    }
+  .trigger.active span:nth-of-type(1) {
+    transform: translateY(10px) rotate(-45deg);
+  }
 
-    .trigger.active span:nth-of-type(2) {
-        left: 50%;
-        opacity: 0;
-        animation: active-menu-bar02 0.8s forwards;
-    }
+  .trigger.active span:nth-of-type(2) {
+    left: 50%;
+    opacity: 0;
+    animation: active-menu-bar02 0.8s forwards;
+  }
 
-    .trigger.active span:nth-of-type(3) {
-        transform: translateY(-15px) rotate(45deg);
-    }
+  .trigger.active span:nth-of-type(3) {
+    transform: translateY(-15px) rotate(45deg);
+  }
 
-    .onanimation {
-        display: block;
-    }
+  .onanimation {
+    display: block;
+  }
 
-    body,
-    p {
-        font-size: 0.9rem;
-        line-height: 1.6rem;
-    }
+  body,
+  p {
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+  }
 
-    .upperFooter .contentWrapper,
-    footer nav {
-        width: 100%;
-    }
+  .upperFooter .contentWrapper,
+  footer nav {
+    width: 100%;
+  }
 
-    .upperFooter ul {
-        font-size: 0.8rem;
-        padding: 0 10%;
-    }
+  .upperFooter ul {
+    font-size: 0.8rem;
+    padding: 0 10%;
+  }
 
-    .upperFooter li {
-        flex-grow: 1;
-        flex-basis: auto;
-        border-bottom: 1px solid #000;
-    }
+  .upperFooter li {
+    flex-grow: 1;
+    flex-basis: auto;
+    border-bottom: 1px solid #000;
+  }
 
-    .upperFooter li:first-child {
-        border-top: 1px solid #000;
-    }
+  .upperFooter li:first-child {
+    border-top: 1px solid #000;
+  }
 
-    .upperFooter a {
-        padding: 0.8rem;
-    }
+  .upperFooter a {
+    padding: 0.8rem;
+  }
 
-    @keyframes active-menu-bar02 {
-        100% {
-            height: 0;
-        }
+  @keyframes active-menu-bar02 {
+    100% {
+      height: 0;
     }
+  }
 }
