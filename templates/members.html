@@ -1,16 +1,23 @@
 {% extends "templates/base.html" %}
 {% block content %}
-      <img class="image" src="/img/NF2019shugo.jpg">
-      <section class="content">
+    <section id="top">
+      <div class="contentWrapper top">
+        <img class="image" src="img/NF2019shugo.jpg">
+      </div>
+    </section>
+    <section class="members">
+      <div class="contentWrapper">
         <h2>メンバー紹介</h2>
         <p>
-          ジャグリングドーナツってどんなとこ？ 一言で表すと、色んな人が集まっているところです。 ここではドーナツの個性豊かなメンバー達を紹介します。 
+          ジャグリングドーナツってどんなとこ？ 一言で表すと、色んな人が集まっているところです。 ここではドーナツの個性豊かなメンバー達を紹介します。
         </p>
         <ul>
-          {% for year in years %}
-            <li><a href="/members/{{ year }}.html">{{ year }}年度メンバー</a></li>
-          {% endfor %}
-          <li><a href="/members/obog.html">OB・OG</a></li>
+          <li><a href="members/2022.html">2022年度メンバー</a></li>
+          <li><a href="members/2021.html">2021年度メンバー</a></li>
+          <li><a href="members/2020.html">2020年度メンバー</a></li>
+          <li><a href="members/2019.html">2019年度メンバー</a></li>
+          <li><a href="members/obog.html">OB・OG</a></li>
         </ul>
-      </section>
+      </div>
+    </section>
 {% endblock %}
