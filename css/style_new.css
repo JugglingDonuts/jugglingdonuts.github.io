@@ -14,12 +14,9 @@ body {
 }
 h1 {
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-  color: #e0c579;
   font-size: 3.5rem;
   letter-spacing: 0.2rem;
-  margin: 0;
-  line-height: 110%;
-  text-shadow: 3px 3px 2px #1b082c, 0 0 5px #13393e;
+  margin: 20px;
 }
 h2 {
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
@@ -35,9 +32,9 @@ h3 {
   margin: 10px 0 5px 0;
 }
 a {
-  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   color: #02559d;
-  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
 }
 a:hover {
   opacity: 0.7;
@@ -87,6 +84,7 @@ header nav {
 }
 header a {
   color: #2a2825;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   font-weight: bold;
   transition: all 0.3s ease;
 }
@@ -145,6 +143,7 @@ footer .contentWrapper {
 }
 .upperFooter a {
   display: block;
+  font-weight: bold;
   font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   color: #515151;
 }
