@@ -103,7 +103,6 @@ header nav {
 header a {
   color: #2a2825;
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-  ;
   font-weight: bold;
   transition: all 0.3s ease;
 }
