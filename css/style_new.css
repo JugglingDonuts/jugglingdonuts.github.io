@@ -81,6 +81,17 @@ section:nth-of-type(even) {
   padding: 3px;
   list-style: circle;
 }
+.withDotLeft {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  text-align: left;
+}
+.withDotLeft li {
+  line-height: 140%;
+  padding: 3px;
+  list-style: circle;
+}
 header nav {
   position: absolute;
   right: 0;
