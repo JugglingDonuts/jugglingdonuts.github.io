@@ -97,6 +97,7 @@ section:nth-of-type(even) {
 }
 .title {
   padding-top: 70px;
+  padding-bottom: 0;
 }
 header nav {
   position: absolute;
