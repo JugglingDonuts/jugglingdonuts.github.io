@@ -2,6 +2,7 @@
 {% block content %}
       <section class="content">
       {% for d in data %}
+      <div class="contentWrapper">
         {% if d.isLast %}
         <h2>{{ d.year }}年度以前のメンバー</h2>
         {% else %}
@@ -14,6 +15,7 @@
             </li>
           {% endfor %}
         </ul>
+      </div>
       {% endfor %}
       </section>
 {% endblock %}
