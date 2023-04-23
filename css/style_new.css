@@ -175,6 +175,13 @@ a.icon {
 .anchor {
   color: #1d1e1f;
 }
+/* member.html */
+.member-picture {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 @media screen and (max-width: 768px) {
   .flex {
     display: block;
