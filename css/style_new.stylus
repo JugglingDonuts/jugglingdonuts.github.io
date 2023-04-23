@@ -173,6 +173,7 @@ footer .contentWrapper {
 .upperFooter li {
   flex-grow: 1;
   flex-basis: auto;
+  width: 100%
 }
 
 .upperFooter a {
