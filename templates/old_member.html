@@ -8,7 +8,7 @@
         {% else %}
         <h2>{{ d.year }}年度メンバー</h2>
         {% endif %}
-        <ul class="old_member-list">
+        <ul class="withDotLeft">
           {% for member in d.members %}
             <li class="old_member-item">
               {{ member.name }}
