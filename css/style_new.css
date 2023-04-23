@@ -55,6 +55,9 @@ td {
   text-align: left;
   padding: 2rem 0;
 }
+.contentWrapper:first-child {
+  padding-top: 60px;
+}
 .clearfix::after {
   display: block;
   content: "";
