@@ -1,6 +1,7 @@
 {% extends "templates/base.html" %}
 {% block content %}
-      <section class="content">
+      <section>
+        <div class="contentWrapper">
         <h2>{{ year }}年度メンバー</h2>
         <ul class="member-list">
           {% for member in members %}
@@ -28,6 +29,6 @@
             </li>
           {% endfor %}
         </ul>
+      </div>
       </section>
 {% endblock %}
-
