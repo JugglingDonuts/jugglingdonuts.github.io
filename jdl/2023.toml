@@ -89,6 +89,18 @@ name = "岩田　訓昂"
 roll = "メイク"
 
 [[staff]]
+name = "永井　伶"
+roll = ""
+
+[[staff]]
+name = "天野　寛大"
+roll = ""
+
+[[staff]]
+name = "山田　明"
+roll = ""
+
+[[staff]]
 name = "平田　大智"
 roll = "ヘアメイク"
 
@@ -111,15 +123,3 @@ roll = "受付統括"
 [[staff]]
 name = "尾鍋　正剛"
 roll = "受付"
-
-[[staff]]
-name = "永井　伶"
-roll = "新歓"
-
-[[staff]]
-name = "天野　寛大"
-roll = ""
-
-[[staff]]
-name = "山田　明"
-roll = ""
