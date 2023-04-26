@@ -15,7 +15,7 @@
   },
   "scripts": {
     "build-html": "node main.js",
-    "build-css": "stylus -u autoprefixer-stylus css/style.stylus css/jdl.stylus css/style_new.stylus -o public/css",
+    "build-css": "stylus -u autoprefixer-stylus css/style.stylus css/style_new.stylus -o public/css",
     "build": "yarn run build-html && yarn run build-css",
     "preview": "yarn run build-html && yarn run build-css && http-server ./public"
   },
