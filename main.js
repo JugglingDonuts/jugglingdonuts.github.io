@@ -33,6 +33,7 @@ const main = () => {
   shell.cp('-r', 'img', 'public/img');
 
   shell.cp('templates/404.html', 'public/404.html');
+  shell.cp('templates/jm.html', 'public/jm.html');
 
   const jdlYear = process.env.WITH_JDL;
   writePage('templates/top.html', 'public/index.html',{jdlYear});
