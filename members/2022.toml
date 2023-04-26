@@ -68,7 +68,7 @@ team = ""
 [[members]]
 name = "遠藤"
 picture = ""
-description = "久しぶりに生まれたシェーカーカップジャグラー。　溢れるアイデアを詰め込むその演技にご注目！"
+description = "久しぶりに生まれたシェーカーカップジャグラー。　溢れるアイデアを詰め込むその演技にご注目<a href='index.html'>！</a>"
 team = ""
 
 [[members]]
