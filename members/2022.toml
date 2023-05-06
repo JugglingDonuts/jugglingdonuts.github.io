@@ -1,14 +1,7 @@
-
 [[members]]
-name = "佐藤"
+name = "青柳"
 picture = ""
-description = "バルーンが上手なディアボラー。最近、先輩の金でカニを食べたらしい。"
-team = ""
-
-[[members]]
-name = "水野"
-picture = ""
-description = "一回生なのに同期から先輩と思われるほどの貫禄がある。トスに心を捧げたシガラー。"
+description = "スケールがでかい大型新入生。いくつものボールを軽々投げる。"
 team = ""
 
 [[members]]
@@ -24,15 +17,9 @@ description = "賢いボーラー。ルネでミール奴隷をしている。"
 team = ""
 
 [[members]]
-name = "永井"
+name = "遠藤"
 picture = ""
-description = "リンガー兼エイトリンガー。リングを愛しているから彼女なんて必要ない！というのは全くの嘘。"
-team = ""
-
-[[members]]
-name = "清住"
-picture = ""
-description = "多分ボディスローが好きなボーラー。たまに足でボールを投げる。"
+description = "久しぶりに生まれたシェーカーカップジャグラー。　溢れるアイデアを詰め込むその演技にご注目！"
 team = ""
 
 [[members]]
@@ -42,15 +29,27 @@ description = "久しぶりに見ると前よりぐっとうまくなってる�
 team = ""
 
 [[members]]
-name = "須崎"
+name = "清住"
 picture = ""
-description = "気まぐれリンガー・須崎は遅れてやってくる。"
+description = "多分ボディスローが好きなボーラー。たまに足でボールを投げる。"
 team = ""
 
 [[members]]
-name = "山田"
+name = "河野"
 picture = ""
-description = "乃木坂が好きなディアボラー。（多分）先輩に推しのディアボラーがいるらしい。"
+description = "Donutsでほぼ唯一の皿スピナー。足技が映える"
+team = ""
+
+[[members]]
+name = "佐藤"
+picture = ""
+description = "バルーンが上手なディアボラー。最近、先輩の金でカニを食べたらしい。"
+team = ""
+
+[[members]]
+name = "須崎"
+picture = ""
+description = "気まぐれリンガー・須崎は遅れてやってくる。"
 team = ""
 
 [[members]]
@@ -60,9 +59,21 @@ description = "トスの軌道が非常に美しいボーラー。決めポー�
 team = ""
 
 [[members]]
-name = "遠藤"
+name = "永井"
 picture = ""
-description = "久しぶりに生まれたシェーカーカップジャグラー。　溢れるアイデアを詰め込むその演技にご注目！"
+description = "リンガー兼エイトリンガー。リングを愛しているから彼女なんて必要ない！というのは全くの嘘。"
+team = ""
+
+[[members]]
+name = "平田"
+picture = ""
+description = "丁寧に練習で技術を磨いてきたボーラー。実はシガーもできる。"
+team = ""
+
+[[members]]
+name = "水野"
+picture = ""
+description = "一回生なのに同期から先輩と思われるほどの貫禄がある。トスに心を捧げたシガラー。"
 team = ""
 
 [[members]]
@@ -78,19 +89,7 @@ description = "けん玉で世界を平和にしたいやまけんです。"
 team = ""
 
 [[members]]
-name = "青柳"
+name = "山田"
 picture = ""
-description = "スケールがでかい大型新入生。いくつものボールを軽々投げる。"
-team = ""
-
-[[members]]
-name = "平田"
-picture = ""
-description = "丁寧に練習で技術を磨いてきたボーラー。実はシガーもできる。"
-team = ""
-
-[[members]]
-name = "河野"
-picture = ""
-description = "Donutsでほぼ唯一の皿スピナー。足技が映える"
+description = "乃木坂が好きなディアボラー。（多分）先輩に推しのディアボラーがいるらしい。"
 team = ""
