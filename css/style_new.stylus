@@ -190,11 +190,32 @@ a.icon {
   color: #1d1e1f;
 }
 /* member.html */
+.member-item {
+  margin: 10px 0;
+}
+.member-name {
+  background: #e2dacc;
+  border: 1px solid #e2dacc;
+  padding: 5px 0 5px 10px;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+.member-content {
+  border: 1px solid #e2dacc;
+  font-size: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 5px 5px;
+}
 .member-picture {
   width: 100px;
   height: 100px;
   -o-object-fit: cover;
   object-fit: cover;
+}
+.member-description {
+  padding: 10px;
 }
 .slider {
 /*横幅94%で左右に余白を持たせて中央寄せ*/
