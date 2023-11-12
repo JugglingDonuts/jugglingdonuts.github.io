@@ -227,6 +227,9 @@ a.icon {
   height: auto;
   box-shadow: 7px 7px 15px -5px #666;
 }
+.slider .slick-track {
+  padding-bottom: 15px
+}
 .slider .slick-slide {
   transform: scale(0.8);
 /*左右の画像のサイズを80%に*/
