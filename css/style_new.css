@@ -211,7 +211,7 @@ a.icon {
 .slider .slick-slide {
   transform: scale(0.8);
 /*左右の画像のサイズを80%に*/
-  transition: all 0.6s ease 0.5s;
+  transition: all 0.6s ease;
   opacity: 0.5;
 /*透過50%*/
 }
