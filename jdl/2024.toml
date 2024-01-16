@@ -1,44 +1,14 @@
-year = 2023
+year = 2024
 month = 5
 date = 6
-day = "土"
+day = "月・祝"
 
 place = "京都府立文化芸術会館"
 
 [[casts]]
 name = "角"
-equip = "ポイ"
-fname = "idei.jpg"
-
-[[casts]]
-name = "加藤　悠太"
-equip = "リング"
-fname = "kato.jpg"
-
-[[casts]]
-name = "鶴見　高輝"
-equip = "シェイカーカップ"
-fname = "tsurumi.jpg"
-
-[[casts]]
-name = "中村　拓也"
-equip = "ディアボロ"
-fname = "nakamura.jpg"
-
-[[casts]]
-name = "本田　健悟"
 equip = "ボール"
-fname = "honda.jpg"
-
-[[casts]]
-name = "松木　梨南"
-equip = "ディアボロ"
-fname = "matsuki.jpg"
-
-[[casts]]
-name = "山田　覚巳"
-equip = "シガーボックス" 
-fname = "yamada.jpg"
+fname = "nodata.jpg"
 
 [[staff]]
 name = "中村　伊吹"
