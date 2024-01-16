@@ -117,7 +117,7 @@ td {
 }
 
 header {
-  background-image: url("../img/jdl/header.jpg"), url("../img/jdl/header_back.jpg");
+  background-image: url("../img/jdl/header.png"), url("../img/jdl/header_back.png");
   background-size:contain, cover;
   height: 590px;  
   background-repeat: no-repeat;
