@@ -89,7 +89,7 @@ td {
           animation: rotateAnime 0.8s cubic-bezier(0.54, 1.43, 0.17, 1.01);
 }
 header {
-  background-image: url("../img/jdl/header.jpg"), url("../img/jdl/header_back.jpg");
+  background-image: url("../img/jdl/header.png"), url("../img/jdl/header_back.png");
   background-size: contain, cover;
   height: 590px;
   background-repeat: no-repeat;
