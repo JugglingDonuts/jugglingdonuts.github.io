@@ -189,13 +189,13 @@ header .contentWrapper {
 }
 
 .sns_button.twitter{
-border:solid 1px #55acee;
-color:#55acee;
+border:solid 1px black;
+color:black;
 }
 
 .sns_button.twitter:hover{
-border:solid 1px #55acee;
-background:#55acee;
+border:solid 1px black;
+background: black;
 }
 
 .sns_button.instagram {
