@@ -167,6 +167,51 @@ header .contentWrapper {
   padding-top: 28rem;
 }
 
+
+.flex.sns_links {
+  justify-content: center;
+}
+
+.sns_button {
+  border-radius:50%;
+  display:inline-block;
+  width:70px;
+  height:70px;
+  font-size:30px;
+  transition:.5s;
+  text-decoration:none;
+  margin: 20px;
+}
+
+.sns_button:hover {
+  color:#fff!important;
+  opacity: 1;
+}
+
+.sns_button.twitter{
+border:solid 1px #55acee;
+color:#55acee;
+}
+
+.sns_button.twitter:hover{
+border:solid 1px #55acee;
+background:#55acee;
+}
+
+.sns_button.instagram {
+border:solid 1px #c6529a;
+color:#c6529a;
+}
+
+.sns_button.instagram:hover{
+border:solid 1px #c6529a;
+background:#c6529a;
+}
+
+.fa-brands, .fab {
+  padding: 20px;
+}
+
 #date table {
   margin: auto;
 }
@@ -213,12 +258,12 @@ header .contentWrapper {
 }
 
 #cast .flexcontent {
-  width: 25%
+  width: 20%;
+  padding: 5px;
 }
 
 #cast img {
   width: 130px;
-  padding: 20px 30px 5px 30px;
 }
 
 #cast figure {
