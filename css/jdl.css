@@ -148,12 +148,12 @@ header .contentWrapper {
   opacity: 1;
 }
 .sns_button.twitter {
-  border: solid 1px #55acee;
-  color: #55acee;
+  border: solid 1px #000;
+  color: #000;
 }
 .sns_button.twitter:hover {
-  border: solid 1px #55acee;
-  background: #55acee;
+  border: solid 1px #000;
+  background: #000;
 }
 .sns_button.instagram {
   border: solid 1px #c6529a;
