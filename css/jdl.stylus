@@ -264,9 +264,7 @@ header .contentWrapper {
 }
 
 .withDot {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 70%;
   text-align: left;
   margin: 0 auto;
 }
