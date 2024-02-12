@@ -58,6 +58,8 @@ a:hover {
 p {
   font-size: 1rem;
   line-height: 1.8rem;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 }
 
 table {
@@ -614,6 +616,10 @@ iframe {
   p {
     font-size: 0.9rem;
     line-height: 1.6rem;
+  }
+
+  .sns_links {
+    display: flex;
   }
 
   #access dt {

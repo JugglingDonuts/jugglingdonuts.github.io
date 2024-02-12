@@ -6,37 +6,37 @@ day = "月・祝"
 place = "京都府立文化芸術会館"
 
 [[casts]]
-name = "池田"
+name = "池田和陽"
 equip = "デビルスティック"
 fname = "ikeda.jpg"
 
 [[casts]]
-name = "遠藤"
+name = "遠藤海人"
 equip = "シェイカーカップ"
 fname = "endo.jpg"
 
 [[casts]]
-name = "角"
+name = "角倫彩子"
 equip = "ボール"
 fname = "sumi.jpg"
 
 [[casts]]
-name = "永井"
+name = "永井伶"
 equip = "リング"
 fname = "nagai.jpg"
 
 [[casts]]
-name = "水野"
+name = "水野凌斗"
 equip = "シガーボックス"
 fname = "mizuno.jpg"
 
 [[casts]]
-name = "森本"
+name = "森本駿之介"
 equip = "ディアボロ"
 fname = "morimoto.jpg"
 
 [[casts]]
-name = "山田"
+name = "山田明"
 equip = "ディアボロ"
 fname = "yamada.jpg"
 
