@@ -188,11 +188,12 @@ header .contentWrapper {
   line-height: 160%;
 }
 #access dt {
-  width: 10%;
+  width: 20%;
   clear: both;
 }
 #access dd {
-  width: 80%;
+  width: 70%;
+  margin-left: 10%;
 }
 #map {
   width: 600px;
