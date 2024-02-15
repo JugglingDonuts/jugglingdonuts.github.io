@@ -119,8 +119,8 @@ td {
 }
 
 header {
-  background-image: url("../img/jdl/header.png"), url("../img/jdl/header_back.png");
-  background-size:contain, cover;
+  background-image: url("../img/jdl/header.png");
+  background-size: cover;
   height: 590px;  
   background-repeat: no-repeat;
   background-position: center;
@@ -457,7 +457,7 @@ iframe {
   }
 
   header {
-    margin-top: 55px;
+    margin-top: 60px;
     height: 300px;
   }
 
@@ -534,6 +534,7 @@ iframe {
     box-sizing: border-box;
     z-index: 1;
     position: fixed;
+    height: 60px;
   }
 
   .trigger,
