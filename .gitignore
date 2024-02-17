@@ -2,3 +2,5 @@ node_modules/
 tmp/
 public/
 .firebase/
+docker-compose.yml
+Dockerfile

@@ -18,6 +18,7 @@ html {
 
 body {
   color: #3b3b3b;
+  font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
 }
 
 h1 {
