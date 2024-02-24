@@ -49,8 +49,6 @@ a:hover {
 p {
   font-size: 1rem;
   line-height: 1.8rem;
-  word-break: keep-all;
-  overflow-wrap: anywhere;
 }
 table {
   margin: 0 auto;
@@ -178,6 +176,8 @@ header .contentWrapper {
 }
 #date p {
   margin-top: 5px;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 }
 #access dl {
   width: 50%;
@@ -291,6 +291,7 @@ section:nth-of-type(even) {
 .upperFooter li {
   flex-grow: 1;
   flex-basis: auto;
+  padding: 10px;
 }
 .upperFooter a {
   display: block;
