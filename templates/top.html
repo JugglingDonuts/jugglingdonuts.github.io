@@ -16,7 +16,7 @@
   <script>
     let nowDate = Date.now();
     let jdlDate = (new Date({{jdl.year}}, {{jdl.month - 1}}, {{jdl.date}})).getTime();
-    let diffDate = Math.floor((jdlDate - nowDate) / 1000 / 60 / 60 / 24);
+    let diffDate = Math.floor((jdlDate - nowDate) / 1000 / 60 / 60 / 24) + 1;
 
     let msg = (diffDate >= 0) 
       ? "Juggling Donuts Live {{jdl.year}}まであと" + diffDate + "日!" 
