@@ -399,10 +399,10 @@ iframe {
   header nav {
     background: rgba(255,255,255,0.85);
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     display: none;
-    top: 55px;
+    top: 60px;
   }
   header nav ul {
     display: block;
@@ -433,7 +433,7 @@ iframe {
     background: rgba(255,255,255,0.85);
     padding: 15px 15px 8px 15px;
     box-sizing: border-box;
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     height: 60px;
   }
