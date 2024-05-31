@@ -18,12 +18,11 @@
       ジャグリングドーナツってどんなとこ？ 一言で表すと、色んな人が集まっているところです。 ここではドーナツの個性豊かなメンバー達を紹介します。
     </p>
     <ul>
-      <li><a href="members/2022.html">2022年度メンバー</a></li>
-      <li><a href="members/2021.html">2021年度メンバー</a></li>
-      <li><a href="members/2020.html">2020年度メンバー</a></li>
-      <li><a href="members/2019.html">2019年度メンバー</a></li>
+      {% for year in years %}
+        <li><a href="members/{{ year }}.html">{{ year }}年度メンバー</a></li>
+      {% endfor %}
       <li><a href="members/obog.html">OB・OG</a></li>
     </ul>
   </div>
 </section>
-{% endblock %}
+{% endblock %}2022年度メンバー
