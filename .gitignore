@@ -4,3 +4,4 @@ public/
 .firebase/
 docker-compose.yml
 Dockerfile
+.DS_Store
