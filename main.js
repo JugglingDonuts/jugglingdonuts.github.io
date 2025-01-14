@@ -38,10 +38,10 @@ const main = () => {
   if (jdlYear) {
     console.log(`with jdl ${jdlYear}`);
     const jdl = loadToml(`jdl/${jdlYear}.toml`);
-    writePage("templates/top.html", "public/index.html", { jdlYear, jdl });
+    writePage("templates/index.html", "public/index.html", { jdlYear, jdl });
     writePage("templates/jdl.html", "public/jdl.html", jdl);
   } else {
-    writePage("templates/top.html", "public/index.html", { jdlYear });
+    writePage("templates/index.html", "public/index.html", { jdlYear });
   }
 
   const years = fs
