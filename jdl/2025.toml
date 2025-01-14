@@ -1,0 +1,151 @@
+year = 2025
+month = 5
+date = 6
+day = "月・祝"
+
+place = "京都府立文化芸術会館"
+
+sponsors = [
+  "株式会社ナランハ",
+  "GEAR",
+  "Osaka Juggler's Grand Prix",
+  "ジャグリングスタジオデビュー",
+  "中部学生ジャグリング大会",
+  "WJD in 京都",
+  "まえだ歯科",
+  "ラーメンあかつき",
+  "タコとケンタロー",
+  "居酒屋なみなみ",
+  "中華そばたく味",
+  "Nagotsuki Farm",
+]
+
+[[casts]]
+  name = "池田和陽"
+  equip = "デビルスティック"
+  fname = "ikeda.jpg"
+
+[[casts]]
+  name = "遠藤海人"
+  equip = "シェイカーカップ"
+  fname = "endo.jpg"
+
+[[casts]]
+  name = "⻆倫彩子"
+  equip = "ボール"
+  fname = "sumi.jpg"
+
+[[casts]]
+  name = "永井伶"
+  equip = "リング"
+  fname = "nagai.jpg"
+
+[[casts]]
+  name = "水野凌斗"
+  equip = "シガーボックス"
+  fname = "mizuno.jpg"
+
+[[casts]]
+  name = "森本駿之介"
+  equip = "ディアボロ"
+  fname = "morimoto.jpg"
+
+[[casts]]
+  name = "山田明"
+  equip = "ディアボロ"
+  fname = "yamada.jpg"
+[[staff]]
+  name = "松木梨南"
+  roll = "舞台監督"
+
+[[staff]]
+  name = "加藤悠太"
+  roll = "舞台監督補佐"
+
+[[staff]]
+  name = "中村拓也"
+  roll = "舞台監督補佐"
+
+[[staff]]
+  name = "尾鍋正剛"
+  roll = "広報統括"
+
+[[staff]]
+  name = "柴田光之進"
+  roll = "広報補佐"
+
+[[staff]]
+  name = "佐藤暢"
+  roll = "宣伝美術"
+
+[[staff]]
+  name = "遠藤海人"
+  roll = "Web"
+
+[[staff]]
+  name = "永井彾"
+  roll = "脚本"
+
+[[staff]]
+  name = "水野凌斗"
+  roll = "照明統括"
+
+[[staff]]
+  name = "藤井瑛士"
+  roll = "照明"
+
+[[staff]]
+  name = "角倫彩子"
+  roll = "音響統括"
+
+[[staff]]
+  name = "土井洸史朗"
+  roll = "音響"
+
+[[staff]]
+  name = "池田和陽"
+  roll = "大道具統括"
+
+[[staff]]
+  name = "山田明"
+  roll = "メイク統括"
+
+[[staff]]
+  name = "平田大智"
+  roll = "ヘアメイク"
+
+[[staff]]
+  name = "坂上優太"
+  roll = "カメラ撮影"
+
+[[staff]]
+  name = "中川武蔵"
+  roll = "カメラ撮影"
+
+[[staff]]
+  name = "森本駿之介"
+  roll = "会計"
+
+[[staff]]
+  name = "岩田訓昂"
+  roll = "新歓"
+
+[[staff]]
+  name = "船岡美玖"
+  roll = "新歓"
+
+[[staff]]
+  name = "平田大智"
+  roll = "スポンサー"
+
+[[staff]]
+  name = "中井竜太郎"
+  roll = "受付統括"
+
+[[staff]]
+  name = "柴田光之進"
+  roll = "受付"
+
+[[staff]]
+  name = "水野凌斗"
+  roll = "全体演目"
