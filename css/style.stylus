@@ -1,160 +1,441 @@
-// priory-color = rgb(121,85,72)
-priory-color = #5D4037
-focus-color = #8D6E63
-text-color = #3E2723
-
-@charset "UTF-8";
-
-body {
-  max-width: 600px;
-  width: 100%;
-  margin: auto;
-  color: text-color;
-  font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+ul {
+  list-style: none;
+  padding: 0;
 }
-
-header {
-  height: 80px;
-  padding-top: 10px;
-  width: 100%;
-}
-
-.title-image {
-  height: 30px;
-  max-width: 400px;
-  padding: 0 10px;
-}
-
-nav {
-  height: 40px;
-  width: 100%;
-  background: priory-color;
-}
-
-.nav-list {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-
-.nav-item {
-  width: 150px;
-  height: 100%;
-  list-style-type: none;
-}
-
-.nav-item:hover {
-  background: focus-color;
-}
-
-.nav-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+a {
   text-decoration: none;
-  color: white;
 }
-
-.nav-link:hover {
-  color: text-color;
+html {
+  box-sizing: border-box;
+  background-color: #f7f5f1;
 }
-
+body {
+  color: #3b3b3b;
+}
+h1 {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 2.5rem;
+  margin: 20px;
+  background: #e2dacc;
+  box-shadow: 0px 0px 0px 5px #e2dacc;
+  border: dashed 2px #fff;
+  padding: 15px;
+  line-height: 110%;
+  overflow-wrap: break-word;
+  word-break: keep-all;
+}
+h2 {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.2rem;
+  padding: 0 0 10px 0;
+}
+h3 {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.2rem;
+  margin: 10px 0 5px 0;
+}
+a {
+  color: #02559d;
+  font-size: 1rem;
+  line-height: 1.1rem;
+}
+a:hover {
+  opacity: 0.7;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+table {
+  margin: 0 auto;
+}
+td {
+  padding: 0 5px;
+}
+.contentWrapper {
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 2rem 0;
+}
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+section:nth-of-type(even) {
+  background-color: #e4dfcc;
+}
 .image {
   width: 100%;
 }
-
-.email-img {
-  vertical-align: top;
+.withDot {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: left;
+  margin: 0 auto;
 }
-
-.content {
-  padding-top: 5px;
-  line-height: 1.3em;
-
-  p {
-    margin: 5px 0;
-  }
-
-  h2 {
-    margin-top: 10px;
-    padding-bottom: 3px;
-    border-bottom: 3px solid priory-color
-  }
-
-  h3 {
-    margin-top: 5px;
-  }
-
-  a {
-    text-decoration: none;
-    color: text-color;
-  }
-
-  pre {
-    display: inline;
-  }
-
-  ul {
-    padding-left: 15px;
-  }
+.withDot li {
+  line-height: 140%;
+  padding: 3px;
+  list-style: circle;
 }
-
-@media (max-width: 600px) {
-  .content {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+.withDotLeft {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: left;
 }
-
-.member-item {
-  list-style-type: none;
-  margin: 10px 0;
+.withDotLeft li {
+  line-height: 140%;
+  padding: 3px;
+  list-style: circle;
 }
-
-.member {
+.title {
+  padding-top: 70px;
+  padding-bottom: 0;
+}
+header nav {
+  position: absolute;
+  right: 0;
+}
+header a {
+  color: #2a2825;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+header a:hover {
+  text-shadow: 2px 2px 1px #6b6b6b;
+}
+header ul {
   display: flex;
+  margin: 0;
+  padding: 20px;
+}
+header li {
+  padding: 0 15px;
+}
+.jdl_div {
+  position: relative;
+  color: #4190c4;
+  text-align: center;
+  border-top: solid 2px #5995bc;
+  border-bottom: solid 2px #5995bc;
+  background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px, #e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px, #e9f4ff 3px, #e9f4ff 7px);
+  margin-bottom: 30px;
+}
+.jdl_div a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
 }
-
+#activities h3 {
+  background: linear-gradient(transparent 70%, #e4d1a9 70%);
+}
+#contact h2 {
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.2rem;
+  margin: 10px 0 5px 0;
+}
+footer .contentWrapper {
+  text-align: center;
+}
+.upperFooter {
+  background-color: #c9c7c1;
+  z-index: 1;
+  position: relative;
+}
+.upperFooter li {
+  flex-grow: 1;
+  flex-basis: auto;
+  width: 100%;
+}
+.upperFooter a {
+  display: block;
+  font-weight: bold;
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #515151;
+}
+a.icon {
+  display: contents;
+}
+.bottomFooter {
+  text-align: center;
+  background-color: #515151;
+  color: #fdf4e0;
+  padding: 5px;
+}
+.flex {
+  display: flex;
+}
+.icon:hover {
+  opacity: 1;
+}
+.icon img {
+  transition: 0.2s all ease-out;
+}
+.icon img:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.2s all ease-in;
+}
+.anchor {
+  color: #1d1e1f;
+}
+/* member.html */
+.member-item {
+  margin: 10px 0;
+}
 .member-name {
-  font-size: 20px;
+  background: #e2dacc;
+  border: 1px solid #e2dacc;
+  padding: 5px 0 5px 10px;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
 }
-
+.member-content {
+  border: 1px solid #e2dacc;
+  font-size: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 5px 5px;
+}
 .member-picture {
-  max-width: 150px;
-  width: 30%;
-  height: 100%;
-  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
-
-.member-text {
-  width: 70%;
+.member-description {
+  padding: 10px;
 }
-
-.irai-button {
+.slider {
+/*横幅94%で左右に余白を持たせて中央寄せ*/
+  width: 94%;
   margin: 0 auto;
-  width: 220px;
-  display: block;
 }
-
-footer {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  text-align: center;
+.slider img {
+  width: 50vw;
+  height: auto;
+  box-shadow: 7px 7px 15px -5px #666;
 }
-
-.jdl {
-  font-size: x-large;
-  line-height: 1.5;
-  padding: 50px 0;
-  margin: auto;
+.slider .slick-track {
+  padding-bottom: 15px
+}
+.slider .slick-slide {
+  transform: scale(0.8);
+/*左右の画像のサイズを80%に*/
+  transition: all 0.5s ease;
+  opacity: 0.5;
+/*透過50%*/
+}
+.slider .slick-slide.slick-center {
+  transform: scale(1);
+/*中央の画像のサイズだけ等倍に*/
+  opacity: 1;
+/*透過なし*/
+}
+/*矢印の設定*/
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+  position: absolute;
+/*絶対配置にする*/
+  top: 42%;
+  cursor: pointer;
+/*マウスカーソルを指マークに*/
+  outline: none;
+/*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #666;
+/*矢印の色*/
+  border-right: 2px solid #666;
+/*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+.slick-prev {
+/*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+.slick-next {
+/*次へ矢印の位置と形状*/
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+/*ドットナビゲーションの設定*/
+.slick-dots {
   text-align: center;
-  border: 5px solid text-color;
+  margin: 20px 0 0 0;
+}
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.slick-dots button {
   display: block;
-
-  div {
-    margin-bottom: 3px;
+  width: 10px;
+  height: 10px;
+  margin: 6px;
+  font-size: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background: #bcbcbc;
+  border-radius: 50%;
+}
+.slick-dots .slick-active button {
+  background: #333;
+/*ドットボタンの現在地表示の色*/
+}
+@media screen and (max-width: 768px) {
+  .flex {
+    display: block;
   }
+  .contentWrapper {
+    width: 80%;
+  }
+  h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+  }
+  iframe {
+    width: 100%;
+  }
+  header .contentWrapper {
+    width: 100%;
+    padding-top: 15rem;
+  }
+  header nav {
+    background: rgba(255,255,255,0.85);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: none;
+    top: 55px;
+  }
+  header nav ul {
+    display: block;
+    padding: 5px 20%;
+  }
+  header nav li {
+    font-size: 0.9rem;
+    color: #606060;
+    border-bottom: 1px solid rgba(118,123,133,0.3);
+    text-align: center;
+  }
+  header nav li:last-child {
+    border-bottom: none;
+  }
+  header nav a {
+    padding: 20px;
+    display: block;
+    color: #333;
+    font-weight: normal;
+    text-shadow: none;
+  }
+  header nav a:hover {
+    color: #ae9218 !important;
+    text-shadow: none;
+  }
+  #menuWrapper {
+    width: 100%;
+    background: rgba(255,255,255,0.85);
+    padding: 15px 15px 8px 15px;
+    box-sizing: border-box;
+    z-index: 1;
+    position: fixed;
+  }
+  .trigger,
+  .trigger span {
+    display: inline-block;
+    transition: all 0.4s;
+    box-sizing: border-box;
+  }
+  .trigger {
+    position: relative;
+    width: 35px;
+    height: 30px;
+  }
+  .trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #718085;
+    border-radius: 4px;
+    opacity: 1;
+  }
+  .trigger a:hover {
+    opacity: 1;
+  }
+  .trigger span:nth-of-type(1) {
+    top: 0;
+  }
+  .trigger span:nth-of-type(2) {
+    top: 12px;
+  }
+  .trigger span:nth-of-type(3) {
+    bottom: 0;
+  }
+  .trigger.active span:nth-of-type(1) {
+    transform: translateY(10px) rotate(-45deg);
+  }
+  .trigger.active span:nth-of-type(2) {
+    left: 50%;
+    opacity: 0;
+    animation: active-menu-bar02 0.8s forwards;
+  }
+  .trigger.active span:nth-of-type(3) {
+    transform: translateY(-15px) rotate(45deg);
+  }
+  .onanimation {
+    display: block;
+  }
+  body,
+  p {
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+  }
+  .upperFooter .contentWrapper,
+  footer nav {
+    width: 100%;
+  }
+  .upperFooter ul {
+    font-size: 0.8rem;
+    padding: 0 10%;
+  }
+  .upperFooter li {
+    flex-grow: 1;
+    flex-basis: auto;
+    border-bottom: 1px solid #000;
+  }
+  .upperFooter li:first-child {
+    border-top: 1px solid #000;
+  }
+  .upperFooter a {
+    padding: 0.8rem;
+  }
+@keyframes active-menu-bar02 {
+    100% {
+      height: 0;
+    }
+}
 }
