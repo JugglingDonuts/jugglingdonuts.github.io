@@ -72,7 +72,7 @@
 
       <section id="promo_video" class="fade_in">
         <div class="contentWrapper">
-          <iframe src="https://www.youtube-nocookie.com/embed/DiTXAGlK7dg?si=669YSYkyRKedyx8v"
+          <iframe src="{{promo_url}}"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -163,7 +163,7 @@
         <div class="contentWrapper">
           <h2>チケットについて</h2>
           <ul class="withDot">
-            <li>JDL2024のチケットは電子チケット、紙チケットおよび当日券の３種類がございます。</li>
+            <li>JDL{{year}}のチケットは電子チケット、紙チケットおよび当日券の３種類がございます。</li>
             <li>電子チケットはPassMarketにて販売しております。</li>
             <li><a href="#e-ticket" class="anchor">電子チケット購入時の注意</a>を読んだうえで下記リンクから購入してください。</li>
             <li>紙チケットは部員が手売りで販売しているため、基本的にJuggling Donuts関係者のみへの販売となります。</li>
@@ -172,7 +172,7 @@
           </ul>
           <div class="purchase">
             <button
-              onclick="window.open('https://passmarket.yahoo.co.jp/event/show/detail/02bi9qmr8gj31.html')">チケット購入はこちら</button>
+              onclick="window.open('{{ticket_url}}')">チケット購入はこちら</button>
           </div>
 
           <h3 id="e-ticket">電子チケット購入時の注意</h3>
@@ -212,7 +212,7 @@
         <div class="contentWrapper">
           <h2>カンパについて</h2>
           <p>
-            JDL2024では、皆様からのご厚意をカンパという形で受け付けております。よろしければご協力よろしくお願いいたします。
+            JDL{{year}}では、皆様からのご厚意をカンパという形で受け付けております。よろしければご協力よろしくお願いいたします。
           </p>
           <div class="flex">
             <div class="flexcontent">
@@ -221,7 +221,7 @@
                 OFUSEにてカンパを受け付けおります。ログインは不要で、1口100円～11000円となっております。支払いにはクレジットカード・Vプリカ・Apple
                 Pay・Google Payをご利用いただけます。<br>Juggling Donutsの活動を支援していただける方は、以下のURLからご協力よろしくお願いいたします。
               </p>
-              <button onclick="window.open('https://ofuse.me/80c44794')">OFUSE</button>
+              <button onclick="window.open('{{ofuse_url}}')">OFUSE</button>
             </div>
             <div class="flexcontent">
               <h3>【当日会場でのご支援】</h3>
@@ -236,7 +236,7 @@
       <section id="sponsor" class="fade_in">
         <div class="contentWrapper">
           <h2>スポンサー</h2>
-          <p>JDL2024は以下のスポンサーの皆様にご協賛いただいております。<br>
+          <p>JDL{{year}}は以下のスポンサーの皆様にご協賛いただいております。<br>
             {% for sponsor in sponsors %}
               {{sponsor}}様<br>
             {% endfor %}
@@ -289,7 +289,7 @@
           <h2>お問い合わせ</h2>
           <p>
             ご不明な点がございましたら広報担当までお気軽にお問い合わせください。<br>
-            （2024年2月24日更新）<br>
+            （{{latest_update}}更新）<br>
             E-mail: <a href="mailto:juggling.donuts.kouhou@gmail.com">juggling.donuts.kouhou@gmail.com</a><br>
             (担当：尾鍋正剛)
           </p>
