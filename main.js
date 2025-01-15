@@ -35,13 +35,22 @@ const main = () => {
   shell.cp("templates/404.html", "public/404.html");
 
   const jdlYear = process.env.WITH_JDL;
-  if (jdlYear) {
-    console.log(`with jdl ${jdlYear}`);
+  const jdlRelease = process.env.RELEASE == "true";
+  if (jdlYear || jdlRelease) {
+    if (jdlRelease) {
+      console.log(`with jdl ${jdlYear} (release)`);
+    } else {
+      console.log(`with jdl ${jdlYear} (test)`);
+    }
     const jdl = loadToml(`jdl/${jdlYear}.toml`);
-    writePage("templates/index.html", "public/index.html", { jdlYear, jdl });
+    writePage("templates/index.html", "public/index.html", {
+      jdlYear,
+      jdlRelease,
+      jdl,
+    });
     writePage("templates/jdl.html", "public/jdl.html", jdl);
   } else {
-    writePage("templates/index.html", "public/index.html", { jdlYear });
+    writePage("templates/index.html", "public/index.html", {});
   }
 
   const years = fs
