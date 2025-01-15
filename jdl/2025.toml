@@ -3,22 +3,19 @@ month = 5
 date = 6
 day = "月・祝"
 
-place = "京都府立文化芸術会館"
-
 sponsors = [
-  "株式会社ナランハ",
-  "GEAR",
-  "Osaka Juggler's Grand Prix",
-  "ジャグリングスタジオデビュー",
-  "中部学生ジャグリング大会",
-  "WJD in 京都",
-  "まえだ歯科",
-  "ラーメンあかつき",
-  "タコとケンタロー",
-  "居酒屋なみなみ",
-  "中華そばたく味",
-  "Nagotsuki Farm",
+  "ここにスポンサー名を入力",
+  "複数の場合はカンマ区切り",
+  "ダブルクォーテーションで囲うのを忘れるとエラーが出ます",
+  "全角半角の区別にも注意してください。",
 ]
+
+promo_url = "https://www.youtube-nocookie.com/embed/DiTXAGlK7dg?si=669YSYkyRKedyx8v"
+ofuse_url = "https://ofuse.me/80c44794"
+ticket_url = "https://passmarket.yahoo.co.jp/event/show/detail/02bi9qmr8gj31.html"
+
+# 日付型を使いたかったがパース時にエラーが出るため文字列を使用。
+latest_update = "2025年1月15日"
 
 [[casts]]
   name = "池田和陽"
