@@ -48,7 +48,7 @@ const main = () => {
       jdlRelease,
       jdl,
     });
-    writePage("templates/jdl.html", "public/jdl.html", jdl);
+    writePage("templates/jdl.html", `public/jdl${jdlYear}.html`, jdl);
   } else {
     writePage("templates/index.html", "public/index.html", {});
   }
