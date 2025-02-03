@@ -4,22 +4,22 @@
   <div class="contentWrapper">
     <img class="image" src="img/top.jpg">
   </div>
-  {% if jdlYear %}
+  {% if jdlYear and jdlRelease %}
   <div class="contentWrapper jdl_div">
     <h2>
       <div id="daysRemainingMsg"></div>
       <br>
       特設ページオープン中!
     </h2>
-    <a href="./jdl.html"></a>
+    <a href="./jdl{{jdl.year}}.html"></a>
   </div>
   <script>
     let nowDate = Date.now();
     let jdlDate = (new Date({{jdl.year}}, {{jdl.month - 1}}, {{jdl.date}})).getTime();
     let diffDate = Math.floor((jdlDate - nowDate) / 1000 / 60 / 60 / 24) + 1;
 
-    let msg = (diffDate >= 0) 
-      ? "Juggling Donuts Live {{jdl.year}}まであと" + diffDate + "日!" 
+    let msg = (diffDate >= 0)
+      ? "Juggling Donuts Live {{jdl.year}}まであと" + diffDate + "日!"
       : "Juggling Donuts Live {{jdl.year}}は終了しました。"
 
     document.getElementById("daysRemainingMsg").innerText = msg;
