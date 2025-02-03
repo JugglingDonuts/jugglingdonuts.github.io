@@ -6,13 +6,13 @@ team = ""
 
 [[members]]
 name = "岩見"
-picture = ""
+picture = "iwami.jpg"
 description = "勝負事が大好きなリンガー。方向違いの真面目さのせいで不真面目に見える。好きな言葉はラブ&ピース。"
 team = ""
 
 [[members]]
 name = "岡本"
-picture = ""
+picture = "okamoto.jpg"
 description = "ボールとクラブを自由自在に扱う、数少ない真人間ジャグラー。安心感がレベチ。"
 team = ""
 
@@ -42,9 +42,9 @@ team = ""
 
 [[members]]
 name = "辻"
-picture = ""
-description = ""
-team = "ジャグリングが特技の変態クラバー。声大きいのに優しい。"
+picture = "tsuji.jpg"
+description = "ジャグリングが特技の変態クラバー。声大きいのに優しい。"
+team = ""
 
 [[members]]
 name = "坪内"
