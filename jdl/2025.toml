@@ -4,11 +4,11 @@ month = 5
 date = 6
 day = "月・祝"
 
-# それぞれ、PV(Youtube), OFUSE, チケットサイトのurlのを入力してください
+# それぞれ、PV(Youtube), OFUSE, チケットサイトのurlを入力。
 # ただし、youtubeは埋め込みのためのurlを取得する必要があります。
-promo_url = "https://www.youtube-nocookie.com/embed/DiTXAGlK7dg?si=669YSYkyRKedyx8v"
-ofuse_url = "https://ofuse.me/80c44794"
-ticket_url = "https://passmarket.yahoo.co.jp/event/show/detail/02bi9qmr8gj31.html"
+promo_url = "https://www.youtube-nocookie.com/embed/xxxx"
+ofuse_url = "https://ofuse.me/xxxx"
+ticket_url = "https://passmarket.yahoo.co.jp/event/show/detail/xxxx.html"
 
 # 最終更新日を入力
 # 日付型を使いたかったがパース時にエラーが出るため文字列を使用。
@@ -31,20 +31,24 @@ sponsors = []
 # 写真はimg/jdl{開催年}に保存。
 # スタッフも同様。
 [[casts]]
-name = "演者１"
-equip = "デビルスティック"
-fname = "ikeda.jpg"
+  name = "演者１"
+  equip = "デビルスティック"
+  fname = "ikeda.jpg"
 
 [[casts]]
-name = "演者１"
-equip = "ディアボロ"
-fname = "yamada.jpg"
+  name = "演者１"
+  equip = "ディアボロ"
+  fname = "yamada.jpg"
 
 # スタッフ
 [[staff]]
-name = "テスト　舞台監督"
-roll = "舞台監督"
+  name = "テスト　舞台監督"
+  roll = "舞台監督"
 
 [[staff]]
-name = "テスト　舞台監督補佐"
-roll = "舞台監督補佐"
+  name = "テスト　舞台監督補佐"
+  roll = "舞台監督補佐"
+
+[[staff]]
+  name = "名前"
+  roll = "舞台監督"
