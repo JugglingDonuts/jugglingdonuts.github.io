@@ -6,11 +6,9 @@
   "author": "ishiy",
   "license": "MIT",
   "dependencies": {
-    "autoprefixer-stylus": "^1.0.0",
-    "dotenv": "^8.2.0",
+    "dotenv": "^16.4.7",
     "nunjucks": "^3.0.1",
     "shelljs": "^0.8.4",
-    "stylus": "^0.54.8",
     "toml": "^3.0.0"
   },
   "scripts": {
@@ -18,6 +16,6 @@
     "preview": "yarn run build && http-server ./public"
   },
   "devDependencies": {
-    "http-server": "^0.12.3"
+    "http-server": "^14.1.1"
   }
 }
