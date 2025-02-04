@@ -1,3 +1,9 @@
+:root {
+  --serif: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN",
+    "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  --sans: "メイリオ", "Hiragino Kaku Gothic Pro", sans-serif;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -18,11 +24,11 @@ html {
 
 body {
   color: #3b3b3b;
-  font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+  font-family: var(--sans);
 }
 
 h1 {
-  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-family: var(--serif);
   color: #e0c579;
   font-size: 3.5rem;
   letter-spacing: 0.2rem;
@@ -32,14 +38,14 @@ h1 {
 }
 
 h2 {
-  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-family: var(--serif);
   font-size: 2.2rem;
   letter-spacing: 0.2rem;
   padding: 0 0 10px 0;
 }
 
 h3 {
-  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-family: var(--serif);
   font-size: 1.3rem;
   letter-spacing: 0.1rem;
   line-height: 2rem;
@@ -47,7 +53,7 @@ h3 {
 }
 
 a {
-  font-family: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-family: var(--serif);
   color: #02559d;
   font-weight: bold;
 }
@@ -104,7 +110,7 @@ td {
 }
 
 .rotate {
-  animation: rotateAnime 0.8s cubic-bezier(.54, 1.43, .17, 1.01);
+  animation: rotateAnime 0.8s cubic-bezier(0.54, 1.43, 0.17, 1.01);
 }
 
 @keyframes rotateAnime {
@@ -118,15 +124,16 @@ td {
 }
 
 header {
-  background-image: url("../img/jdl/header.png"), url("../img/jdl/header_back.png");
-  background-size:contain, cover;
-  height: 590px;  
+  background-image: url("../img/jdl/header.png"),
+    url("../img/jdl/header_back.png");
+  background-size: contain, cover;
+  height: 590px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 header::before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -168,48 +175,48 @@ header .contentWrapper {
   padding-top: 28rem;
 }
 
-
 .flex.sns_links {
   justify-content: center;
 }
 
 .sns_button {
-  border-radius:50%;
-  display:inline-block;
-  width:70px;
-  height:70px;
-  font-size:30px;
-  transition:.5s;
-  text-decoration:none;
+  border-radius: 50%;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  transition: 0.5s;
+  text-decoration: none;
   margin: 20px;
 }
 
 .sns_button:hover {
-  color:#fff!important;
+  color: #fff !important;
   opacity: 1;
 }
 
-.sns_button.twitter{
-border:solid 1px black;
-color:black;
+.sns_button.twitter {
+  border: solid 1px black;
+  color: black;
 }
 
-.sns_button.twitter:hover{
-border:solid 1px black;
-background: black;
+.sns_button.twitter:hover {
+  border: solid 1px black;
+  background: black;
 }
 
 .sns_button.instagram {
-border:solid 1px #c6529a;
-color:#c6529a;
+  border: solid 1px #c6529a;
+  color: #c6529a;
 }
 
-.sns_button.instagram:hover{
-border:solid 1px #c6529a;
-background:#c6529a;
+.sns_button.instagram:hover {
+  border: solid 1px #c6529a;
+  background: #c6529a;
 }
 
-.fa-brands, .fab {
+.fa-brands,
+.fab {
   padding: 20px;
 }
 
@@ -305,7 +312,6 @@ background:#c6529a;
 .note {
   font-size: 0.9rem;
   margin: 10px auto;
-  line-height: 1.1rem;
 }
 
 #ticket h3 {
@@ -368,11 +374,13 @@ section:nth-of-type(even) {
 
 .upperFooter a {
   display: block;
-  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
+    "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
+    sans-serif;
   color: #515151;
 }
 
-a.icon{
+a.icon {
   display: contents;
 }
 
@@ -422,7 +430,9 @@ button {
   border: 0;
   color: #fafafa;
   font-size: large;
-  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
+    "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
+    sans-serif;
   font-weight: normal;
   text-align: center;
   background-color: #cb8d4a;
@@ -648,25 +658,16 @@ iframe {
     font-size: 0.9rem;
   }
 
-  #price ul {
-    font-size: 0.7rem;
-  }
-  
   #cast .flexcontent {
-    width: 100%
+    width: 100%;
   }
-
 
   #cast img {
     padding: 0;
   }
-  
+
   #cast figure {
     margin: 10px;
-  }
-
-  .note li {
-    font-size: 0.8rem;
   }
 
   .upperFooter .contentWrapper,
@@ -693,7 +694,7 @@ iframe {
     padding: 0.8rem;
   }
 
-  .fade_in:nth-child(n){
+  .fade_in:nth-child(n) {
     transform: translateY(50px);
   }
 }
