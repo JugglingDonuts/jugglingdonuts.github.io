@@ -1,3 +1,7 @@
+# ヘッダー画像（タイトル画像）はこのファイルから変えることができません。
+# img/jdl/header.png, header_back.png
+# を入れ替えて使うか、css/jdl.cssから変更してください。
+
 # JDL当日の日付を入力
 year = 2025
 month = 5
