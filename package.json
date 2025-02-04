@@ -14,10 +14,8 @@
     "toml": "^3.0.0"
   },
   "scripts": {
-    "build-html": "node main.js",
-    "build-css": "stylus -u autoprefixer-stylus css/jdl.stylus css/style.stylus -o public/css",
-    "build": "yarn run build-html && yarn run build-css",
-    "preview": "yarn run build-html && yarn run build-css && http-server ./public"
+    "build": "node main.js",
+    "preview": "yarn run build && http-server ./public"
   },
   "devDependencies": {
     "http-server": "^0.12.3"

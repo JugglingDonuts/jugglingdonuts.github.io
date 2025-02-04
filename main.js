@@ -26,9 +26,10 @@ const main = () => {
     shell.rm("-r", "public");
   }
   shell.mkdir("public");
-  shell.mkdir("public/css");
   shell.mkdir("public/members");
 
+  // copy css
+  shell.cp("-r", "css", "public/css");
   // copy img
   shell.cp("-r", "img", "public/img");
 
@@ -57,7 +58,7 @@ const main = () => {
     .readdirSync("members")
     .sort()
     .reverse()
-    .map((f) => f.substr(0, 4));
+    .map((f) => f.substring(0, 4));
   const active = years.slice(0, 4);
   const inactive = years.slice(4);
   writePage("templates/members.html", "public/members.html", { years: active });
