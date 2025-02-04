@@ -7,8 +7,12 @@ day = "月・祝"
 # それぞれ、PV(Youtube), OFUSE, チケットサイトのurlを入力。
 # ただし、youtubeは埋め込みのためのurlを取得する必要があります。
 promo_url = "https://www.youtube-nocookie.com/embed/xxxx"
-ofuse_url = "https://ofuse.me/xxxx"
 ticket_url = "https://passmarket.yahoo.co.jp/event/show/detail/xxxx.html"
+ofuse_url = "https://ofuse.me/xxxx"
+
+# チケット、OFUSEが準備できたらそれぞれの値をfalseからtrueへ変えてください。
+ticket_ready = false
+ofuse_ready = false
 
 # 最終更新日を入力
 # 日付型を使いたかったがパース時にエラーが出るため文字列を使用。

@@ -22,9 +22,11 @@ html {
   overflow-x: hidden;
 }
 
-body {
+body,
+p {
   color: #3b3b3b;
   font-family: var(--sans);
+  line-height: 1.6rem;
 }
 
 h1 {
@@ -60,11 +62,6 @@ a {
 
 a:hover {
   opacity: 0.3;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.8rem;
 }
 
 table {
@@ -311,7 +308,6 @@ header .contentWrapper {
 
 .note {
   font-size: 0.9rem;
-  margin: 10px auto;
 }
 
 #ticket h3 {
@@ -325,7 +321,6 @@ header .contentWrapper {
 }
 
 .withDot li {
-  line-height: 140%;
   padding: 3px;
   list-style: circle;
 }
@@ -339,7 +334,6 @@ header .contentWrapper {
   width: 80%;
   margin: 0 auto;
   text-align: left;
-  line-height: 160%;
 }
 
 #caution ul {
@@ -351,7 +345,6 @@ header .contentWrapper {
 }
 
 #caution li {
-  line-height: 120%;
   padding: 3px;
   list-style: circle;
 }
@@ -374,9 +367,7 @@ section:nth-of-type(even) {
 
 .upperFooter a {
   display: block;
-  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
-    "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
-    sans-serif;
+  font-family: var(--sans);
   color: #515151;
 }
 
@@ -430,9 +421,7 @@ button {
   border: 0;
   color: #fafafa;
   font-size: large;
-  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
-    "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
-    sans-serif;
+  font-family: var(--sans);
   font-weight: normal;
   text-align: center;
   background-color: #cb8d4a;
@@ -447,13 +436,13 @@ button:hover {
   border-bottom: 2px solid #915b22;
 }
 
-button.not_ready {
+button.not-ready {
   background-color: #676767;
   text-align: center;
   border-bottom: 5px solid #2d2d2d;
 }
 
-button.not_ready:hover {
+button.not-ready:hover {
   margin-top: 10px;
   border-bottom: 5px solid #2d2d2d;
 }
@@ -630,7 +619,6 @@ iframe {
   body,
   p {
     font-size: 0.9rem;
-    line-height: 1.6rem;
   }
 
   .sns_links {
