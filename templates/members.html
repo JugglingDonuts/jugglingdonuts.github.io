@@ -1,21 +1,9 @@
 {% extends "templates/base.html" %} {% block content %}
-<section id="top">
-  <div class="contentWrapper">
-    <ul class="slider">
-      <li><img src="img/nf/NF2024.jpg" alt="" /></li>
-      <li><img src="img/nf/NF2023.jpg" alt="" /></li>
-      <li><img src="img/nf/NF2022.jpg" alt="" /></li>
-      <li><img src="img/nf/NF2019.jpg" alt="" /></li>
-      <li><img src="img/nf/NF2018.jpg" alt="" /></li>
-      <li><img src="img/nf/NF2017.jpg" alt="" /></li>
-    </ul>
-  </div>
-</section>
 <section class="members">
   <div class="contentWrapper">
     <h2>メンバー紹介</h2>
     <p>
-      ジャグリングドーナツってどんなとこ？
+      ジャグリングドーナツってどんなとこ？<br />
       一言で表すと、色んな人が集まっているところです。
       ここではドーナツの個性豊かなメンバー達を紹介します。
     </p>
@@ -24,6 +12,18 @@
       <li><a href="members/{{ year }}.html">{{ year }}年度メンバー</a></li>
       {% endfor %}
       <li><a href="members/obog.html">OB・OG</a></li>
+    </ul>
+  </div>
+</section>
+<section id="gallery">
+  <div class="contentWrapper">
+    <ul class="slider">
+      <li><img src="img/nf/NF2024.jpg" alt="" /></li>
+      <li><img src="img/nf/NF2023.jpg" alt="" /></li>
+      <li><img src="img/nf/NF2022.jpg" alt="" /></li>
+      <li><img src="img/nf/NF2019.jpg" alt="" /></li>
+      <li><img src="img/nf/NF2018.jpg" alt="" /></li>
+      <li><img src="img/nf/NF2017.jpg" alt="" /></li>
     </ul>
   </div>
 </section>
