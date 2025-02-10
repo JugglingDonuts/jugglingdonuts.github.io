@@ -14,7 +14,9 @@ promo_url = "https://www.youtube-nocookie.com/embed/xxxx"
 ticket_url = "https://passmarket.yahoo.co.jp/event/show/detail/xxxx.html"
 ofuse_url = "https://ofuse.me/xxxx"
 
-# チケット、OFUSEが準備できたらそれぞれの値をfalseからtrueへ変えてください。
+
+# PV、チケット、OFUSEが準備できたらそれぞれの値をfalseからtrueへ変えてください。z
+promo_ready = false
 ticket_ready = false
 ofuse_ready = false
 
