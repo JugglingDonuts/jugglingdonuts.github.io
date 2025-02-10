@@ -70,6 +70,7 @@
         </div>
       </section>
 
+      {% if promo_ready %}
       <section id="promo_video" class="fade_in">
         <div class="contentWrapper">
           <iframe src="{{promo_url}}"
@@ -78,6 +79,7 @@
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </section>
+      {% endif %}
 
       <section id="date" class="fade_in">
         <div class="contentWrapper">
