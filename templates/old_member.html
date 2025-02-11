@@ -1,22 +1,18 @@
-{% extends "templates/base.html" %}
-{% block content %}
-      <section class="content">
-      {% for d in data %}
-      <div class="contentWrapper">
-        {% if d.isLast %}
-        <h2>{{ d.year }}年度以前のメンバー</h2>
-        {% else %}
-        <h2>{{ d.year }}年度メンバー</h2>
-        {% endif %}
-        <ul class="withDotLeft">
-          {% for member in d.members %}
-            <li class="old_member-item">
-              {{ member.name }}
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
+{% extends "templates/base.html" %} {% block content %}
+<section class="content">
+  {% for d in data %}
+  <div class="content-wrapper">
+    {% if d.isLast %}
+    <h2>{{ d.year }}年度以前のメンバー</h2>
+    {% else %}
+    <h2>{{ d.year }}年度メンバー</h2>
+    {% endif %}
+    <ul class="with-dot-left">
+      {% for member in d.members %}
+      <li class="old_member-item">{{ member.name }}</li>
       {% endfor %}
-      </section>
+    </ul>
+  </div>
+  {% endfor %}
+</section>
 {% endblock %}
-

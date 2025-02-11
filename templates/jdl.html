@@ -16,13 +16,13 @@
 </head>
 
 <body>
-  <div class="scroll_controller">
+  <div class="scroll-controller">
     <div id="loading">
       <div id="logo">
         <img src="img/icon.svg" alt="" class="rotate"><br>
       </div>
     </div>
-    <div id="menuWrapper">
+    <div id="menu-wrapper">
       <a class="trigger">
         <span></span>
         <span></span>
@@ -45,8 +45,8 @@
     </header>
 
     <main>
-      <section id="about" class="fade_in">
-        <div class="contentWrapper">
+      <section id="about" class="fade-in">
+        <div class="content-wrapper">
           <h2>Juggling Donuts Live (JDL) とは?</h2>
           <p>京都大道芸倶楽部Juggling
             Donutsが総力を挙げて贈る、年に一度のジャグリングライブショー！<br>
@@ -54,14 +54,14 @@
             変更や連絡、その他出演者の紹介等は<a href="http://www.twitter.com/Juggling_Donuts/">X</a>や<a href="https://www.instagram.com/jugglingdonuts/">Instagram</a>にアップします。ぜひチェックしてください！<br>
             チケットについては<a href="#ticket" class="">こちら</a>から！
           </p>
-          <ul class="flex sns_links">
+          <ul class="flex sns-links">
             <li class="flexcontent">
-              <a href="http://www.twitter.com/Juggling_Donuts/" class="sns_button twitter">
+              <a href="http://www.twitter.com/Juggling_Donuts/" class="sns-button twitter">
                 <i class="fa-brands fa-x-twitter"></i>
               </a>
             </li>
             <li class="flexcontent">
-              <a href="https://www.instagram.com/jugglingdonuts/" class="sns_button instagram">
+              <a href="https://www.instagram.com/jugglingdonuts/" class="sns-button instagram">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
@@ -71,8 +71,8 @@
       </section>
 
       {% if promo_ready %}
-      <section id="promo_video" class="fade_in">
-        <div class="contentWrapper">
+      <section id="promo_video" class="fade-in">
+        <div class="content-wrapper">
           <iframe src="{{promo_url}}"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -81,8 +81,8 @@
       </section>
       {% endif %}
 
-      <section id="date" class="fade_in">
-        <div class="contentWrapper">
+      <section id="date" class="fade-in">
+        <div class="content-wrapper">
           <h2>日時</h2>
           <table>
             <tr>
@@ -106,8 +106,8 @@
         </div>
       </section>
 
-      <section id="access" class="fade_in">
-        <div class="contentWrapper">
+      <section id="access" class="fade-in">
+        <div class="content-wrapper">
           <h2>会場</h2>
           <dl>
             <dt>会場</dt>
@@ -123,8 +123,8 @@
         </div>
       </section>
 
-      <section id="price" class="fade_in">
-        <div class="contentWrapper">
+      <section id="price" class="fade-in">
+        <div class="content-wrapper">
           <h2>料金</h2>
           <p>昼の部、夜の部の料金は以下の通りです。</p>
           <table>
@@ -161,10 +161,10 @@
         </div>
       </section>
 
-      <section id="ticket" class="fade_in">
-        <div class="contentWrapper">
+      <section id="ticket" class="fade-in">
+        <div class="content-wrapper">
           <h2>チケットについて</h2>
-          <ul class="withDot">
+          <ul class="with-dot">
             <li>JDL{{year}}のチケットは電子チケット、紙チケットおよび当日券の３種類がございます。</li>
             <li>電子チケットはPassMarketにて販売しております。</li>
             <li><a href="#e-ticket" class="anchor">電子チケット購入時の注意</a>を読んだうえで下記リンクから購入してください。</li>
@@ -183,7 +183,7 @@
           {% endif %}
 
           <h3 id="e-ticket">電子チケット購入時の注意</h3>
-          <ul class="withDot">
+          <ul class="with-dot">
             <li>支払いはクレジットカードまたはPayPay残高決済が利用できます。
                 ただしPayPay残高決済はYahoo! JAPAN IDとの連携が必要です。</li>
             <li>未就学児をお連れの保護者様は、未就学児のための電子チケット購入の必要はありません。
@@ -196,7 +196,7 @@
           </ul>
 
           <h3>キャンセルについて</h3>
-          <ul class="withDot">
+          <ul class="with-dot">
             <li>
               一人で10枚までチケットを購入することができますが、仕様上1枚ごとのキャンセルができません。
               枚数を変更する場合は、購入されたチケットを一度すべてキャンセルしていただき、再度正しい枚数で購入をしていただきます。
@@ -218,7 +218,7 @@
           </ul>
 
           <h3>当日の受付について</h3>
-          <ul class="withDot">
+          <ul class="with-dot">
             <li>開演の30分前から受付を開始します。公演に間に合うようにご来場ください。</li>
             <li>ご購入時に返送したメールから入場券を確認させていただきます。
                 電子チケットを購入された方は必ずスマホ等のチケットが利用可能な端末をご持参ください。</li>
@@ -228,8 +228,8 @@
         </div>
       </section>
 
-      <section id="donation" class="fade_in">
-        <div class="contentWrapper">
+      <section id="donation" class="fade-in">
+        <div class="content-wrapper">
           <h2>カンパについて</h2>
           <p>
             JDL{{year}}では、皆様からのご厚意をカンパという形で受け付けております。
@@ -265,8 +265,8 @@
         </div>
       </section>
 
-      <section id="sponsor" class="fade_in">
-        <div class="contentWrapper">
+      <section id="sponsor" class="fade-in">
+        <div class="content-wrapper">
           <h2>スポンサー</h2>
           <p>JDL{{year}}は以下のスポンサーの皆様にご協賛いただいております。<br>
             {% for sponsor in sponsors %}
@@ -276,8 +276,8 @@
         </div>
       </section>
 
-      <section id="cast" class="fade_in">
-        <div class="contentWrapper">
+      <section id="cast" class="fade-in">
+        <div class="content-wrapper">
           <h2>Cast&amp;Staff</h2>
           <h3>出演 （道具）</h3>
           <div class="flex">
@@ -305,8 +305,8 @@
         </div>
       </section>
 
-      <section id="caution" class="fade_in">
-        <div class="contentWrapper">
+      <section id="caution" class="fade-in">
+        <div class="content-wrapper">
           <h2>注意事項</h2>
           <ul>
             <li>お問い合わせの対応は担当者が手作業で行っています。その為返信には二日ほどかかる場合があります。</li>
@@ -315,8 +315,8 @@
         </div>
       </section>
 
-      <section id="contact" class="fade_in">
-        <div class="contentWrapper">
+      <section id="contact" class="fade-in">
+        <div class="content-wrapper">
           <h2>お問い合わせ</h2>
           <p>
             ご不明な点がございましたら広報担当までお気軽にお問い合わせください。<br>
@@ -329,8 +329,8 @@
     </main>
 
     <footer>
-      <div class="upperFooter">
-        <div class="contentWrapper">
+      <div class="upper-footer">
+        <div class="content-wrapper">
           <nav>
             <ul class="flex">
               <li><a href="#about">ABOUT</a></li>
@@ -347,7 +347,7 @@
           </a>
         </div>
       </div>
-      <div class="bottomFooter">
+      <div class="bottom-footer">
           &copy; {{year}} Juggling Donuts
       </div>
     </footer>
@@ -366,12 +366,12 @@
 
     $(function () {
       $(window).on('load scroll', function () {
-        $(".fade_in").each(function () {
+        $(".fade-in").each(function () {
           var ePos = $(this).offset().top;
           var scroll = $(window).scrollTop();
           var windowHeight = $(window).height();
           if (scroll > ePos - windowHeight + windowHeight / 5) {
-            $(this).addClass("scroll_in")
+            $(this).addClass("scroll-in")
           }
         });
       });
