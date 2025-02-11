@@ -1,13 +1,13 @@
 {% extends "templates/base.html" %}
 {% block content %}
 <section id="top">
-  <div class="contentWrapper">
+  <div class="content-wrapper">
     <img class="image" src="img/top.jpg">
   </div>
   {% if jdlYear and jdlRelease %}
-  <div class="contentWrapper jdl_div">
+  <div class="content-wrapper jdl-announce">
     <h2>
-      <div id="daysRemainingMsg"></div>
+      <div id="remaining-days"></div>
       <br>
       特設ページオープン中!
     </h2>
@@ -22,13 +22,13 @@
       ? "Juggling Donuts Live {{jdl.year}}まであと" + diffDate + "日!"
       : "Juggling Donuts Live {{jdl.year}}は終了しました。"
 
-    document.getElementById("daysRemainingMsg").innerText = msg;
+    document.getElementById("remaining-days").innerText = msg;
   </script>
   {% endif %}
 </section>
 
 <section id="about">
-  <div class="contentWrapper">
+  <div class="content-wrapper">
     <h2>Donutsについて</h2>
     <p>
       ジャグリングドーナツは日本でも珍しいジャグリングのサークルです。 みんなで集まって、技を教えあったり、研究したり、遊んだり 楽しくジャグリングしています。 地域のイベントの出演依頼などにも精力的に応じ、
@@ -40,7 +40,7 @@
   </div>
 </section>
 <section id="activities">
-  <div class="contentWrapper">
+  <div class="content-wrapper">
     <h2>活動内容</h2>
     <article>
       <h3>練習</h3>
@@ -91,7 +91,7 @@
     </article>
 </section>
 <section id="contact">
-  <div class="contentWrapper">
+  <div class="content-wrapper">
     <h2>お問い合わせ</h2>
     <p>
       twitter:<a href="https://twitter.com/Juggling_Donuts">Juggling_Donuts</a><br>

@@ -1,25 +1,22 @@
-{% extends "templates/base.html" %}
-{% block content %}
+{% extends "templates/base.html" %} {% block content %}
 <section>
-  <div class="contentWrapper">
+  <div class="content-wrapper">
     <h2>{{ year }}年度メンバー</h2>
     {% for member in members %}
     <div class="member-item">
       <div class="member-name">
-        {{ member.name }}
-        {% if member.team %}
-        ({{ member.team }})
-        {% endif %}
+        {{ member.name }} {% if member.team %} ({{ member.team }}) {% endif %}
       </div>
       <div class="member-content">
         {% if member.picture %}
-        <img class="member-picture" src="/img/member/{{ year }}/{{ member.picture }}">
+        <img
+          class="member-picture"
+          src="/img/member/{{ year }}/{{ member.picture }}"
+        />
         {% else %}
-        <img class="member-picture" src="/img/member/nodata.jpg">
+        <img class="member-picture" src="/img/member/nodata.jpg" />
         {% endif %}
-        <p class="member-description">
-          {{ member.description }}
-        </p>
+        <p class="member-description">{{ member.description }}</p>
       </div>
     </div>
     {% endfor %}
