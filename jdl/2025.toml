@@ -5,8 +5,8 @@
 # JDL当日の日付を入力
 year = 2025
 month = 5
-date = 6
-day = "月・祝"
+date = 4
+day = "日"
 
 # それぞれ、PV(Youtube), OFUSE, チケットサイトのurlを入力。
 # ただし、youtubeは埋め込みのためのurlを取得する必要があります。
@@ -22,10 +22,10 @@ ofuse_ready = false
 
 # 最終更新日を入力
 # 日付型を使いたかったがパース時にエラーが出るため文字列を使用。
-latest_update = "2025年1月15日"
+latest_update = "2025年2月12日"
 
 # 広報統括の名前を入力
-pr_manager = "テスト　広報担当"
+pr_manager = "船岡美玖"
 
 # 角括弧 [] の中にスポンサーをカンマ区切りで入力してください。
 # 例：
@@ -41,24 +41,180 @@ sponsors = []
 # 写真はimg/jdl{開催年}に保存。
 # スタッフも同様。
 [[casts]]
-  name = "演者１"
-  equip = "デビルスティック"
-  fname = "ikeda.jpg"
+  name = "坂上優太"
+  equip = "ディアボロ"
+  fname = "坂上.jpg"
 
 [[casts]]
-  name = "演者１"
+  name = "柴田光之進"
+  equip = "ボール"
+  fname = "柴田.jpg"
+
+  [[casts]]
+  name = "椿井陸人"
+  equip = "デビルスティック"
+  fname = "椿井.JPG"
+
+  [[casts]]
+  name = "土井洸史朗"
+  equip = "ボール"
+  fname = "土井.jpg"
+
+  [[casts]]
+  name = "中川武蔵"
+  equip = "皿"
+  fname = "中川.jpeg"
+
+  [[casts]]
+  name = "藤井瑛士"
+  equip = "シガーボックス"
+  fname = "藤井.jpg"
+
+  [[casts]]
+  name = "船岡美玖"
+  equip = "なし"
+  fname = "船岡.PNG"
+
+  [[casts]]
+  name = "堀部愛翔"
   equip = "ディアボロ"
-  fname = "yamada.jpg"
+  fname = "堀部.jpg"
 
 # スタッフ
 [[staff]]
-  name = "テスト　舞台監督"
+  name = "水野凌斗"
   roll = "舞台監督"
 
 [[staff]]
-  name = "テスト　舞台監督補佐"
+  name = "角倫彩子"
   roll = "舞台監督補佐"
 
+  [[staff]]
+  name = "永井伶"
+  roll = "舞台監督補佐"
+
+
 [[staff]]
-  name = "名前"
-  roll = "舞台監督"
+  name = "船岡美玖"
+  roll = "広報統括"
+
+  [[staff]]
+  name = "岩見優輝"
+  roll = "広報補佐"
+
+  [[staff]]
+  name = "鷲尾佳祐"
+  roll = "広報補佐"
+
+  [[staff]]
+  name = "杉山開陸"
+  roll = "宣伝美術"
+
+  [[staff]]
+  name = "杉山開陸"
+  roll = "チケット"
+
+  [[staff]]
+  name = "木村真緒"
+  roll = "Web"
+  
+  [[staff]]
+  name = "立石和香"
+  roll = "Web"
+
+  [[staff]]
+  name = "船岡美玖"
+  roll = "脚本"
+
+  [[staff]]
+  name = "藤井瑛士"
+  roll = "照明統括"
+
+  [[staff]]
+  name = "堀田天真"
+  roll = "照明"
+
+  [[staff]]
+  name = "土井洸史朗"
+  roll = "音響統括"
+
+  [[staff]]
+  name = "辻颯太郎"
+  roll = "音響"
+
+  [[staff]]
+  name = "堀部愛翔"
+  roll = "大道具統括"
+
+  [[staff]]
+  name = "原田柊太朗"
+  roll = "大道具"
+
+[[staff]]
+  name = "宮脇和丸"
+  roll = "大道具"
+
+  [[staff]]
+  name = "米岡賢優"
+  roll = "大道具"
+
+  [[staff]]
+  name = "和才颯"
+  roll = "大道具"
+
+  [[staff]]
+  name = "船岡美玖"
+  roll = "メイク統括"
+
+  [[staff]]
+  name = "稲葉友莉香"
+  roll = "メイク"
+
+  [[staff]]
+  name = "坂上優太"
+  roll = "ヘアメイク"
+
+  [[staff]]
+  name = "椿井陸人"
+  roll = "ヘアメイク"
+
+  [[staff]]
+  name = "岡本大知"
+  roll = "カメラ撮影"
+
+  [[staff]]
+  name = "藤田幸星"
+  roll = "カメラ撮影"
+
+  [[staff]]
+  name = "向川彗"
+  roll = "カメラ撮影"
+
+  [[staff]]
+  name = "坂上優太"
+  roll = "会計"
+
+  [[staff]]
+  name = "金堀薫"
+  roll = "新歓"
+
+[[staff]]
+  name = "坪内萌絵"
+  roll = "新歓"
+
+  [[staff]]
+  name = "中川拓輝"
+  roll = "新歓"
+
+  [[staff]]
+  name = "森本駿之介"
+  roll = "スポンサー"
+
+  [[staff]]
+  name = "平田大智"
+  roll = "受付統括"
+
+  [[staff]]
+  name = "坂上優太"
+  roll = "全体演目"
+  
