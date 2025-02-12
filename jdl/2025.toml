@@ -15,10 +15,11 @@ ticket_url = "https://passmarket.yahoo.co.jp/event/show/detail/xxxx.html"
 ofuse_url = "https://ofuse.me/xxxx"
 
 
-# PV、チケット、OFUSEが準備できたらそれぞれの値をfalseからtrueへ変えてください。z
+# PV、チケット、OFUSE、スポンサーが準備できたらそれぞれの値をfalseからtrueへ変えてください。z
 promo_ready = false
 ticket_ready = false
 ofuse_ready = false
+sponsors_ready = false
 
 # 最終更新日を入力
 # 日付型を使いたかったがパース時にエラーが出るため文字列を使用。
