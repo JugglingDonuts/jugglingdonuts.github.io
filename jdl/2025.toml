@@ -23,7 +23,7 @@ sponsors_ready = false
 
 # 最終更新日を入力
 # 日付型を使いたかったがパース時にエラーが出るため文字列を使用。
-latest_update = "2025年2月12日"
+latest_update = "2025年2月23日"
 
 # 広報統括の名前を入力
 pr_manager = "船岡美玖"
@@ -43,43 +43,43 @@ sponsors = []
 # スタッフも同様。
 [[casts]]
   name = "坂上優太"
-  equip = "ディアボロ"
+  # equip = "ディアボロ"
   fname = "坂上.jpg"
 
 [[casts]]
   name = "柴田光之進"
-  equip = "ボール"
+  # equip = "ボール"
   fname = "柴田.jpg"
 
   [[casts]]
-  name = "椿井陸人"
-  equip = "デビルスティック"
-  fname = "椿井.JPG"
+  name = "堀部愛翔"
+  # equip = "ディアボロ"
+  fname = "堀部.jpg"
 
   [[casts]]
   name = "土井洸史朗"
-  equip = "ボール"
+  # equip = "ボール"
   fname = "土井.jpg"
 
   [[casts]]
   name = "中川武蔵"
-  equip = "皿"
+  # equip = "皿"
   fname = "中川.jpg"
 
   [[casts]]
+  name = "椿井陸人"
+  # equip = "デビルスティック"
+  fname = "椿井.JPG"
+
+  [[casts]]
   name = "藤井瑛士"
-  equip = "シガーボックス"
+  # equip = "シガーボックス"
   fname = "藤井.jpg"
 
   [[casts]]
   name = "船岡美玖"
-  equip = "なし"
+  # equip = "なし"
   fname = "船岡.PNG"
-
-  [[casts]]
-  name = "堀部愛翔"
-  equip = "ディアボロ"
-  fname = "堀部.jpg"
 
 # スタッフ
 [[staff]]
@@ -194,18 +194,6 @@ sponsors = []
   [[staff]]
   name = "坂上優太"
   roll = "会計"
-
-  [[staff]]
-  name = "金堀薫"
-  roll = "新歓"
-
-[[staff]]
-  name = "坪内萌絵"
-  roll = "新歓"
-
-  [[staff]]
-  name = "中川拓輝"
-  roll = "新歓"
 
   [[staff]]
   name = "森本駿之介"
