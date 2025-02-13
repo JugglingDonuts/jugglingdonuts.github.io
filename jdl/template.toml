@@ -1,0 +1,65 @@
+# ヘッダー画像（タイトル画像）はこのファイルから変えることができません。
+# img/jdl/header.png, header_back.png
+# を入れ替えて使うか、css/jdl.cssから変更してください。
+
+# JDL当日の日付を入力
+year = 2099
+month = 13
+date = 32
+day = "火・祝"
+
+# それぞれ、PV(Youtube), OFUSE, チケットサイトのurlを入力。
+# ただし、youtubeは埋め込みのためのurlを取得する必要があります。
+promo_url = "https://www.youtube-nocookie.com/embed/xxxx"
+ticket_url = "https://passmarket.yahoo.co.jp/event/show/detail/xxxx.html"
+ofuse_url = "https://ofuse.me/xxxx"
+
+# PV、チケット、OFUSE、スポンサーが準備できたらそれぞれの値をfalseからtrueへ変えてください。z
+promo_ready = false
+ticket_ready = false
+ofuse_ready = false
+sponsors_ready = false
+
+# 最終更新日を入力
+# 日付型を使いたかったがパース時にエラーが出るため文字列を使用。
+latest_update = "yyyy年m月d日"
+
+# 広報統括の名前を入力
+pr_manager = "広報統括の名前"
+
+# 角括弧 [] の中にスポンサーをカンマ区切りで入力してください。
+# 例：
+# sponsors = [
+#   "スポンサーA",
+#   "スポンサーB",
+#   "スポンサーC",
+# ]
+sponsors = []
+
+# 演者の名前、道具、写真のファイル名を入力。
+# 例年五十音順に並べている。
+# 写真はimg/jdl{開催年}に保存。
+# スタッフも同様。
+[[casts]]
+  name = "キャスト1"
+  equip = "ディアボロ"
+  fname = "cast_1.jpg"
+
+[[casts]]
+  name = "キャスト2"
+  equip = "ボール"
+  fname = "cast_1.jpg"
+
+[[casts]]
+  name = "キャスト3"
+  equip = "シェイカーカップ"
+  fname = "cast_1.jpg"
+
+# スタッフの名前、役割を入力。
+[[staff]]
+  name = "スタッフ1"
+  roll = "舞台監督"
+
+[[staff]]
+  name = "スタッフ1"
+  roll = "舞台監督"
