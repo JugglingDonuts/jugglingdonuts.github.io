@@ -206,7 +206,6 @@
       <div class="bottom-footer">© 2023 Juggling Donuts</div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
       $(".trigger").click(function () {
         $(this).toggleClass("active");
@@ -217,19 +216,7 @@
         $(".trigger").removeClass("active");
         $("header nav").toggleClass("onanimation");
       });
-
-      $(".slider").slick({
-        autoplay: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        prevArrow: '<div class="slick-prev"></div>',
-        nextArrow: '<div class="slick-next"></div>',
-        centerMode: true,
-        variableWidth: true,
-        dots: true,
-      });
     </script>
+    
   </body>
 </html>
