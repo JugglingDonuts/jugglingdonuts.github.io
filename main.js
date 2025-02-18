@@ -16,8 +16,8 @@ const loadToml = (fn) => {
   return data;
 };
 
-const writePage = (tmp, output, data) => {
-  const page = nunjucks.render(tmp, data);
+const writePage = (template, output, data) => {
+  const page = nunjucks.render(template, data);
   fs.writeFileSync(output, page);
 };
 
@@ -28,11 +28,9 @@ const main = () => {
   shell.mkdir("public");
   shell.mkdir("public/members");
 
-  // copy css
+  // copy static files
   shell.cp("-r", "css", "public/css");
-  // copy img
   shell.cp("-r", "img", "public/img");
-
   shell.cp("templates/404.html", "public/404.html");
 
   const jdlYear = process.env.WITH_JDL;
@@ -61,7 +59,10 @@ const main = () => {
     .map((f) => f.substring(0, 4));
   const active = years.slice(0, 4);
   const inactive = years.slice(4);
-  writePage("templates/members.html", "public/members.html", { years: active });
+  writePage("templates/members.html", "public/members.html", {
+    years: active,
+    has_slider: true,
+  });
   active.forEach((year) => {
     const members = loadToml(`members/${year}.toml`).members;
     writePage("templates/member.html", `public/members/${year}.html`, {
@@ -81,7 +82,10 @@ const main = () => {
 
   const iraiFormUrl =
     "https://docs.google.com/forms/d/e/1FAIpQLSf5pHW7KXhTDXpM4smg3CeABYJ1kn80m5_HiDdt7044Not1FA/viewform?usp=pp_url";
-  writePage("templates/irai.html", "public/irai.html", { iraiFormUrl });
+  writePage("templates/irai.html", "public/irai.html", {
+    iraiFormUrl,
+    has_slider: true,
+  });
 };
 
 main();
