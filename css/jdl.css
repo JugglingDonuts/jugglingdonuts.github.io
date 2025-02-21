@@ -225,6 +225,7 @@ header .content-wrapper {
 
 #date td {
   text-align: left;
+  white-space: nowrap; /* 応急処置的に追加．300px以下の横幅だと画面外にはみ出すがそんな狭い環境はほとんどないはず．絶対もっと適切なやり方があると思う． */
 }
 
 #date p {
