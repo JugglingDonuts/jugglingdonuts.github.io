@@ -1,7 +1,8 @@
 :root {
-  --serif: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN",
-    "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-  --sans: "メイリオ", "Hiragino Kaku Gothic Pro", sans-serif;
+  --serif: "游明朝", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  --sans: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
 }
 
 ul {
@@ -40,11 +41,10 @@ h1 {
   line-height: 110%;
   text-shadow: 3px 3px 2px rgb(27, 8, 44), 0 0 5px rgb(19, 57, 62, 0.9);
 }
-
-h2 {
+*/ h2 {
   font-family: var(--serif);
   font-size: 2.2rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   padding: 0 0 10px 0;
 }
 
@@ -60,6 +60,7 @@ a {
   font-family: var(--serif);
   color: #02559d;
   font-weight: bold;
+  transition: 0.2s;
 }
 
 a:hover {
