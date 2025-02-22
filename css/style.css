@@ -1,7 +1,8 @@
 :root {
-  --serif: "游明朝", YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN",
-    "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-  --sans: "メイリオ", "Hiragino Kaku Gothic Pro", sans-serif;
+  --serif: "游明朝", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  --sans: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
 }
 
 ul {
@@ -43,7 +44,7 @@ h1 {
 h2 {
   font-family: var(--serif);
   font-size: 2.2rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   padding: 0 0 10px 0;
 }
 
@@ -281,99 +282,6 @@ a.icon {
 .member-description {
   padding: 10px;
 }
-
-.slider {
-  /*横幅94%で左右に余白を持たせて中央寄せ*/
-  width: 94%;
-  margin: 0 auto;
-}
-
-.slider img {
-  width: 50vw;
-  height: auto;
-  box-shadow: 7px 7px 15px -5px #666;
-}
-
-.slider .slick-track {
-  padding-bottom: 15px;
-}
-
-.slider .slick-slide {
-  transform: scale(0.8);
-  /*左右の画像のサイズを80%に*/
-  transition: all 0.5s ease;
-  opacity: 0.5;
-  /*透過50%*/
-}
-
-.slider .slick-slide.slick-center {
-  transform: scale(1);
-  /*中央の画像のサイズだけ等倍に*/
-  opacity: 1;
-  /*透過なし*/
-}
-
-/*矢印の設定*/
-/*戻る、次へ矢印の位置*/
-.slick-prev,
-.slick-next {
-  position: absolute;
-  /*絶対配置にする*/
-  top: 42%;
-  cursor: pointer;
-  /*マウスカーソルを指マークに*/
-  outline: none;
-  /*クリックをしたら出てくる枠線を消す*/
-  border-top: 2px solid #666;
-  /*矢印の色*/
-  border-right: 2px solid #666;
-  /*矢印の色*/
-  height: 15px;
-  width: 15px;
-}
-
-.slick-prev {
-  /*戻る矢印の位置と形状*/
-  left: -1.5%;
-  transform: rotate(-135deg);
-}
-
-.slick-next {
-  /*次へ矢印の位置と形状*/
-  right: -1.5%;
-  transform: rotate(45deg);
-}
-
-/*ドットナビゲーションの設定*/
-.slick-dots {
-  text-align: center;
-  margin: 20px 0 0 0;
-}
-
-.slick-dots li {
-  display: inline-block;
-  margin: 0 5px;
-}
-
-.slick-dots button {
-  display: block;
-  width: 10px;
-  height: 10px;
-  margin: 6px;
-  font-size: 0;
-  padding: 0;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  background: #bcbcbc;
-  border-radius: 50%;
-}
-
-.slick-dots .slick-active button {
-  background: #333;
-  /*ドットボタンの現在地表示の色*/
-}
-
 @media screen and (max-width: 768px) {
   .flex {
     display: block;
@@ -410,7 +318,7 @@ a.icon {
   header nav {
     background: rgba(255, 255, 255, 0.85);
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     display: none;
     top: 60px;
@@ -450,7 +358,7 @@ a.icon {
     background: rgba(255, 255, 255, 0.85);
     padding: 15px 15px 8px 15px;
     box-sizing: border-box;
-    z-index: 1;
+    z-index: 2;
     position: fixed;
   }
 
