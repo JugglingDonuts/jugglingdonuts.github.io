@@ -17,7 +17,7 @@ ofuse_url = "https://ofuse.me/xxxx"
 
 # PV、チケット、OFUSEが準備できたらそれぞれの値をfalseからtrueへ変えてください。z
 promo_ready = false
-ticket_ready = true
+ticket_ready =true
 ofuse_ready = false
 
 # 最終更新日を入力
