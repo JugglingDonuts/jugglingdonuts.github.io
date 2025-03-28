@@ -10,13 +10,13 @@ day = "日"
 
 # それぞれ、PV(Youtube), OFUSE, チケットサイトのurlを入力。
 # ただし、youtubeは埋め込みのためのurlを取得する必要があります。
-promo_url = "https://www.youtube-nocookie.com/embed/xxxx"
+promo_url = "https://youtu.be/kh7ELtjHfpU?si=bdLLhf5T5tzr7pgr"
 ticket_url ="https://passmarket.yahoo.co.jp/event/show/detail/02zth6ggt7c41.html#detail"
 ofuse_url = "https://ofuse.me/xxxx"
 
 
 # PV、チケット、OFUSEが準備できたらそれぞれの値をfalseからtrueへ変えてください。z
-promo_ready = false
+promo_ready =true
 ticket_ready =true
 ofuse_ready = false
 
