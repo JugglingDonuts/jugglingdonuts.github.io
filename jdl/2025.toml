@@ -12,7 +12,7 @@ day = "日"
 # ただし、youtubeは埋め込みのためのurlを取得する必要があります。
 promo_url = "<iframe width="560" height="315" src="https://www.youtube.com/embed/kh7ELtjHfpU?si=YNUVrRfOMVB7Z7dZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" 
 ticket_url ="https://passmarket.yahoo.co.jp/event/show/detail/02zth6ggt7c41.html#detail"
-ofuse_url = "https://ofuse.me/45291e86"
+ofuse_url = "https://ofuse.me/xxxx"
 
 
 # PV、チケット、OFUSEが準備できたらそれぞれの値をfalseからtrueへ変えてください。z
