@@ -23,7 +23,7 @@ sponsors_ready = true
 
 # 最終更新日を入力
 # 日付型を使いたかったがパース時にエラーが出るため文字列を使用。
-latest_update = "2025年4月22日"
+latest_update = "2025年4月21日"
 
 # 広報統括の名前を入力
 pr_manager = "船岡美玖"
