@@ -50,26 +50,6 @@
     <img class="image" src="img/top.jpg">
   </div>
   
-  <div class="content-wrapper jdl-announce">
-    <h2>
-      <div id="remaining-days"></div>
-      <br>
-      特設ページオープン中!
-    </h2>
-    <a href="./jdl2025.html"></a>
-  </div>
-  <script>
-    let nowDate = Date.now();
-    let jdlDate = (new Date(2025, 4, 4)).getTime();
-    let diffDate = Math.floor((jdlDate - nowDate) / 1000 / 60 / 60 / 24) + 1;
-
-    let msg = (diffDate >= 0)
-      ? "Juggling Donuts Live 2025まであと" + diffDate + "日!"
-      : "Juggling Donuts Live 2025は終了しました。"
-
-    document.getElementById("remaining-days").innerText = msg;
-  </script>
-  
 </section>
 
 <section id="about">
@@ -139,7 +119,7 @@
   <div class="content-wrapper">
     <h2>お問い合わせ</h2>
     <p>
-      twitter:<a href="https://twitter.com/Juggling_Donuts">Juggling_Donuts</a><br>
+      X:<a href="https://x.com/jugglingdonuts">jugglingdonuts</a><br>
       見学など:<a href="mailto:donuts.daihyou@gmail.com">donuts.daihyou@gmail.com</a><br>
       出演依頼:<a href="mailto:donuts.irai@gmail.com">donuts.irai@gmail.com</a><br>
     </p>
