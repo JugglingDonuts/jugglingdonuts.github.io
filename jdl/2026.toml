@@ -1,0 +1,216 @@
+# ヘッダー画像（タイトル画像）はこのファイルから変えることができません。
+# img/jdl/header.png, header_back.png
+# を入れ替えて使うか、css/jdl.cssから変更してください。
+
+# JDL当日の日付を入力
+year = 2026
+month = 5
+date = 5
+day = "火・祝"
+
+# それぞれ、PV(Youtube), OFUSE, チケットサイトのurlを入力。
+# ただし、youtubeは埋め込みのためのurlを取得する必要があります。
+promo_url = "https://www.youtube-nocookie.com/embed/xxxx"
+ticket_url = "https://passmarket.yahoo.co.jp/event/show/detail/xxxx.html"
+ofuse_url = "https://ofuse.me/xxxx"
+
+# PV、チケット、OFUSE、スポンサーが準備できたらそれぞれの値をfalseからtrueへ変えてください。z
+promo_ready = false
+ticket_ready = false
+ofuse_ready = false
+sponsors_ready = false
+
+# 最終更新日を入力
+# 日付型を使いたかったがパース時にエラーが出るため文字列を使用。
+latest_update = "2026年2月17日"
+
+# 広報統括の名前を入力
+pr_manager = "岩見優輝"
+
+# 角括弧 [] の中にスポンサーをカンマ区切りで入力してください。
+# 例：
+# sponsors = [
+#   "スポンサーA",
+#   "スポンサーB",
+#   "スポンサーC",
+# ]
+sponsors = []
+
+# 演者の名前、道具、写真のファイル名を入力。
+# 例年五十音順に並べている。
+# 写真はimg/jdl{開催年}に保存。
+# スタッフも同様。
+[[casts]]
+  name = "稲葉友莉香"
+  equip = "シガーボックス"
+  fname = "稲葉.jpg"
+
+[[casts]]
+  name = "岩見優輝"
+  equip = "リング"
+  fname = "岩見.jpg"
+
+[[casts]]
+  name = "金堀薫"
+  equip = "皿"
+  fname = "金堀.jpg"
+
+[[casts]]
+  name = "木村真緒"
+  equip = "デビルスティック"
+  fname = "木村.jpg"
+
+[[casts]]
+  name = "辻󠄀颯太郎"
+  equip = "クラブ"
+  fname = "辻󠄀そ.jpg"
+
+[[casts]]
+  name = "中川拓輝"
+  equip = "ボール"
+  fname = "中川た.jpg"
+
+[[casts]]
+  name = "和才颯"
+  equip = "ボール"
+  fname = "和才.jpg"
+# スタッフの名前、役割を入力。
+[[staff]]
+  name = "船岡美玖"
+  roll = "舞台監督"
+
+[[staff]]
+  name = "水野凌斗"
+  roll = "舞台監督補佐"
+
+[[staff]]
+  name = "土井洸史朗"
+  roll = "舞台監督補佐"
+
+[[staff]]
+  name = "岩見優輝"
+  roll = "広報統括"
+
+[[staff]]
+  name = "川井剛太"
+  roll = "広報補佐"
+
+[[staff]]
+  name = "三浦貫太"
+  roll = "広報補佐"
+
+[[staff]]
+  name = "金堀薫"
+  roll = "宣伝美術"
+
+[[staff]]
+  name = "谷崎理人"
+  roll = "宣伝美術"
+
+[[staff]]
+  name = "谷崎理人"
+  roll = "チケット"
+
+[[staff]]
+  name = "岡本大知"
+  roll = "スポンサー"
+
+[[staff]]
+  name = "江川愛純実"
+  roll = "Web"
+
+[[staff]]
+  name = "岡陽悠"
+  roll = "Web"
+
+[[staff]]
+  name = "柴田光之進"
+  roll = "受付統括"
+
+[[staff]]
+  name = "宮脇和丸"
+  roll = "受付補佐"
+
+[[staff]]
+  name = "稲葉友莉香"
+  roll = "脚本"
+
+[[staff]]
+  name = "堀田天真"
+  roll = "照明統括"
+
+[[staff]]
+  name = "長島帆孝"
+  roll = "照明"
+
+[[staff]]
+  name = "辻󠄀颯太郎"
+  roll = "音響統括"
+
+[[staff]]
+  name = "都留瑞生"
+  roll = "音響"
+
+[[staff]]
+  name = "岡本大知"
+  roll = "大道具統括"
+
+[[staff]]
+  name = "牧野恭吾"
+  roll = "大道具"
+
+[[staff]]
+  name = "岩田優杜"
+  roll = "大道具"
+
+[[staff]]
+  name = "辻󠄀真輝"
+  roll = "大道具"
+
+[[staff]]
+  name = "稲葉友莉香"
+  roll = "メイク統括"
+
+[[staff]]
+  name = "石田莉子"
+  roll = "メイク"
+
+[[staff]]
+  name = "木村真緒"
+  roll = "ヘアメイク"
+
+[[staff]]
+  name = "坪内萌絵"
+  roll = "ヘアメイク"
+
+[[staff]]
+  name = "宮原大河"
+  roll = "カメラ撮影"
+
+[[staff]]
+  name = "谷崎理人"
+  roll = "カメラ撮影"
+
+[[staff]]
+  name = "後藤美結"
+  roll = "カメラ撮影"
+
+[[staff]]
+  name = "稲葉友莉香"
+  roll = "会計"
+
+[[staff]]
+  name = "石田莉子"
+  roll = "新歓"
+
+[[staff]]
+  name = "江川愛純実"
+  roll = "新歓"
+
+[[staff]]
+  name = "岩見優輝"
+  roll = "全体演目"
+
+[[staff]]
+  name = "山田健稔"
+  roll = "PV"
