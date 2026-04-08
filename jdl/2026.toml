@@ -11,18 +11,18 @@ day = "火・祝"
 # それぞれ、PV(Youtube), OFUSE, チケットサイトのurlを入力。
 # ただし、youtubeは埋め込みのためのurlを取得する必要があります。
 promo_url = "https://www.youtube.com/embed/dn5N0BYe8qE?si=feemBeCDiJ8mHj7W"
-ticket_url = "https://passmarket.yahoo.co.jp/event/show/detail/xxxx.html"
+ticket_url = "https://passmarket.yahoo.co.jp/event/show/detail/028k2a5t8r251.html"
 ofuse_url = "https://ofuse.me/xxxx"
 
 # PV、チケット、OFUSE、スポンサーが準備できたらそれぞれの値をfalseからtrueへ変えてください。z
 promo_ready = true
-ticket_ready = false
+ticket_ready = true
 ofuse_ready = false
 sponsors_ready = true
 
 # 最終更新日を入力
 # 日付型を使いたかったがパース時にエラーが出るため文字列を使用。
-latest_update = "2026年3月30日"
+latest_update = "2026年4月08日"
 
 # 広報統括の名前を入力
 pr_manager = "岩見優輝"
