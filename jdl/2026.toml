@@ -17,7 +17,7 @@ ofuse_url = "https://ofuse.me/41325eb5"
 # PV、チケット、OFUSE、スポンサーが準備できたらそれぞれの値をfalseからtrueへ変えてください。z
 promo_ready = true
 ticket_ready = true
-ofuse_ready = false
+ofuse_ready = true
 sponsors_ready = true
 
 # 最終更新日を入力
