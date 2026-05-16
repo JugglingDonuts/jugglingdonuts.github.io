@@ -34,16 +34,16 @@ team = ""
 
 ## 開発環境のセットアップ
 
-[yarn](https://yarnpkg.com/ja/) をインストールし、次のコマンドでライブラリをインストールする。
+[npm](https://www.npmjs.com/) をインストールし、次のコマンドでライブラリをインストールする。
 
 ```bash
-yarn
+npm install
 ```
 
 HTMLとCSSを生成し、プレビューを見るには
 
 ```bash
-yarn run preview
+npm run preview
 ```
 
 とする。
@@ -75,7 +75,7 @@ convert -crop 600x400+0+100 sample.org.jpg sample.jpg
 ### ライブラリの更新
 
 ```bash
-yarn upgrade
+npm update
 ```
 
 ### デプロイとホスティング

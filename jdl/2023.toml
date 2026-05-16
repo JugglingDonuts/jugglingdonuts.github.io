@@ -37,89 +37,89 @@ fname = "matsuki.jpg"
 
 [[casts]]
 name = "山田　覚巳"
-equip = "シガーボックス" 
+equip = "シガーボックス"
 fname = "yamada.jpg"
 
 [[staff]]
 name = "中村　伊吹"
-roll = "舞台監督"
+role = "舞台監督"
 
 [[staff]]
 name = "酒德　波和"
-roll = "舞台監督補佐"
+role = "舞台監督補佐"
 
 [[staff]]
 name = "木村　忠吾"
-roll = ""
+role = ""
 
 [[staff]]
 name = "藤原　秀慈"
-roll = "広報統括"
+role = "広報統括"
 
 [[staff]]
 name = "角　倫彩子"
-roll = "広報補佐・音響"
+role = "広報補佐・音響"
 
 [[staff]]
 name = "遠藤　海人"
-roll = "Web"
+role = "Web"
 
 [[staff]]
 name = "須崎　朝香"
-roll = "宣伝美術"
+role = "宣伝美術"
 
 [[staff]]
 name = "水野　凌斗"
-roll = "照明"
+role = "照明"
 
 [[staff]]
 name = "鶴見　高輝"
-roll = "大道具統括"
+role = "大道具統括"
 
 [[staff]]
 name = "池田　和陽"
-roll = "大道具実働"
+role = "大道具実働"
 
 [[staff]]
 name = "清住　尚平"
-roll = ""
+role = ""
 
 [[staff]]
 name = "岩田　訓昂"
-roll = "メイク"
+role = "メイク"
 
 [[staff]]
 name = "永井　伶"
-roll = ""
+role = ""
 
 [[staff]]
 name = "天野　寛大"
-roll = ""
+role = ""
 
 [[staff]]
 name = "山田　明"
-roll = ""
+role = ""
 
 [[staff]]
 name = "平田　大智"
-roll = "ヘアメイク"
+role = "ヘアメイク"
 
 [[staff]]
 name = "佐藤　暢"
-roll = "カメラ"
+role = "カメラ"
 
 [[staff]]
 name = "森本　駿之介"
-roll = ""
+role = ""
 
 [[staff]]
 name = "中井　竜太郎"
-roll = "会計・スポンサー"
+role = "会計・スポンサー"
 
 [[staff]]
 name = "山下　巧"
-roll = "受付統括"
+role = "受付統括"
 
 [[staff]]
 name = "尾鍋　正剛"
-roll = "受付"
+role = "受付"

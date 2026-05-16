@@ -10,7 +10,7 @@ day = "日"
 
 # それぞれ、PV(Youtube), OFUSE, チケットサイトのurlを入力。
 # ただし、youtubeは埋め込みのためのurlを取得する必要があります。
-promo_url = 'https://www.youtube.com/embed/kh7ELtjHfpU?si=c2gRl6LlU_YpUINM' 
+promo_url = 'https://www.youtube.com/embed/kh7ELtjHfpU?si=c2gRl6LlU_YpUINM'
 ticket_url ="https://passmarket.yahoo.co.jp/event/show/detail/02zth6ggt7c41.html#detail"
 ofuse_url = "https://ofuse.me/45291e86"
 
@@ -97,138 +97,138 @@ sponsors = [
 # スタッフ
 [[staff]]
   name = "水野凌斗"
-  roll = "舞台監督"
+  role = "舞台監督"
 
 [[staff]]
   name = "角倫彩子"
-  roll = "舞台監督補佐"
+  role = "舞台監督補佐"
 
   [[staff]]
   name = "永井伶"
-  roll = "舞台監督補佐"
+  role = "舞台監督補佐"
 
 
 [[staff]]
   name = "船岡美玖"
-  roll = "広報統括"
+  role = "広報統括"
 
   [[staff]]
   name = "岩見優輝"
-  roll = "広報補佐"
+  role = "広報補佐"
 
   [[staff]]
   name = "鷲尾佳祐"
-  roll = "広報補佐"
+  role = "広報補佐"
 
   [[staff]]
   name = "杉山開陸"
-  roll = "宣伝美術"
+  role = "宣伝美術"
 
   [[staff]]
   name = "杉山開陸"
-  roll = "チケット"
+  role = "チケット"
 
   [[staff]]
   name = "木村真緒"
-  roll = "Web"
-  
+  role = "Web"
+
   [[staff]]
   name = "立石和香"
-  roll = "Web"
+  role = "Web"
 
   [[staff]]
   name = "船岡美玖"
-  roll = "脚本"
+  role = "脚本"
 
   [[staff]]
   name = "藤井瑛士"
-  roll = "照明統括"
+  role = "照明統括"
 
   [[staff]]
   name = "堀田天真"
-  roll = "照明"
+  role = "照明"
 
   [[staff]]
   name = "土井洸史朗"
-  roll = "音響統括"
+  role = "音響統括"
 
   [[staff]]
   name = "辻颯太郎"
-  roll = "音響"
+  role = "音響"
 
   [[staff]]
   name = "堀部愛翔"
-  roll = "大道具統括"
+  role = "大道具統括"
 
   [[staff]]
   name = "原田柊太朗"
-  roll = "大道具"
+  role = "大道具"
 
 [[staff]]
   name = "宮脇和丸"
-  roll = "大道具"
+  role = "大道具"
 
   [[staff]]
   name = "米岡賢優"
-  roll = "大道具"
+  role = "大道具"
 
   [[staff]]
   name = "和才颯"
-  roll = "大道具"
+  role = "大道具"
 
   [[staff]]
   name = "船岡美玖"
-  roll = "メイク統括"
+  role = "メイク統括"
 
   [[staff]]
   name = "稲葉友莉香"
-  roll = "メイク"
+  role = "メイク"
 
   [[staff]]
   name = "坂上優太"
-  roll = "ヘアメイク"
+  role = "ヘアメイク"
 
   [[staff]]
   name = "椿井陸人"
-  roll = "ヘアメイク"
+  role = "ヘアメイク"
 
   [[staff]]
   name = "岡本大知"
-  roll = "カメラ撮影"
+  role = "カメラ撮影"
 
   [[staff]]
   name = "藤田幸星"
-  roll = "カメラ撮影"
+  role = "カメラ撮影"
 
   [[staff]]
   name = "向川彗"
-  roll = "カメラ撮影"
+  role = "カメラ撮影"
 
   [[staff]]
   name = "坂上優太"
-  roll = "会計"
+  role = "会計"
 
   [[staff]]
   name = "金堀薫"
-  roll = "新歓"
+  role = "新歓"
 
 [[staff]]
   name = "坪内萌絵"
-  roll = "新歓"
+  role = "新歓"
 
   [[staff]]
   name = "中川拓輝"
-  roll = "新歓"
+  role = "新歓"
 
   [[staff]]
   name = "森本駿之介"
-  roll = "スポンサー"
+  role = "スポンサー"
 
   [[staff]]
   name = "平田大智"
-  roll = "受付統括"
+  role = "受付統括"
 
   [[staff]]
   name = "坂上優太"
-  roll = "全体演目"
-  
+  role = "全体演目"
+

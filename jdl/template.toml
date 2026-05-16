@@ -58,8 +58,8 @@ sponsors = []
 # スタッフの名前、役割を入力。
 [[staff]]
   name = "スタッフ1"
-  roll = "舞台監督"
+  role = "舞台監督"
 
 [[staff]]
   name = "スタッフ1"
-  roll = "舞台監督"
+  role = "舞台監督"
