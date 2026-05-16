@@ -92,144 +92,144 @@ sponsors = [
 # スタッフの名前、役割を入力。
 [[staff]]
   name = "船岡美玖"
-  roll = "舞台監督"
+  role = "舞台監督"
 
 [[staff]]
   name = "水野凌斗"
-  roll = "舞台監督補佐"
+  role = "舞台監督補佐"
 
 [[staff]]
   name = "土井洸史朗"
-  roll = "舞台監督補佐"
+  role = "舞台監督補佐"
 
 [[staff]]
   name = "岩見優輝"
-  roll = "広報統括"
+  role = "広報統括"
 
 [[staff]]
   name = "川井剛太"
-  roll = "広報補佐"
+  role = "広報補佐"
 
 [[staff]]
   name = "三浦貫太"
-  roll = "広報補佐"
+  role = "広報補佐"
 
 [[staff]]
   name = "金堀薫"
-  roll = "宣伝美術"
+  role = "宣伝美術"
 
 [[staff]]
   name = "谷崎理人"
-  roll = "宣伝美術"
+  role = "宣伝美術"
 
 [[staff]]
   name = "谷崎理人"
-  roll = "チケット"
+  role = "チケット"
 
 [[staff]]
   name = "岡本大知"
-  roll = "スポンサー"
+  role = "スポンサー"
 
 [[staff]]
   name = "江川愛純実"
-  roll = "Web"
+  role = "Web"
 
 [[staff]]
   name = "岡陽悠"
-  roll = "Web"
+  role = "Web"
 
 [[staff]]
   name = "柴田光之進"
-  roll = "受付統括"
+  role = "受付統括"
 
 [[staff]]
   name = "宮脇和丸"
-  roll = "受付補佐"
+  role = "受付補佐"
 
 [[staff]]
   name = "稲葉友莉香"
-  roll = "脚本"
+  role = "脚本"
 
 [[staff]]
   name = "堀田天真"
-  roll = "照明統括"
+  role = "照明統括"
 
 [[staff]]
   name = "長島帆孝"
-  roll = "照明"
+  role = "照明"
 
 [[staff]]
   name = "辻󠄀颯太郎"
-  roll = "音響統括"
+  role = "音響統括"
 
 [[staff]]
   name = "都留瑞生"
-  roll = "音響"
+  role = "音響"
 
 [[staff]]
   name = "岡本大知"
-  roll = "大道具統括"
+  role = "大道具統括"
 
 [[staff]]
   name = "牧野恭吾"
-  roll = "大道具"
+  role = "大道具"
 
 [[staff]]
   name = "岩田優杜"
-  roll = "大道具"
+  role = "大道具"
 
 [[staff]]
   name = "辻󠄀真輝"
-  roll = "大道具"
+  role = "大道具"
 
 [[staff]]
   name = "稲葉友莉香"
-  roll = "メイク統括"
+  role = "メイク統括"
 
 [[staff]]
   name = "石田莉子"
-  roll = "メイク"
+  role = "メイク"
 
 [[staff]]
   name = "木村真緒"
-  roll = "ヘアメイク"
+  role = "ヘアメイク"
 
 [[staff]]
   name = "坪内萌絵"
-  roll = "ヘアメイク"
+  role = "ヘアメイク"
 
 [[staff]]
   name = "宮原大河"
-  roll = "カメラ撮影"
+  role = "カメラ撮影"
 
 [[staff]]
   name = "谷崎理人"
-  roll = "カメラ撮影"
+  role = "カメラ撮影"
 
 [[staff]]
   name = "後藤美結"
-  roll = "カメラ撮影"
+  role = "カメラ撮影"
 
 [[staff]]
   name = "稲葉友莉香"
-  roll = "会計"
+  role = "会計"
 
 [[staff]]
   name = "石田莉子"
-  roll = "新歓"
+  role = "新歓"
 
 [[staff]]
   name = "江川愛純実"
-  roll = "新歓"
+  role = "新歓"
 
 [[staff]]
   name = "谷崎理人"
-  roll = "新歓"
-  
+  role = "新歓"
+
 [[staff]]
   name = "岩見優輝"
-  roll = "全体演目"
+  role = "全体演目"
 
 [[staff]]
   name = "山田健稔"
-  roll = "PV"
+  role = "PV"
