@@ -7,7 +7,7 @@
   <meta name="robots" content="none">
   <meta name="description" content="Juggling Donutsが総力を挙げて贈る、年に1度のジャグリングライブショー">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-  <link rel="stylesheet" href="css/jdl.css">
+  <link rel="stylesheet" href="css/modern.css">
   <link rel="shortcut icon" href="img/icon.ico">
   <link rel="apple-touch-icon" href="img/apple_touch_icon.png">
   <link rel="icon" type="image/png" href="img/android_chrome.png">
@@ -15,7 +15,7 @@
   <title>Juggling Donuts Live {{year}}</title>
 </head>
 
-<body>
+<body class="jdl-page">
   <div class="scroll-controller">
     <div id="loading">
       <div id="logo">
@@ -45,67 +45,60 @@
     </header>
 
     <main>
-      <section id="about" class="fade-in">
-        <div class="content-wrapper">
-          <h2>Juggling Donuts Live (JDL) とは?</h2>
+      <section id="about" data-animate>
+        <h2>Juggling Donuts Live (JDL) とは?</h2>
           <p>京都大道芸倶楽部Juggling
             Donutsが総力を挙げて贈る、年に一度のジャグリングライブショー！<br>
             ジャグリングと無声劇のコラボレーションをお楽しみください。<br>
             変更や連絡、その他出演者の紹介等は<a href="https://www.x.com/jugglingdonuts/">X</a>や<a href="https://www.instagram.com/jugglingdonuts/">Instagram</a>にアップします。ぜひチェックしてください！<br>
             チケットについては<a href="#ticket" class="">こちら</a>から！
           </p>
-          <ul class="flex sns-links">
-            <li class="flexcontent">
+      <ul class="sns-links">
+            <li>
               <a href="https://www.x.com/jugglingdonuts/" class="sns-button twitter">
                 <i class="fa-brands fa-x-twitter"></i>
               </a>
             </li>
-            <li class="flexcontent">
+            <li>
               <a href="https://www.instagram.com/jugglingdonuts/" class="sns-button instagram">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
           </ul>
           </p>
-        </div>
       </section>
 
       {% if promo_ready %}
-      <section id="promo_video" class="fade-in">
-        <div class="content-wrapper">
+      <section id="promo_video" data-animate>
           <iframe src="{{promo_url}}"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
       </section>
       {% endif %}
 
-      <section id="date" class="fade-in">
-        <div class="content-wrapper">
+      <section id="date" data-animate>
           <h2>日時</h2>
           <table>
             <tr>
-              <td>日付</td>
-              <td colspan="2">{{year}}年{{month}}月{{date}}日（{{day}}）</td>
+              <td data-label="日付">日付</td>
+              <td colspan="2" data-label="日付">{{year}}年{{month}}月{{date}}日（{{day}}）</td>
             </tr>
             <tr>
-              <td>時間</td>
-              <td>昼の部</td>
-              <td>開演 14:30（開場 14:00）</td>
+              <td data-label="時間">時間</td>
+              <td data-label="部">昼の部</td>
+              <td data-label="詳細">開演 14:30（開場 14:00）</td>
             </tr>
             <tr>
-              <td></td>
-              <td>夜の部</td>
-              <td>開演 18:30（開場 18:00）</td>
+              <td data-label="時間"></td>
+              <td data-label="部">夜の部</td>
+              <td data-label="詳細">開演 18:30（開場 18:00）</td>
             </tr>
           </table>
           <p>昼の部、夜の部の公演はどちらも同じ内容で、<wbr>公演時間はおよそ１時間を予定しています。</p>
-        </div>
       </section>
 
-      <section id="access" class="fade-in">
-        <div class="content-wrapper">
+      <section id="access" data-animate>
           <h2>会場</h2>
           <dl>
             <dt>会場</dt>
@@ -118,11 +111,9 @@
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.3530424699907!2d135.76668371550159!3d35.02289687340104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010860fda53017%3A0x6e35fd78e4481b05!2z5Lqs6YO95bqc56uL5paH5YyW6Iq46KGT5Lya6aSo!5e0!3m2!1sja!2sjp!4v1676264263339!5m2!1sja!2sjp"
             id="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
       </section>
 
-      <section id="price" class="fade-in">
-        <div class="content-wrapper">
+      <section id="price" data-animate>
           <h2>料金</h2>
           <p>昼の部、夜の部の料金は以下の通りです。</p>
           <table>
@@ -132,35 +123,33 @@
               <th class="gray">昼夜セット割 <small>(*2)</small></th>
             </tr>
             <tr>
-              <th>大人</th>
-              <td>￥1,600</td>
-              <td>￥2,500</td>
+              <th data-label="対象">大人</th>
+              <td data-label="通常料金">￥1,600</td>
+              <td data-label="昼夜セット割">￥2,500</td>
             </tr>
             <tr>
-              <th>大学生</th>
-              <td>￥1,200</td>
-              <td>￥2,000</td>
+              <th data-label="対象">大学生</th>
+              <td data-label="通常料金">￥1,200</td>
+              <td data-label="昼夜セット割">￥2,000</td>
             </tr>
             <tr>
-              <th>高校生以下</th>
-              <td>￥500</td>
-              <td>￥800</td>
+              <th data-label="対象">高校生以下</th>
+              <td data-label="通常料金">￥500</td>
+              <td data-label="昼夜セット割">￥800</td>
             </tr>
             <tr>
-              <th>未就学児</th>
-              <td>￥0</td>
-              <td>-</td>
+              <th data-label="対象">未就学児</th>
+              <td data-label="通常料金">￥0</td>
+              <td data-label="昼夜セット割">-</td>
             </tr>
           </table>
           <ul class="note">
             <li>(*1) 昼の部、夜の部それぞれ同額となります。</li>
             <li>(*2) 昼の部と夜の部の両方をご覧になる方の料金です。</li>
           </ul>
-        </div>
       </section>
 
-      <section id="ticket" class="fade-in">
-        <div class="content-wrapper">
+      <section id="ticket" data-animate>
           <h2>チケットについて</h2>
           <ul class="with-dot">
             <li>JDL{{year}}のチケットは電子チケット、紙チケットおよび当日券の３種類がございます。</li>
@@ -223,18 +212,16 @@
             <li>座席指定は行っておりません。当日ご来場いただいた順番に案内させていただきます。</li>
             <li>昼夜セット割をご利用のお客様は昼の部と夜の部で同じチケットを提示していただきます。</li>
           </ul>
-        </div>
       </section>
 
-      <section id="donation" class="fade-in">
-        <div class="content-wrapper">
+      <section id="donation" data-animate>
           <h2>カンパについて</h2>
           <p>
             JDL{{year}}では、皆様からのご厚意をカンパという形で受け付けております。
             よろしければご協力よろしくお願いいたします。
           </p>
-          <div class="flex">
-            <div class="flexcontent">
+          <div class="donation-grid">
+            <div class="donation-item">
               <h3>【OFUSEによるご支援】</h3>
               <p>
                 OFUSEにてカンパを受け付けております。
@@ -252,7 +239,7 @@
               </button>
               {% endif %}
             </div>
-            <div class="flexcontent">
+            <div class="donation-item">
               <h3>【当日会場でのご支援】</h3>
               <p>
                 公演当日に募金の形でのカンパも受け付ける予定です。
@@ -260,29 +247,25 @@
               </p>
             </div>
           </div>
-        </div>
       </section>
 
       {% if sponsors_ready %}
-      <section id="sponsor" class="fade-in">
-        <div class="content-wrapper">
+      <section id="sponsor" data-animate>
           <h2>スポンサー</h2>
           <p>JDL{{year}}は以下のスポンサーの皆様にご協賛いただいております。<br>
             {% for sponsor in sponsors %}
               {{sponsor}} 様<br>
             {% endfor %}
           </p>
-        </div>
       </section>
       {% endif %}
 
-      <section id="cast" class="fade-in">
-        <div class="content-wrapper">
+      <section id="cast" data-animate>
           <h2>Cast&amp;Staff</h2>
           <h3>出演 </h3>
-          <div class="flex">
+          <div class="cast-grid">
             {% for cast in casts %}
-            <div class="flexcontent">
+            <div class="cast-item">
               <figure>
                 <img src="img/jdl{{year}}/{{ cast.fname }}">
                 <figcaption>
@@ -299,26 +282,22 @@
           <table class="staff">
             {% for member in staff %}
             <tr>
-              <td>{{member.role}}</td>
-              <td>{{member.name}}</td>
+              <td data-label="役割">{{member.role}}</td>
+              <td data-label="名前">{{member.name}}</td>
             </tr>
             {% endfor %}
           </table>
-        </div>
       </section>
 
-      <section id="caution" class="fade-in">
-        <div class="content-wrapper">
+      <section id="caution" data-animate>
           <h2>注意事項</h2>
           <ul>
             <li>お問い合わせの対応は担当者が手作業で行っています。その為返信には二日ほどかかる場合があります。</li>
             <li>これらの情報は予告なく変更する可能性があります。</li>
           </ul>
-        </div>
       </section>
 
-      <section id="contact" class="fade-in">
-        <div class="content-wrapper">
+      <section id="contact" data-animate>
           <h2>お問い合わせ</h2>
           <p>
             ご不明な点がございましたら広報担当までお気軽にお問い合わせください。<br>
@@ -326,7 +305,6 @@
             E-mail: <a href="mailto:juggling.donuts.kouhou@gmail.com">juggling.donuts.kouhou@gmail.com</a><br>
             （担当：{{pr_manager}}）
           </p>
-        </div>
       </section>
     </main>
 
@@ -354,68 +332,97 @@
       </div>
     </footer>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="/js/animations.js"></script>
   <script>
-    $(".trigger").click(function () {
-      $(this).toggleClass("active")
-      $("header nav").toggleClass("onanimation")
+    // Mobile Menu
+    const trigger = document.querySelector(".trigger");
+    const nav = document.querySelector("header nav");
+    const navLinks = document.querySelectorAll("header nav li a");
+
+    if (trigger && nav) {
+      trigger.addEventListener("click", () => {
+        trigger.classList.toggle("active");
+        nav.classList.toggle("onanimation");
+      });
+
+      navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          trigger.classList.remove("active");
+          nav.classList.remove("onanimation");
+        });
+      });
+    }
+
+    // Loading Screen
+    function noscroll(e) {
+      e.preventDefault();
+    }
+
+    window.addEventListener('load', () => {
+      document.addEventListener('touchmove', noscroll, { passive: false });
+      document.addEventListener('wheel', noscroll, { passive: false });
+
+      const logo = document.getElementById("logo");
+      const loading = document.getElementById("loading");
+      const header = document.querySelector("header");
+
+      setTimeout(() => {
+        if (logo) {
+          logo.classList.add("fade-out");
+          setTimeout(() => logo.style.display = "none", 600);
+        }
+      }, 500);
+
+      setTimeout(() => {
+        if (loading) {
+          loading.classList.add("fade-out");
+          setTimeout(() => loading.style.display = "none", 600);
+        }
+      }, 800);
+
+      setTimeout(() => {
+        if (header) header.classList.add("isPlay");
+        document.removeEventListener('touchmove', noscroll, { passive: false });
+        document.removeEventListener('wheel', noscroll, { passive: false });
+      }, 1000);
     });
 
-    $("header nav li a").click(function () {
-      $(".trigger").removeClass("active")
-      $("header nav").toggleClass("onanimation")
-    });
+    // Smooth Scroll and Hash Handling
+    const getHeaderHeight = () => (window.innerWidth < 768 ? 55 : 0);
 
-    $(function () {
-      $(window).on('load scroll', function () {
-        $(".fade-in").each(function () {
-          var ePos = $(this).offset().top;
-          var scroll = $(window).scrollTop();
-          var windowHeight = $(window).height();
-          if (scroll > ePos - windowHeight + windowHeight / 5) {
-            $(this).addClass("scroll-in")
+    const scrollToTarget = (selector) => {
+      const target = document.querySelector(selector);
+      if (target) {
+        const position = target.offsetTop - getHeaderHeight();
+        window.scrollTo({
+          top: position,
+          behavior: 'smooth'
+        });
+      }
+    };
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlHash = location.hash;
+      if (urlHash) {
+        window.scrollTo(0, 0);
+        setTimeout(() => scrollToTarget(urlHash), 100);
+      }
+
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', (e) => {
+          const href = anchor.getAttribute('href');
+          if (href !== '#') {
+            e.preventDefault();
+            if (trigger) trigger.classList.remove("active");
+            if (nav) nav.classList.remove("onanimation");
+            scrollToTarget(href);
           }
         });
       });
     });
 
-    $(window).on('load', function () {
-      document.addEventListener('touchmove', noscroll, { passive: false });
-      document.addEventListener('wheel', noscroll, { passive: false });
-      $("#logo").delay(500).fadeOut("slow");
-      $("#loading").delay(800).fadeOut("slow");
-      $("header").delay(1000).queue(function () {
-        $(this).addClass('isPlay');
-        document.removeEventListener('touchmove', noscroll, { passive: false });
-        document.removeEventListener('wheel', noscroll, { passive: false });
-      });
-    });
-
-    function noscroll(e) {
-      e.preventDefault();
-    }
-
-    $(function () {
-      var headerHeight = ($(window).width() < 768) ? 55 : 0;
-      var urlHash = location.hash;
-      if (urlHash) {
-        $('body,html').stop().scrollTop(0);
-        setTimeout(function () {
-          var target = $(urlHash);
-          var position = target.offset().top - headerHeight;
-          $('body,html').stop().animate({ scrollTop: position }, 500);
-        }, 100);
-      }
-      $('a[href^="#"]').click(function () {
-        $(".trigger").removeClass("active")
-        $("header nav").removeClass("onanimation")
-        var href = $(this).attr("href");
-        var target = $(href);
-        var position = target.offset().top - headerHeight;
-        $('body,html').stop().animate({ scrollTop: position }, { duration: 500, easing: 'swing' });
-        return false;
-      });
-    });
+    // Intersection Observer for animations
+    // Removed redundant inline observer, now using /js/animations.js
   </script>
 </body>
 
