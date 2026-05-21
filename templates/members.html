@@ -1,30 +1,30 @@
 {% extends "templates/base.html" %} {% block content %}
-<section class="members">
-  <div class="content-wrapper">
-    <h2>メンバー紹介</h2>
-    <p>
-      ジャグリングドーナツってどんなとこ？<br>
-      一言で表すと、色んな人が集まっているところです。
-      ここではドーナツの個性豊かなメンバー達を紹介します。
-    </p>
-    <ul>
-      {% for year in years %}
-      <li><a href="members/{{ year }}.html">{{ year }}年度メンバー</a></li>
-      {% endfor %}
-      <li><a href="members/obog.html">OB・OG</a></li>
-    </ul>
-  </div>
+<section class="members" data-animate>
+  <h2>メンバー紹介</h2>
+  <p>
+    ジャグリングドーナツってどんなとこ？<br />
+    一言で表すと、色んな人が集まっているところです。
+    ここではドーナツの個性豊かなメンバー達を紹介します。
+  </p>
+  <ul>
+    {% for year in years %}
+    <li><a href="members/{{ year }}.html">{{ year }}年度メンバー</a></li>
+    {% endfor %}
+    <li><a href="members/obog.html">OB・OG</a></li>
+  </ul>
 </section>
-<section id="gallery">
-  <div class="content-wrapper">
-    <ul class="slider">
-      <li><img src="img/nf/NF2024.jpg" alt="" /></li>
-      <li><img src="img/nf/NF2023.jpg" alt="" /></li>
-      <li><img src="img/nf/NF2022.jpg" alt="" /></li>
-      <li><img src="img/nf/NF2019.jpg" alt="" /></li>
-      <li><img src="img/nf/NF2018.jpg" alt="" /></li>
-      <li><img src="img/nf/NF2017.jpg" alt="" /></li>
-    </ul>
+<section id="gallery" data-animate>
+  <div class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide"><img src="img/nf/NF2024.jpg" alt="" loading="lazy" /></li>
+        <li class="splide__slide"><img src="img/nf/NF2023.jpg" alt="" loading="lazy" /></li>
+        <li class="splide__slide"><img src="img/nf/NF2022.jpg" alt="" loading="lazy" /></li>
+        <li class="splide__slide"><img src="img/nf/NF2019.jpg" alt="" loading="lazy" /></li>
+        <li class="splide__slide"><img src="img/nf/NF2018.jpg" alt="" loading="lazy" /></li>
+        <li class="splide__slide"><img src="img/nf/NF2017.jpg" alt="" loading="lazy" /></li>
+      </ul>
+    </div>
   </div>
 </section>
 {% endblock %}
