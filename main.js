@@ -27,10 +27,12 @@ const main = () => {
   }
   shell.mkdir("public");
   shell.mkdir("public/members");
+  shell.mkdir("public/js");
 
   // copy static files
   shell.cp("-r", "css", "public/css");
   shell.cp("-r", "img", "public/img");
+  shell.cp("-r", "js", "public/js");
   shell.cp("templates/404.html", "public/404.html");
 
   const jdlYear = process.env.WITH_JDL;

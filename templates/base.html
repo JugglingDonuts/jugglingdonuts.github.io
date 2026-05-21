@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
@@ -11,15 +11,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
+    {% if has_slider %}
     <link
       rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
     />
-    <link rel="stylesheet" href="/css/style.css" />
-    {% if has_slider %}
-    <link rel="stylesheet" href="/css/slick.css" />
     {% endif %}
+    <link rel="stylesheet" href="/css/modern.css" />
     <link rel="shortcut icon" href="/img/icon.ico" />
     <link rel="apple-touch-icon" href="/img/apple_touch_icon.png" />
     <link rel="icon" type="image/png" href="/img/android_chrome.png" />
@@ -43,14 +41,14 @@
       </nav>
     </header>
     <main>
-      <div class="content-wrapper title">
+      <section class="title-section">
         <h1>京都<wbr />大道芸<wbr />倶楽部 <wbr />Juggling <wbr />Donuts</h1>
-      </div>
-      {% block content %}{% endblock %}
+      </section>
+      {% block content %} {% endblock %}
     </main>
     <footer>
-      <div class="upper-footer">
-        <div class="content-wrapper">
+      <div class="footer-inner">
+        <div class="footer-top">
           <nav>
             <ul class="flex">
               <li class="nav-item">
@@ -64,43 +62,42 @@
               </li>
             </ul>
           </nav>
-          <a href="index.html" class="icon">
-            <img
-              src="/img/icon.svg"
-              style="margin: 1em; width: 100px"
-              alt="Top"
-            />
+          <a href="index.html" class="footer-icon">
+            <img src="/img/icon.svg" alt="Top" />
           </a>
         </div>
       </div>
-      <div class="bottom-footer">&copy; 2017-2025 Juggling Donuts</div>
+      <div class="footer-bottom">&copy; 2017-2027 Juggling Donuts</div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="/js/animations.js"></script>
     <script>
-      $(".trigger").click(function () {
-        $(this).toggleClass("active");
-        $("header nav").toggleClass("onanimation");
-      });
+      const trigger = document.querySelector(".trigger");
+      const nav = document.querySelector("header nav");
+      const navLinks = document.querySelectorAll("header nav li a");
 
-      $("header nav li a").click(function () {
-        $(".trigger").removeClass("active");
-        $("header nav").toggleClass("onanimation");
+      if (trigger && nav) {
+        trigger.addEventListener("click", () => {
+          trigger.classList.toggle("active");
+          nav.classList.toggle("onanimation");
+        });
+      }
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          if (trigger) trigger.classList.remove("active");
+          if (nav) nav.classList.remove("onanimation");
+        });
       });
     </script>
     {% if has_slider %}
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script>
-      $(".slider").slick({
-        autoplay: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        prevArrow: '<div class="slick-prev"></div>',
-        nextArrow: '<div class="slick-next"></div>',
-        centerMode: true,
-        variableWidth: true,
-        dots: true,
+      document.querySelectorAll(".splide").forEach((el) => {
+        new Splide(el, {
+          type: "loop",
+          autoplay: true,
+          gap: "1rem",
+        }).mount();
       });
     </script>
     {% endif %}
