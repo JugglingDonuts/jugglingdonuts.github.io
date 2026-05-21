@@ -25,7 +25,7 @@
 
   <body>
     <div id="menu-wrapper">
-      <a class="trigger">
+      <a id="menu-toggle">
         <span></span>
         <span></span>
         <span></span>
@@ -71,21 +71,23 @@
     </footer>
     <script src="/js/animations.js"></script>
     <script>
-      const trigger = document.querySelector(".trigger");
-      const nav = document.querySelector("header nav");
+      // 1. Select elements
+      const menuToggle = document.getElementById("menu-toggle");
+      const headerNav = document.querySelector("header nav");
       const navLinks = document.querySelectorAll("header nav li a");
 
-      if (trigger && nav) {
-        trigger.addEventListener("click", () => {
-          trigger.classList.toggle("active");
-          nav.classList.toggle("onanimation");
-        });
-      }
+      // 2. Handle click on the hamburger menu
+      menuToggle?.addEventListener("click", function () {
+        const header = headerNav?.closest("header");
+        this.classList.toggle("active");
+        header?.classList.toggle("is-open");
+      });
 
+      // 3. Handle click on the navigation links
       navLinks.forEach((link) => {
         link.addEventListener("click", () => {
-          if (trigger) trigger.classList.remove("active");
-          if (nav) nav.classList.remove("onanimation");
+          menuToggle?.classList.remove("active");
+          headerNav?.closest("header")?.classList.remove("is-open");
         });
       });
     </script>
