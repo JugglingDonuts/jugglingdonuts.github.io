@@ -1,0 +1,549 @@
+:root {
+	/* Colors */
+	--color-primary: #c6529a;
+	--color-secondary: #718085;
+	--color-accent: #d14a8a;
+
+	--color-bg-main: #ffffff;
+	--color-bg-alt: #e4dfcc;
+	--color-bg-footer: #c9c7c1;
+	--color-bg-footer-dark: #515151;
+	--color-bg-light: #fdfcf8;
+
+	--color-text-main: #333333;
+	--color-text-muted: #515151;
+	--color-text-light: #ffffff;
+	--color-border: #cccccc;
+
+	/* Typography */
+	--font-serif:
+		"游明朝", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro W3",
+		"Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	--font-sans:
+		"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+		"游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+
+	/* Fluid Typography Scale */
+	--text-xs: clamp(0.7rem, 0.65rem + 0.25vw, 0.8rem);
+	--text-sm: clamp(0.8rem, 0.75rem + 0.25vw, 0.9rem);
+	--text-base: clamp(0.9rem, 0.85rem + 0.25vw, 1rem);
+	--text-md: clamp(1.1rem, 1rem + 0.5vw, 1.25rem);
+	--text-lg: clamp(1.5rem, 1.2rem + 1.5vw, 2rem);
+	--text-xl: clamp(2rem, 1.5rem + 2.5vw, 3rem);
+
+	/* Spacing Scale */
+	--space-xs: 0.25rem;
+	--space-sm: 0.5rem;
+	--space-md: 1rem;
+	--space-lg: 2rem;
+	--space-xl: 4rem;
+	--space-xxl: 8rem;
+
+	/* Shadows & Borders */
+	--shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+	--shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+	--radius-sm: 4px;
+	--radius-md: 8px;
+	--radius-lg: 16px;
+	--radius-full: 9999px;
+}
+
+/* Modern Global Reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	transition:
+		color 0.2s ease,
+		opacity 0.2s ease;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+}
+
+button {
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	font: inherit;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--font-sans);
+	font-size: var(--text-base);
+	color: var(--color-text-main);
+	background-color: var(--color-bg-main);
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--font-serif);
+	line-height: 1.2;
+	color: var(--color-text-main);
+	margin-bottom: var(--space-md);
+}
+
+h1 {
+	font-size: var(--text-xl);
+}
+h2 {
+	font-size: var(--text-lg);
+}
+h3 {
+	font-size: var(--text-md);
+}
+h4 {
+	font-size: var(--text-base);
+}
+
+p {
+	margin-bottom: var(--space-md);
+}
+
+/* --- Header & Navigation --- */
+header {
+	z-index: 100;
+	background-color: rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	box-shadow: var(--shadow-sm);
+}
+
+header nav ul {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	height: 60px;
+}
+
+header nav ul li a {
+	display: block;
+	padding: 0 var(--space-lg);
+	height: 100%;
+	line-height: 60px;
+	font-weight: 500;
+	font-family: var(--font-sans);
+	transition: color 0.3s ease;
+	text-align: center;
+}
+
+header nav ul li a:hover {
+	color: var(--color-primary);
+}
+
+/* Mobile Menu Trigger */
+#menu-wrapper {
+	position: fixed;
+	top: var(--space-md);
+	right: var(--space-md);
+	z-index: 110;
+}
+
+.trigger {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 20px;
+	cursor: pointer;
+	position: relative;
+}
+
+.trigger span {
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: var(--color-secondary);
+	border-radius: var(--radius-sm);
+	transition: all 0.3s ease;
+}
+
+.trigger.active span:nth-child(1) {
+	transform: translateY(8.5px) rotate(45deg);
+}
+
+.trigger.active span:nth-child(2) {
+	opacity: 0;
+	transform: translateX(-20px);
+}
+
+.trigger.active span:nth-child(3) {
+	transform: translateY(-8.5px) rotate(-45deg);
+}
+
+/* Mobile Nav Animation */
+header nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	background-color: var(--color-bg-main);
+	transition: height 0.4s ease;
+	z-index: 105;
+}
+
+header nav.onanimation {
+	height: 100vh;
+}
+
+header nav.onanimation ul {
+	grid-template-columns: 1fr;
+	justify-content: center;
+	height: 100vh;
+	align-content: center;
+}
+
+header nav.onanimation ul li {
+	text-align: center;
+	width: 100%;
+}
+
+header nav.onanimation ul li a {
+	display: block;
+	padding: var(--space-lg) 0;
+	line-height: 1;
+	font-size: var(--text-lg);
+}
+
+/* ==========================================================================
+   Phase 2: The Grid Layout Engine
+   ========================================================================== */
+
+/* The Centering Grid System */
+section {
+	display: grid;
+	grid-template-columns: minmax(var(--space-lg), 1fr) minmax(0, 1100px) minmax(
+			var(--space-lg),
+			1fr
+		);
+	padding: var(--space-xl) 0;
+}
+
+section > * {
+	grid-column: 2;
+}
+
+@media (max-width: 1100px) {
+	section:not(.full-bleed) > * {
+		padding-inline: var(--space-md);
+	}
+}
+
+section.full-bleed {
+	display: block;
+}
+
+section:nth-of-type(even) {
+	background-color: var(--color-bg-alt);
+}
+
+.title-section {
+	text-align: center;
+	padding: var(--space-xxl) 0;
+}
+
+/* Footer Spacing Fix */
+footer {
+	margin-top: 0;
+}
+
+.footer-inner {
+	background-color: var(--color-bg-footer);
+	padding: var(--space-lg) 0;
+	display: grid;
+	grid-template-columns: minmax(var(--space-lg), 1fr) minmax(0, 1100px) minmax(
+			var(--space-lg),
+			1fr
+		);
+}
+
+.footer-inner > * {
+	grid-column: 2;
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: var(--space-md);
+}
+
+.footer-top nav ul {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: var(--space-md);
+}
+
+.footer-top .nav-link {
+	display: block;
+	text-align: center;
+	font-size: var(--text-sm);
+	color: var(--color-text-muted);
+	padding: var(--space-sm) var(--space-md);
+	border-bottom: 1px solid transparent;
+	transition: border-color 0.3s ease;
+}
+
+.footer-top .nav-link:hover {
+	border-bottom-color: var(--color-text-main);
+}
+
+.footer-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-icon img {
+	width: 80px;
+	height: auto;
+	display: block;
+}
+
+.footer-bottom {
+	background-color: var(--color-bg-footer-dark);
+	color: var(--color-text-light);
+	text-align: center;
+	padding: var(--space-md) 0;
+	font-size: var(--text-xs);
+}
+
+@media (min-width: 768px) {
+	#menu-wrapper {
+		display: none;
+	}
+
+	header nav {
+		position: static;
+		height: auto;
+		overflow: visible;
+	}
+
+	header nav.onanimation {
+		height: auto;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: center;
+		height: 60px;
+	}
+
+	.footer-top {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.footer-top nav ul {
+		display: flex;
+		gap: var(--space-md);
+	}
+}
+
+/* ==========================================================================
+   Phase 3: Semantic Component Architecture
+   ========================================================================== */
+
+.member-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: var(--space-lg);
+	width: 100%;
+}
+
+.member-item {
+	background-color: var(--color-bg-light);
+	border-radius: var(--radius-md);
+	overflow: hidden;
+	box-shadow: var(--shadow-sm);
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid var(--color-border);
+}
+
+.member-item:hover {
+	transform: translateY(-5px);
+	box-shadow: var(--shadow-md);
+}
+
+.member-picture {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	border-bottom: 3px solid var(--color-primary);
+}
+
+.member-name {
+	font-weight: bold;
+	font-size: var(--text-md);
+	padding: var(--space-md) var(--space-md) 0;
+	text-align: center;
+	color: var(--color-text-main);
+}
+
+.member-description {
+	padding: 0 var(--space-md) var(--space-md);
+	font-size: var(--text-sm);
+	color: var(--color-text-muted);
+	text-align: center;
+	flex-grow: 1;
+}
+
+/* Announcement System */
+.jdl-announce {
+	background: linear-gradient(
+		135deg,
+		var(--color-primary),
+		var(--color-accent)
+	);
+	color: var(--color-text-light);
+	padding: var(--space-lg);
+	border-radius: var(--radius-lg);
+	text-align: center;
+	box-shadow: var(--shadow-md);
+	margin: var(--space-md) 0;
+}
+
+.jdl-announce h2 {
+	color: var(--color-text-light);
+	margin-bottom: var(--space-md);
+}
+
+.jdl-announce a {
+	display: inline-block;
+	background-color: var(--color-text-light);
+	color: var(--color-primary);
+	padding: var(--space-sm) var(--space-lg);
+	border-radius: var(--radius-full);
+	font-weight: bold;
+	transition: transform 0.2s ease;
+}
+
+.jdl-announce a:hover {
+	transform: scale(1.05);
+}
+
+.splide__slide img {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+	display: block;
+	border-radius: var(--radius-md);
+}
+
+/* Responsive Tables */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: var(--space-md);
+}
+
+table th,
+table td {
+	padding: var(--space-md);
+	border-bottom: 1px solid var(--color-border);
+	text-align: left;
+}
+
+table th {
+	background-color: var(--color-bg-alt);
+	font-weight: bold;
+}
+
+@media (max-width: 600px) {
+	table,
+	thead,
+	tbody,
+	th,
+	td,
+	tr {
+		display: block;
+	}
+
+	table tr {
+		margin-bottom: var(--space-md);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-sm);
+		padding: var(--space-sm);
+	}
+
+	table td {
+		display: flex;
+		justify-content: space-between;
+		padding: var(--space-xs) var(--space-sm);
+		border-bottom: none;
+	}
+
+	table td::before {
+		content: attr(data-label);
+		font-weight: bold;
+		color: var(--color-text-muted);
+	}
+
+	table th {
+		display: none;
+	}
+}
+
+/* ==========================================================================
+   Phase 4: Responsive Fluidity & Polish
+   ========================================================================== */
+
+/* Motion & Interaction */
+[data-animate] {
+	opacity: 0;
+	transform: translateY(30px);
+	transition:
+		opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+		transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+	will-change: opacity, transform;
+}
+
+[data-animate].animate-in {
+	opacity: 1;
+	transform: translateY(0);
+}
