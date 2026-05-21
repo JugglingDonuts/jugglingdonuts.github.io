@@ -1,5 +1,4 @@
 :root {
-	/* Colors */
 	--color-primary: #b5428a;
 	--color-secondary: #718085;
 	--color-accent: #c13a7a;
@@ -15,7 +14,6 @@
 	--color-text-light: #ffffff;
 	--color-border: #cccccc;
 
-	/* Typography */
 	--font-serif:
 		"游明朝", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro W3",
 		"Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
@@ -23,7 +21,6 @@
 		"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
 		"游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
 
-	/* Fluid Typography Scale */
 	--text-xs: clamp(0.7rem, 0.65rem + 0.25vw, 0.8rem);
 	--text-sm: clamp(0.8rem, 0.75rem + 0.25vw, 0.9rem);
 	--text-base: clamp(0.9rem, 0.85rem + 0.25vw, 1rem);
@@ -31,7 +28,6 @@
 	--text-lg: clamp(1.5rem, 1.2rem + 1.5vw, 2rem);
 	--text-xl: clamp(2rem, 1.5rem + 2.5vw, 3rem);
 
-	/* Spacing Scale */
 	--space-xs: 0.25rem;
 	--space-sm: 0.5rem;
 	--space-md: 1rem;
@@ -39,7 +35,6 @@
 	--space-xl: 4rem;
 	--space-xxl: 8rem;
 
-	/* Shadows & Borders */
 	--shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
 	--shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
 	--radius-sm: 4px;
@@ -48,7 +43,6 @@
 	--radius-full: 9999px;
 }
 
-/* Modern Global Reset */
 *,
 *::before,
 *::after {
@@ -138,7 +132,6 @@ p {
 	margin-bottom: var(--space-md);
 }
 
-/* --- Header & Navigation --- */
 header {
 	position: fixed;
 	top: 0;
@@ -190,7 +183,6 @@ header nav ul li a:hover {
 	transform: scale(1.05);
 }
 
-/* Mobile Menu Trigger */
 #menu-wrapper {
 	position: fixed;
 	top: var(--space-md);
@@ -257,11 +249,6 @@ header nav ul li a:hover {
 	}
 }
 
-/* ==========================================================================
-   Phase 2: The Grid Layout Engine
-   ========================================================================== */
-
-/* The Centering Grid System */
 section {
 	display: grid;
 	grid-template-columns: minmax(var(--space-lg), 1fr) minmax(0, 1100px) minmax(
@@ -288,7 +275,6 @@ section:nth-of-type(even) {
 	padding: var(--space-xxl) 0;
 }
 
-/* Footer Spacing Fix */
 footer {
 	margin-top: 0;
 }
@@ -372,10 +358,6 @@ footer {
 	}
 }
 
-/* ==========================================================================
-   Phase 3: Semantic Component Architecture
-   ========================================================================== */
-
 .member-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -426,7 +408,6 @@ footer {
 	flex-grow: 1;
 }
 
-/* Announcement System */
 .jdl-announce {
 	background-color: var(--color-bg-light);
 	color: var(--color-text-main);
@@ -479,7 +460,6 @@ footer {
 	border-radius: var(--radius-md);
 }
 
-/* Responsive Tables */
 table,
 thead,
 tbody,
@@ -568,11 +548,6 @@ table th {
 	}
 }
 
-/* ==========================================================================
-   Phase 4: Responsive Fluidity & Polish
-   ========================================================================== */
-
-/* Motion & Interaction */
 [data-animate] {
 	opacity: 0;
 	transform: translateY(30px);
@@ -586,10 +561,6 @@ table th {
 	opacity: 1;
 	transform: translateY(0);
 }
-
-/* ==========================================================================
-   JDL Page Specific Styles
-   ========================================================================== */
 
 .jdl-page #loading {
 	position: fixed;
