@@ -1,6 +1,9 @@
 {% extends "templates/base.html" %} {% block content %}
+<section class="title-section">
+  <h1>{{ year }}年度メンバー</h1>
+</section>
+
 <section data-animate>
-  <h2>{{ year }}年度メンバー</h2>
   <div class="member-grid">
     {% for member in members %}
     <div class="member-item">

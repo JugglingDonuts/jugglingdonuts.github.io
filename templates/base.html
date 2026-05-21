@@ -41,10 +41,8 @@
       </nav>
     </header>
     <main>
-      <section class="title-section">
-        <h1>京都<wbr />大道芸<wbr />倶楽部 <wbr />Juggling <wbr />Donuts</h1>
-      </section>
-      {% block content %} {% endblock %}
+      {% block content %}
+      {% endblock %}
     </main>
     <footer>
       <div class="footer-inner">
@@ -71,19 +69,16 @@
     </footer>
     <script src="/js/animations.js"></script>
     <script>
-      // 1. Select elements
       const menuToggle = document.getElementById("menu-toggle");
       const headerNav = document.querySelector("header nav");
       const navLinks = document.querySelectorAll("header nav li a");
 
-      // 2. Handle click on the hamburger menu
       menuToggle?.addEventListener("click", function () {
         const header = headerNav?.closest("header");
         this.classList.toggle("active");
         header?.classList.toggle("is-open");
       });
 
-      // 3. Handle click on the navigation links
       navLinks.forEach((link) => {
         link.addEventListener("click", () => {
           menuToggle?.classList.remove("active");
