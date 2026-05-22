@@ -1,0 +1,222 @@
+<style>
+  .jd-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 520px;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    border: 0.5px solid var(--color-border-tertiary);
+  }
+  .jd-text {
+    background: #fdf8f0;
+    padding: 3rem 2.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .jd-bg-circle {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 1px solid #e8d8be;
+    top: -100px;
+    right: -100px;
+    pointer-events: none;
+  }
+  .jd-bg-circle2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #e8d8be;
+    bottom: -60px;
+    left: -40px;
+    pointer-events: none;
+  }
+  .jd-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: #fff3e0;
+    color: #b86a00;
+    border-radius: 100px;
+    padding: 5px 14px 5px 10px;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    margin-bottom: 1.5rem;
+    align-self: flex-start;
+    border: 0.5px solid #f0c070;
+    opacity: 0;
+    animation: jdUp 0.45s 0.1s forwards;
+  }
+  .jd-badge-dot {
+    width: 6px;
+    height: 6px;
+    background: #e07000;
+    border-radius: 50%;
+  }
+  .jd-jp {
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    color: #6b5c45;
+    margin: 0 0 0.4rem;
+    font-weight: 400;
+    opacity: 0;
+    animation: jdUp 0.45s 0.2s forwards;
+  }
+  .jd-h1 {
+    font-family: var(--font-serif);
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 400;
+    line-height: 1.08;
+    color: #1a1208;
+    margin: 0 0 1.5rem;
+    opacity: 0;
+    animation: jdUp 0.45s 0.3s forwards;
+  }
+  .jd-h1 .accent {
+    color: #e07000;
+    font-style: italic;
+  }
+  .jd-divider {
+    width: 36px;
+    height: 2px;
+    background: #e07000;
+    border-radius: 2px;
+    margin-bottom: 1.2rem;
+    opacity: 0;
+    animation: jdUp 0.45s 0.38s forwards;
+  }
+  .jd-body {
+    font-size: 13.5px;
+    color: #7a6a52;
+    line-height: 1.8;
+    margin: 0 0 2rem;
+    max-width: 280px;
+    opacity: 0;
+    animation: jdUp 0.45s 0.46s forwards;
+  }
+  .jd-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: jdUp 0.45s 0.54s forwards;
+  }
+  .jd-btn {
+    background: #e07000;
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 0.02em;
+    transition: background 0.2s;
+  }
+  .jd-btn:hover {
+    background: #c06000;
+  }
+  .jd-btn-ghost {
+    background: none;
+    border: 0.5px solid #c8b090;
+    color: #7a6a52;
+    padding: 12px 22px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    transition:
+      border-color 0.2s,
+      color 0.2s;
+  }
+  .jd-btn-ghost:hover {
+    border-color: #e07000;
+    color: #e07000;
+  }
+  .jd-img {
+    overflow: hidden;
+    position: relative;
+  }
+  .jd-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: scale(1.05);
+    animation: jdImg 1.2s 0.05s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  }
+  .jd-img-label {
+    position: absolute;
+    bottom: 1.2rem;
+    left: 1.2rem;
+    background: rgba(253, 248, 240, 0.92);
+    color: #4a3a20;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    animation: jdUp 0.45s 0.8s both;
+  }
+  @keyframes jdUp {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes jdImg {
+    from {
+      transform: scale(1.06);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+</style>
+
+<h2 class="sr-only">
+  Juggling Donuts hero — 京都大道芸倶楽部のサークル紹介ヒーローセクション
+</h2>
+
+<div class="jd-hero">
+  <div class="jd-text">
+    <div class="jd-bg-circle"></div>
+    <div class="jd-bg-circle2"></div>
+
+    <div class="jd-badge">
+      <span class="jd-badge-dot"></span>
+      京都大学公認サークル
+    </div>
+
+    <p class="jd-jp">京都大道芸倶楽部</p>
+    <h1 class="jd-h1">Juggling<br /><span class="accent">Donuts</span></h1>
+
+    <div class="jd-divider"></div>
+
+    <p class="jd-body">
+      日本でも珍しいジャグリングサークル。技を磨き、舞台に立ち、街を沸かせる —
+      1998年創立、京都から発信するパフォーマンス集団です。
+    </p>
+
+    <div class="jd-actions">
+      <button class="jd-btn">Donutsについて</button>
+      <button class="jd-btn-ghost">活動内容を見る</button>
+    </div>
+  </div>
+
+  <div class="jd-img">
+    <img
+      src="static/img/top.jpg"
+      alt="ジャグリングパフォーマンスの様子"
+    />
+    <div class="jd-img-label">NF・JDL・出演依頼 受付中</div>
+  </div>
+</div>

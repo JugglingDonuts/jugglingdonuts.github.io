@@ -1,12 +1,16 @@
 {% extends "templates/base.html" %} {% block content %}
 
-<section class="title-section">
-  <h1>京都<wbr/>大道芸<wbr/>倶楽部 <wbr/>Juggling <wbr/>Donuts</h1>
-</section>
-
-<section id="top" data-animate>
-  <img class="image" src="img/top.jpg" />
-</section>
+<div class="hero">
+  <div class="hero-text">
+    <div class="hero-donut-outer"></div>
+    <div class="hero-donut-inner"></div>
+    <p>京都<wbr />大道芸<wbr />倶楽部 <wbr /></p>
+    <h1>Juggling <wbr />Donuts</h1>
+  </div>
+  <div class="hero-img">
+    <img src="img/top.jpg" />
+  </div>
+</div>
 
 {% if jdlYear and jdlRelease %}
 <section id="jdl-announce" data-animate>
@@ -103,14 +107,14 @@
   <ul>
     <li>X：<a href="https://x.com/jugglingdonuts">Juggling Donuts</a></li>
     <li>
-      instagram：<a href="https://www.instagram.com/jugglingdonuts/"
-        >京都大道芸倶楽部JugglingDonuts</a
-      >
+      instagram：
+      <a href="https://www.instagram.com/jugglingdonuts/">
+        京都大道芸倶楽部JugglingDonuts
+      </a>
     </li>
     <li>
-      見学など：<a href="mailto:donuts.daihyou@gmail.com"
-        >donuts.daihyou@gmail.com</a
-      >
+      見学など：
+      <a href="mailto:donuts.daihyou@gmail.com"> donuts.daihyou@gmail.com </a>
     </li>
     <li>
       出演依頼：<a href="mailto:donuts.irai@gmail.com">donuts.irai@gmail.com</a>
