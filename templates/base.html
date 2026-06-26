@@ -40,9 +40,7 @@
         </ul>
       </nav>
     </header>
-    <main>
-      {% block content %} {% endblock %}
-    </main>
+    <main>{% block content %} {% endblock %}</main>
     <footer>
       <div class="footer-inner">
         <div class="footer-top">
@@ -66,7 +64,6 @@
       </div>
       <div class="footer-bottom">&copy; 2017-2027 Juggling Donuts</div>
     </footer>
-    <script src="/js/animations.js"></script>
     <script>
       const menuToggle = document.getElementById("menu-toggle");
       const headerNav = document.querySelector("header nav");
